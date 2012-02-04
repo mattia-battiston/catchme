@@ -19,6 +19,7 @@ public class CatchmeActivity extends MapActivity {
 
     MapController mapController = mapView.getController();
     mapController.setZoom(10);
+
   }
 
   @Override
