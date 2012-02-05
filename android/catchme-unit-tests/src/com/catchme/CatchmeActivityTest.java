@@ -1,28 +1,25 @@
 package com.catchme;
 
 import static org.junit.Assert.assertFalse;
-import static org.powermock.api.support.membermodification.MemberMatcher.constructor;
-import static org.powermock.api.support.membermodification.MemberModifier.suppress;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+import org.powermock.reflect.Whitebox;
 
 import com.google.android.maps.MapActivity;
 
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({ CatchmeActivity.class })
+@PrepareForTest({ MapActivity.class })
 public class CatchmeActivityTest {
 
   CatchmeActivity catchmeActivity;
 
   @Before
   public void before() throws Exception {
-    suppress(constructor(MapActivity.class));
-
-    catchmeActivity = new CatchmeActivity();
+    catchmeActivity = Whitebox.newInstance(CatchmeActivity.class);
   }
 
   @Test
