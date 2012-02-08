@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
-import com.google.android.maps.MapView;
 
 public class CatchmeActivity extends MapActivity implements CatchmeView {
 
@@ -16,13 +15,18 @@ public class CatchmeActivity extends MapActivity implements CatchmeView {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
 
-    MapView mapView = (MapView) findViewById(R.id.mapview);
-    mapView.setBuiltInZoomControls(true);
+    // MapView mapView = (MapView) findViewById(R.id.mapview);
+    // mapView.setBuiltInZoomControls(true);
+    //
+    // this.mapController = mapView.getController();
+    //
+    // CatchmePresenter catchmePresenter = new CatchmePresenter(this);
+    // catchmePresenter.bind();
 
-    this.mapController = mapView.getController();
+    // Intent goToHelloWorld = new Intent(this, HelloWorldActivity.class);
+    // startActivity(goToHelloWorld);
 
-    CatchmePresenter catchmePresenter = new CatchmePresenter(this);
-    catchmePresenter.bind();
+    new AppController(this).goToHelloWorld();
   }
 
   @Override
