@@ -6,7 +6,9 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
-public class CatchmeActivity extends MapActivity {
+public class CatchmeActivity extends MapActivity implements CatchmeView {
+
+  private MapController mapController;
 
   /** Called when the activity is first created. */
   @Override
@@ -17,14 +19,20 @@ public class CatchmeActivity extends MapActivity {
     MapView mapView = (MapView) findViewById(R.id.mapview);
     mapView.setBuiltInZoomControls(true);
 
-    MapController mapController = mapView.getController();
-    mapController.setZoom(10);
+    this.mapController = mapView.getController();
 
+    CatchmePresenter catchmePresenter = new CatchmePresenter(this);
+    catchmePresenter.bind();
   }
 
   @Override
   protected boolean isRouteDisplayed() {
     // TODO Auto-generated method stub
     return false;
+  }
+
+  @Override
+  public MapController getMapController() {
+    return mapController;
   }
 }
