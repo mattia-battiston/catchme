@@ -3,6 +3,7 @@ package com.catchme;
 import android.app.Activity;
 import android.content.Intent;
 
+@Deprecated
 public class AppController {
 
   private final Activity currentActivity;

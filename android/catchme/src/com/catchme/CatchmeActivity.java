@@ -4,8 +4,11 @@ import android.os.Bundle;
 
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
+import com.google.android.maps.MapView;
 
 public class CatchmeActivity extends MapActivity implements CatchmeView {
+
+  private CatchmePresenter catchmePresenter = new CatchmePresenter();
 
   private MapController mapController;
 
@@ -15,18 +18,15 @@ public class CatchmeActivity extends MapActivity implements CatchmeView {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
 
-    // MapView mapView = (MapView) findViewById(R.id.mapview);
-    // mapView.setBuiltInZoomControls(true);
-    //
-    // this.mapController = mapView.getController();
-    //
-    // CatchmePresenter catchmePresenter = new CatchmePresenter(this);
-    // catchmePresenter.bind();
+    initGui();
 
-    // Intent goToHelloWorld = new Intent(this, HelloWorldActivity.class);
-    // startActivity(goToHelloWorld);
+    catchmePresenter.go(this);
+  }
 
-    new AppController(this).goToHelloWorld();
+  private void initGui() {
+    MapView mapView = (MapView) findViewById(R.id.mapview);
+    mapView.setBuiltInZoomControls(true);
+    this.mapController = mapView.getController();
   }
 
   @Override
