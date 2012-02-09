@@ -17,4 +17,9 @@ public class AppController {
     currentActivity.startActivity(goToHelloWorld);
   }
 
+  public void goToMap() {
+    Intent goToMap = new Intent(currentActivity, CatchmeActivity.class);
+    currentActivity.startActivity(goToMap);
+  }
+
 }
