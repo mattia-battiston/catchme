@@ -8,6 +8,8 @@ import com.google.android.maps.MapView;
 
 public class CatchmeActivity extends MapActivity implements CatchmeView {
 
+  private CatchmePresenter catchmePresenter = new CatchmePresenter();
+
   private MapController mapController;
 
   /** Called when the activity is first created. */

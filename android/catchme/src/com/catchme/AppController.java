@@ -3,6 +3,7 @@ package com.catchme;
 import android.app.Activity;
 import android.content.Intent;
 
+@Deprecated
 public class AppController {
 
   private final Activity currentActivity;
@@ -15,6 +16,11 @@ public class AppController {
     Intent goToHelloWorld = new Intent(currentActivity,
         HelloWorldActivity.class);
     currentActivity.startActivity(goToHelloWorld);
+  }
+
+  public void goToMap() {
+    Intent goToMap = new Intent(currentActivity, CatchmeActivity.class);
+    currentActivity.startActivity(goToMap);
   }
 
 }
