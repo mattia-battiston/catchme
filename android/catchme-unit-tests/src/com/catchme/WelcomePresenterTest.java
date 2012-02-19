@@ -1,4 +1,4 @@
-package com.catchme.trials;
+package com.catchme;
 
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.verify;
