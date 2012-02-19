@@ -9,6 +9,7 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import org.powermock.reflect.Whitebox;
 
+import com.catchme.trials.CatchmeActivity;
 import com.google.android.maps.MapActivity;
 
 @RunWith(PowerMockRunner.class)

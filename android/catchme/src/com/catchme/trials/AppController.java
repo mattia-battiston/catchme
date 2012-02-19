@@ -1,4 +1,4 @@
-package com.catchme;
+package com.catchme.trials;
 
 import android.app.Activity;
 import android.content.Intent;

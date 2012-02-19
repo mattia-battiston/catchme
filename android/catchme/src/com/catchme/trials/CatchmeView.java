@@ -1,4 +1,4 @@
-package com.catchme;
+package com.catchme.trials;
 
 import com.google.android.maps.MapController;
 

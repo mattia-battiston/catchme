@@ -1,4 +1,8 @@
-package com.catchme;
+package com.catchme.trials;
+
+import com.catchme.R;
+import com.catchme.R.id;
+import com.catchme.R.layout;
 
 import android.app.Activity;
 import android.os.Bundle;

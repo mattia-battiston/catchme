@@ -24,8 +24,6 @@
             </intent-filter>
         </activity>
         
-        <activity android:label="Hello World" android:name=".HelloWorldActivity"></activity>
-        
     </application>
 
 </manifest>

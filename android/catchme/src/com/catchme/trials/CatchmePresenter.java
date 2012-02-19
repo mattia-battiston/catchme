@@ -1,4 +1,4 @@
-package com.catchme;
+package com.catchme.trials;
 
 public class CatchmePresenter {
 
