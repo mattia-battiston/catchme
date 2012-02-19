@@ -1,19 +1,39 @@
 package com.catchme;
 
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+
 public class WelcomePresenter {
 
-  private final View view;
+  private final PresenterView view;
 
-  public interface View {
+  public interface PresenterView {
+    Context getCurrentContext();
+
     void setContentView(int contentView);
+
+    Button getContinueButton();
   }
 
-  public WelcomePresenter(View view) {
+  public WelcomePresenter(PresenterView view) {
     this.view = view;
   }
 
   public void go() {
-    view.setContentView(R.layout.welcome);
+    view.getContinueButton().setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        next();
+      }
+    });
+  }
+
+  public void next() {
+    Context currentView = view.getCurrentContext();
+    Intent goToMap = new Intent(currentView, CatchmeMapActivity.class);
+    currentView.startActivity(goToMap);
   }
 
 }

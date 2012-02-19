@@ -1,30 +1,35 @@
 package com.catchme;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.content.Context;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-public class CatchmeActivity extends Activity implements WelcomePresenter.View {
+public class CatchmeActivity extends Activity implements
+    WelcomePresenter.PresenterView {
 
-  WelcomePresenter welcomePresenter = new WelcomePresenter(this);
+  private WelcomePresenter welcomePresenter = new WelcomePresenter(this);
+
+  private Button continueButton;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setContentView(R.layout.welcome);
+
+    continueButton = (Button) findViewById(R.id.welcome_continue);
 
     welcomePresenter.go();
+  }
 
-    Button continueButton = (Button) findViewById(R.id.welcome_continue);
-    continueButton.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        Intent goToMap = new Intent(CatchmeActivity.this,
-            CatchmeMapActivity.class);
-        startActivity(goToMap);
-      }
-    });
+  @Override
+  public Context getCurrentContext() {
+    return this;
+  }
+
+  @Override
+  public Button getContinueButton() {
+    return continueButton;
   }
 
   public void setWelcomePresenter(WelcomePresenter welcomePresenter) {

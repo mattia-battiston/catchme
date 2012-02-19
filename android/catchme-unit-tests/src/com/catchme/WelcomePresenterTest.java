@@ -1,22 +1,20 @@
 package com.catchme;
 
-import static org.mockito.Matchers.anyInt;
-import static org.mockito.Mockito.verify;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.catchme.R;
-import com.catchme.WelcomePresenter;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 public class WelcomePresenterTest {
 
   WelcomePresenter presenter;
 
   @Mock
-  WelcomePresenter.View view;
+  WelcomePresenter.PresenterView view;
 
   @Before
   public void before() {
@@ -26,17 +24,23 @@ public class WelcomePresenterTest {
   }
 
   @Test
-  public void go_setsWhichLayoutToUse() {
+  public void goToNextPageWhenClickingContinueButton() {
     presenter.go();
 
-    verify(view).setContentView(anyInt());
+    View.OnClickListener continueClickListener = getContinueClickListener();
+    continueClickListener.onClick(null);
+
+    Intent startedIntent = getIntentStarte();
   }
 
-  @Test
-  public void welcomePresenterUsesWelcomeLayout() {
-    presenter.go();
+  private Intent getIntentStarte() {
+    // TODO Auto-generated method stub
+    return null;
+  }
 
-    verify(view).setContentView(R.layout.welcome);
+  private OnClickListener getContinueClickListener() {
+    // TODO Auto-generated method stub
+    return null;
   }
 
 }
