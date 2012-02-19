@@ -7,6 +7,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import com.catchme.base.CustomTestRunner;
+
 @Ignore
 @RunWith(CustomTestRunner.class)
 public class CatchMeRobolectricTest {

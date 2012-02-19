@@ -1,4 +1,4 @@
-package com.catchme.trials;
+package com.catchme.base;
 
 import java.io.File;
 
