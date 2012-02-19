@@ -6,21 +6,21 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/welcome_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/border"
         android:text="" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/welcome_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="Example text" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/welcome_footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
