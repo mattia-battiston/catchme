@@ -25,6 +25,8 @@
             </intent-filter>
         </activity>
         
+        <activity android:label="Catchme Map" android:name=".CatchmeMapActivity"></activity>
+        
     </application>
 
 </manifest>

@@ -13,7 +13,6 @@ public class WelcomePresenter {
   }
 
   public void go() {
-    System.out.println("Setup view");
     view.setContentView(R.layout.welcome);
   }
 

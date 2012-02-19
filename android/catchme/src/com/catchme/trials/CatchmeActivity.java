@@ -3,8 +3,6 @@ package com.catchme.trials;
 import android.os.Bundle;
 
 import com.catchme.R;
-import com.catchme.R.id;
-import com.catchme.R.layout;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
@@ -19,7 +17,7 @@ public class CatchmeActivity extends MapActivity implements CatchmeView {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.main);
+    // setContentView(R.layout.main);
 
     MapView mapView = (MapView) findViewById(R.id.mapview);
     mapView.setBuiltInZoomControls(true);
