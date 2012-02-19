@@ -6,8 +6,6 @@ import com.google.android.maps.MapActivity;
 
 public class CatchmeMapActivity extends MapActivity {
 
-  // TODO convert to use a presenter
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

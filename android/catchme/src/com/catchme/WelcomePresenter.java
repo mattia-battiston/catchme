@@ -11,6 +11,8 @@ public class WelcomePresenter {
 
   public interface PresenterView {
     Button getContinueButton();
+
+    Context getContext();
   }
 
   private WelcomePresenter() {
@@ -21,20 +23,15 @@ public class WelcomePresenter {
     currentContext.startActivity(goToWelcome);
   }
 
-  public void bind(PresenterView view) {
+  public void bind(final PresenterView view) {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         System.out.println("Go to next");
+        CatchmeMapPresenter.getInstance().go(view.getContext());
       }
     });
   }
-
-  // public void next() {
-  // Context currentView = view.getCurrentContext();
-  // Intent goToMap = new Intent(currentView, CatchmeMapActivity.class);
-  // currentView.startActivity(goToMap);
-  // }
 
   public static WelcomePresenter getInstance() {
     return instance;

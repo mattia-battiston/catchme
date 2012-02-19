@@ -1,6 +1,7 @@
 package com.catchme;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -35,6 +36,11 @@ public class WelcomeActivity extends Activity implements PresenterView {
   @Override
   public Button getContinueButton() {
     return continueButton;
+  }
+
+  @Override
+  public Context getContext() {
+    return this;
   }
 
 }
