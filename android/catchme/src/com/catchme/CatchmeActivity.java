@@ -9,5 +9,9 @@ public class CatchmeActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.welcome);
+
+    // TextView content = (TextView) findViewById(R.id.welcome_content);
+    // content.setText(R.string.veryLongText);
+    // content.setMovementMethod(new ScrollingMovementMethod());
   }
 }
