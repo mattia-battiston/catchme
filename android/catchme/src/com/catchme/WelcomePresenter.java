@@ -7,33 +7,37 @@ import android.widget.Button;
 
 public class WelcomePresenter {
 
-  private final PresenterView view;
+  private static WelcomePresenter instance = new WelcomePresenter();
 
   public interface PresenterView {
-    Context getCurrentContext();
-
-    void setContentView(int contentView);
-
     Button getContinueButton();
   }
 
-  public WelcomePresenter(PresenterView view) {
-    this.view = view;
+  private WelcomePresenter() {
   }
 
-  public void go() {
+  public void go(Context currentContext) {
+    Intent goToWelcome = new Intent(currentContext, WelcomeActivity.class);
+    currentContext.startActivity(goToWelcome);
+  }
+
+  public void bind(PresenterView view) {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        next();
+        System.out.println("Go to next");
       }
     });
   }
 
-  public void next() {
-    Context currentView = view.getCurrentContext();
-    Intent goToMap = new Intent(currentView, CatchmeMapActivity.class);
-    currentView.startActivity(goToMap);
+  // public void next() {
+  // Context currentView = view.getCurrentContext();
+  // Intent goToMap = new Intent(currentView, CatchmeMapActivity.class);
+  // currentView.startActivity(goToMap);
+  // }
+
+  public static WelcomePresenter getInstance() {
+    return instance;
   }
 
 }

@@ -1,39 +1,26 @@
 package com.catchme;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.widget.Button;
 
-public class CatchmeActivity extends Activity implements
-    WelcomePresenter.PresenterView {
-
-  private WelcomePresenter welcomePresenter = new WelcomePresenter(this);
-
-  private Button continueButton;
+public class CatchmeActivity extends Activity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.welcome);
 
-    continueButton = (Button) findViewById(R.id.welcome_continue);
-
-    welcomePresenter.go();
+    // start the first step; eventually this will read the step the user has
+    // arrived to from the db
+    WelcomePresenter.getInstance().go(this);
   }
 
   @Override
-  public Context getCurrentContext() {
-    return this;
-  }
+  protected void onResume() {
+    super.onResume();
 
-  @Override
-  public Button getContinueButton() {
-    return continueButton;
-  }
-
-  public void setWelcomePresenter(WelcomePresenter welcomePresenter) {
-    this.welcomePresenter = welcomePresenter;
+    // start the first step; eventually this will read the step the user has
+    // arrived to from the db
+    WelcomePresenter.getInstance().go(this);
   }
 
 }
