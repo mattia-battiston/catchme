@@ -5,9 +5,12 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
+import com.catchme.flow.AppController;
+
 public class WelcomePresenter {
 
   private static WelcomePresenter instance = new WelcomePresenter();
+  private AppController appController;
 
   public interface PresenterView {
     Button getContinueButton();
@@ -28,13 +31,17 @@ public class WelcomePresenter {
       @Override
       public void onClick(View v) {
         System.out.println("Go to next");
-        CatchmeMapPresenter.getInstance().go(view.getContext());
+        appController.next(view.getContext());
       }
     });
   }
 
   public static WelcomePresenter getInstance() {
     return instance;
+  }
+
+  public void setAppController(AppController appController) {
+    this.appController = appController;
   }
 
 }
