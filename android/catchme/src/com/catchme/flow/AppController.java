@@ -25,7 +25,8 @@ public class AppController {
   public void next(Context context) {
     activities.push(context);
 
-    CatchmeMapPresenter.getInstance().go(context);
+    CatchmeMapPresenter catchmeMapPresenter = CatchmeMapPresenter.getInstance();
+    catchmeMapPresenter.go(context);
   }
 
   public void back(Activity activity) {
