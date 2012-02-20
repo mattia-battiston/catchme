@@ -1,11 +1,14 @@
-package com.catchme;
+package com.catchme.steps.map;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.catchme.WelcomePresenter.PresenterView;
+import com.catchme.R;
+import com.catchme.R.id;
+import com.catchme.R.layout;
+import com.catchme.steps.map.WelcomePresenter.PresenterView;
 
 public class WelcomeActivity extends Activity implements PresenterView {
 

@@ -25,8 +25,8 @@
             </intent-filter>
         </activity>
         
-        <activity android:label="Welcome" android:name=".WelcomeActivity"></activity>
-        <activity android:label="Catchme Map" android:name=".CatchmeMapActivity"></activity>
+        <activity android:label="Welcome" android:name=".steps.map.WelcomeActivity"></activity>
+        <activity android:label="Catchme Map" android:name=".steps.text.CatchmeMapActivity"></activity>
         
     </application>
 

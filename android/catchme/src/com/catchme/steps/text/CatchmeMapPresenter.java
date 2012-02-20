@@ -1,4 +1,4 @@
-package com.catchme;
+package com.catchme.steps.text;
 
 import android.content.Context;
 import android.content.Intent;

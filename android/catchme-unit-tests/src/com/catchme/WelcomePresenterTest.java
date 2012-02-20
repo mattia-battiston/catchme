@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import com.catchme.steps.map.WelcomePresenter;
+
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
