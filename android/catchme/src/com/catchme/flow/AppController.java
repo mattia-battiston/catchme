@@ -6,8 +6,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
-import com.catchme.steps.map.WelcomePresenter;
-import com.catchme.steps.text.CatchmeMapPresenter;
+import com.catchme.steps.map.CatchmeMapPresenter;
+import com.catchme.steps.text.WelcomePresenter;
 
 public class AppController {
 

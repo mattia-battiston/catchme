@@ -9,7 +9,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import com.catchme.base.CustomTestRunner;
-import com.catchme.steps.map.WelcomePresenter;
+import com.catchme.steps.text.WelcomePresenter;
 
 @RunWith(CustomTestRunner.class)
 public class CatchmeActivityTest {

@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.text;
 
 import android.app.Activity;
 import android.content.Context;

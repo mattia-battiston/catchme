@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.catchme.steps.map.WelcomePresenter;
+import com.catchme.steps.text.WelcomePresenter;
 
 import android.content.Intent;
 import android.view.View;

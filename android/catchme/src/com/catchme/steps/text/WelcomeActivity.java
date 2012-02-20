@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.text;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.catchme.R;
-import com.catchme.steps.map.WelcomePresenter.PresenterView;
+import com.catchme.steps.text.WelcomePresenter.PresenterView;
 
 public class WelcomeActivity extends Activity implements PresenterView {
 
