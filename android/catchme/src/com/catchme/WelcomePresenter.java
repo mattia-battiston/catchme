@@ -1,5 +1,6 @@
 package com.catchme;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -34,6 +35,10 @@ public class WelcomePresenter {
         appController.next(view.getContext());
       }
     });
+  }
+
+  public void back(Activity activity) {
+    appController.back(activity);
   }
 
   public static WelcomePresenter getInstance() {

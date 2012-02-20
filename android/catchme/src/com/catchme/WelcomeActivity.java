@@ -2,7 +2,6 @@ package com.catchme;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -26,11 +25,7 @@ public class WelcomeActivity extends Activity implements PresenterView {
 
   @Override
   public void onBackPressed() {
-    Intent i = new Intent();
-    i.setAction(Intent.ACTION_MAIN);
-    i.addCategory(Intent.CATEGORY_HOME);
-    startActivity(i);
-    finish();
+    welcomePresenter.back(this);
   }
 
   @Override
