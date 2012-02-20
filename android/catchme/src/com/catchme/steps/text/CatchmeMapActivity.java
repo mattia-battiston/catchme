@@ -3,7 +3,6 @@ package com.catchme.steps.text;
 import android.os.Bundle;
 
 import com.catchme.R;
-import com.catchme.R.layout;
 import com.google.android.maps.MapActivity;
 
 public class CatchmeMapActivity extends MapActivity {
