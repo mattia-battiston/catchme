@@ -2,7 +2,6 @@ package com.catchme.steps.map;
 
 import java.util.List;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import com.catchme.R;
@@ -11,7 +10,6 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
-import com.google.android.maps.OverlayItem;
 
 public class CatchmeMapActivity extends MapActivity implements
     CatchmeMapPresenter.PresenterView {
@@ -32,16 +30,12 @@ public class CatchmeMapActivity extends MapActivity implements
     mapPresenter.bind(this);
 
     List<Overlay> overlays = mapView.getOverlays();
-    Drawable icon = this.getResources().getDrawable(R.drawable.map_pin);
-    // Bitmap bitmap = ((BitmapDrawable) icon).getBitmap();
-    // Drawable d = new BitmapDrawable(Bitmap.createScaledBitmap(bitmap, 50, 50,
-    // true));
 
-    HelloItemizedOverlay myOverlay = new HelloItemizedOverlay(icon);
     GeoPoint point = new GeoPoint(19240000, -99120000);
-    OverlayItem overlayitem = new OverlayItem(point, "", "");
-    myOverlay.addOverlay(overlayitem);
-    overlays.add(myOverlay);
+    MapPointOverlay pin = new MapPointOverlay(this, point);
+    overlays.add(pin);
+
+    mapController.animateTo(point);
 
     // LayoutInflater layoutInflater = (LayoutInflater) this
     // .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

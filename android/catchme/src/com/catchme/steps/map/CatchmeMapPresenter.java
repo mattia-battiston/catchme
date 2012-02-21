@@ -30,5 +30,6 @@ public class CatchmeMapPresenter {
 
   public void bind(final PresenterView view) {
     view.getMap().setBuiltInZoomControls(true);
+    view.getMapController().setZoom(15);
   }
 }
