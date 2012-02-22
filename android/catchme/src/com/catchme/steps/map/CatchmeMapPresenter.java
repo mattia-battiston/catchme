@@ -45,6 +45,8 @@ public class CatchmeMapPresenter {
     view.getMapController().setZoom(15);
 
     view.setTarget(new GeoPoint(19240000, -99120000));
+
+    view.getContinueButton();
   }
 
   public void onTargetClicked(MapPointOverlay target) {
