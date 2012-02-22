@@ -2,6 +2,7 @@ package com.catchme.steps.map;
 
 import java.util.List;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -61,5 +62,10 @@ public class CatchmeMapActivity extends MapActivity implements
   @Override
   public Button getContinueButton() {
     return (Button) findViewById(R.id.mapBaloon_close);
+  }
+
+  @Override
+  public Context getContext() {
+    return this;
   }
 }

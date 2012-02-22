@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.catchme.R;
+import com.catchme.flow.AppController;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
@@ -16,6 +17,7 @@ public class CatchmeMapPresenter {
 
   private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
   private PresenterView view;
+  private AppController appController;
 
   public interface PresenterView {
     MapView getMap();
@@ -25,6 +27,8 @@ public class CatchmeMapPresenter {
     void setTarget(GeoPoint geoPoint);
 
     Button getContinueButton();
+
+    Context getContext();
   }
 
   private CatchmeMapPresenter() {
@@ -70,8 +74,13 @@ public class CatchmeMapPresenter {
       @Override
       public void onClick(View v) {
         System.out.println("Button clicked");
+        appController.next(view.getContext());
       }
     });
 
+  }
+
+  public void setAppController(AppController appController) {
+    this.appController = appController;
   }
 }

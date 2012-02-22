@@ -26,6 +26,7 @@ public class AppController {
     activities.push(context);
 
     CatchmeMapPresenter catchmeMapPresenter = CatchmeMapPresenter.getInstance();
+    catchmeMapPresenter.setAppController(this);
     catchmeMapPresenter.go(context);
   }
 
