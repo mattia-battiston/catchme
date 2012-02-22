@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.map.point;
 
 import java.util.ArrayList;
 
@@ -13,16 +13,13 @@ public class MapPointOverlay extends ItemizedOverlay<OverlayItem> {
 
   private ArrayList<OverlayItem> overlayItems = new ArrayList<OverlayItem>();
 
-  // TODO clean up this constructor, probably use a factory
-  public MapPointOverlay(Context context, GeoPoint point) {
+  public MapPointOverlay(Context context) {
     super(boundCenterBottom(context.getResources().getDrawable(
         R.drawable.map_pin)));
-    OverlayItem overlayitem = new OverlayItem(point, "", "");
-    addOverlay(overlayitem);
   }
 
-  public void addOverlay(OverlayItem overlay) {
-    overlayItems.add(overlay);
+  public void setPoint(GeoPoint point) {
+    overlayItems.add(new OverlayItem(point, "", ""));
     populate();
   }
 

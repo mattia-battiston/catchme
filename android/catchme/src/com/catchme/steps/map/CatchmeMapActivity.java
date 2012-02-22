@@ -5,6 +5,7 @@ import java.util.List;
 import android.os.Bundle;
 
 import com.catchme.R;
+import com.catchme.steps.map.point.MapPointFactory;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
@@ -15,6 +16,8 @@ public class CatchmeMapActivity extends MapActivity implements
     CatchmeMapPresenter.PresenterView {
 
   private CatchmeMapPresenter mapPresenter = CatchmeMapPresenter.getInstance();
+
+  private MapPointFactory mapPointFactory = new MapPointFactory(this);
 
   private MapController mapController;
   private MapView mapView;
@@ -28,14 +31,6 @@ public class CatchmeMapActivity extends MapActivity implements
     mapController = mapView.getController();
 
     mapPresenter.bind(this);
-
-    List<Overlay> overlays = mapView.getOverlays();
-
-    GeoPoint point = new GeoPoint(19240000, -99120000);
-    MapPointOverlay pin = new MapPointOverlay(this, point);
-    overlays.add(pin);
-
-    mapController.animateTo(point);
 
     // LayoutInflater layoutInflater = (LayoutInflater) this
     // .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -81,6 +76,14 @@ public class CatchmeMapActivity extends MapActivity implements
   @Override
   public MapController getMapController() {
     return mapController;
+  }
+
+  @Override
+  public void setTarget(GeoPoint point) {
+    List<Overlay> overlays = mapView.getOverlays();
+    overlays.add(mapPointFactory.createMapPoint(point));
+
+    mapController.animateTo(point);
   }
 
 }
