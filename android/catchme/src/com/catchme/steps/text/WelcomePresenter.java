@@ -10,6 +10,8 @@ import com.catchme.flow.AppController;
 
 public class WelcomePresenter {
 
+  // TODO extract common parts for presenters
+
   private static WelcomePresenter instance = new WelcomePresenter();
   private AppController appController;
 
@@ -31,7 +33,6 @@ public class WelcomePresenter {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        System.out.println("Go to next");
         appController.next(view.getContext());
       }
     });

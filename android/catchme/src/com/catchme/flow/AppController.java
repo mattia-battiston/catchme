@@ -13,6 +13,11 @@ public class AppController {
 
   private Stack<Context> activities = new Stack<Context>();
 
+  // TODO test
+  // TODO store status in a database, to know where we are in the flow
+  // TODO next should calculate the next step to go to
+  // TODO back should calculate the next step to go to
+
   public void start(Context context) {
     // start the first step; eventually this will read the step the user has
     // arrived to from the db
