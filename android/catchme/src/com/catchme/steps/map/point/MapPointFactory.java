@@ -37,7 +37,6 @@ public class MapPointFactory {
         .setText("Example text for baloon");
     map.addView(noteBaloon, new MapView.LayoutParams(200, 200, point,
         MapView.LayoutParams.BOTTOM_CENTER));
-    map.setEnabled(false);// TODO is this needed?
 
     return pin;
   }
