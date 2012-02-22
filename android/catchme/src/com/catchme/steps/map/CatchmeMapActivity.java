@@ -3,6 +3,7 @@ package com.catchme.steps.map;
 import java.util.List;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.catchme.R;
 import com.catchme.steps.map.point.MapPointFactory;
@@ -17,7 +18,8 @@ public class CatchmeMapActivity extends MapActivity implements
 
   private CatchmeMapPresenter mapPresenter = CatchmeMapPresenter.getInstance();
 
-  private MapPointFactory mapPointFactory = new MapPointFactory(this);
+  private MapPointFactory mapPointFactory = new MapPointFactory(this,
+      mapPresenter);
 
   private MapController mapController;
   private MapView mapView;
@@ -86,4 +88,8 @@ public class CatchmeMapActivity extends MapActivity implements
     mapController.animateTo(point);
   }
 
+  @Override
+  public Button getContinueButton() {
+    return (Button) findViewById(R.id.mapBaloon_close);
+  }
 }
