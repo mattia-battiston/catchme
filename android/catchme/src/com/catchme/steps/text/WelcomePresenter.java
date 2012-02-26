@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.catchme.flow.AppController;
+import com.catchme.flow.step.Step;
 
-public class WelcomePresenter {
+public class WelcomePresenter implements Step {
 
   // TODO extract common parts for presenters
 
@@ -24,6 +25,7 @@ public class WelcomePresenter {
   private WelcomePresenter() {
   }
 
+  @Override
   public void go(Context currentContext) {
     Intent goToWelcome = new Intent(currentContext, WelcomeActivity.class);
     currentContext.startActivity(goToWelcome);
@@ -46,6 +48,7 @@ public class WelcomePresenter {
     return instance;
   }
 
+  @Override
   public void setAppController(AppController appController) {
     this.appController = appController;
   }

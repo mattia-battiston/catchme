@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.catchme.flow.PresenterRetriever;
+import com.catchme.flow.presenter.PresenterRetriever;
 import com.catchme.steps.text.WelcomePresenter;
 
 public class BaseUnitTest {

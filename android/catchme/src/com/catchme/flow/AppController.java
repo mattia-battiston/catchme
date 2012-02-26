@@ -1,19 +1,17 @@
 package com.catchme.flow;
 
-import java.util.Stack;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
-import com.catchme.steps.map.CatchmeMapPresenter;
-import com.catchme.steps.text.WelcomePresenter;
+import com.catchme.flow.step.Step;
+import com.catchme.flow.step.StepRetriever;
 
 public class AppController {
 
-  private Stack<Context> activities = new Stack<Context>();
+  private StepRetriever stepRetriever = new StepRetriever();
 
-  private PresenterRetriever presenterRetriever = new PresenterRetriever();
+  private Step step;
 
   // TODO test
   // TODO store status in a database, to know where we are in the flow
@@ -21,21 +19,13 @@ public class AppController {
   // TODO back should calculate the next step to go to
 
   public void start(Context context) {
-    // start the first step; eventually this will read the step the user has
-    // arrived to from the db
-    WelcomePresenter welcomePresenter = presenterRetriever
-        .getPresenter(WelcomePresenter.class);
-    welcomePresenter.setAppController(this);
-
-    welcomePresenter.go(context);
+    this.step = stepRetriever.getFirstStep();
+    goToStep(context);
   }
 
   public void next(Context context) {
-    activities.push(context);
-
-    CatchmeMapPresenter catchmeMapPresenter = CatchmeMapPresenter.getInstance();
-    catchmeMapPresenter.setAppController(this);
-    catchmeMapPresenter.go(context);
+    this.step = stepRetriever.getStepAfter(step);
+    goToStep(context);
   }
 
   public void back(Activity activity) {
@@ -46,8 +36,13 @@ public class AppController {
     activity.finish();
   }
 
-  public void setPresenterRetriever(PresenterRetriever presenterRetriever) {
-    this.presenterRetriever = presenterRetriever;
+  private void goToStep(Context context) {
+    step.setAppController(this);
+    step.go(context);
+  }
+
+  public void setStepRetriever(StepRetriever stepRetriever) {
+    this.stepRetriever = stepRetriever;
   }
 
 }

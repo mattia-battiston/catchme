@@ -1,4 +1,4 @@
-package com.catchme.flow;
+package com.catchme.flow.presenter;
 
 public class PresenterRetriever {
 

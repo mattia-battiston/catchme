@@ -6,11 +6,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.catchme.flow.AppController;
+import com.catchme.flow.step.Step;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
-public class CatchmeMapPresenter {
+public class CatchmeMapPresenter implements Step {
 
   private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
   private PresenterView view;
