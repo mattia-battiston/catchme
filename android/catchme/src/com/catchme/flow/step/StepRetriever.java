@@ -1,6 +1,7 @@
 package com.catchme.flow.step;
 
 import com.catchme.flow.presenter.PresenterRetriever;
+import com.catchme.steps.exit.ExitStep;
 import com.catchme.steps.map.CatchmeMapPresenter;
 import com.catchme.steps.text.WelcomePresenter;
 
@@ -23,13 +24,6 @@ public class StepRetriever {
   }
 
   public Step getStepBefore(Step step) {
-    // TODO wrap this in a step
-    // Intent i = new Intent();
-    // i.setAction(Intent.ACTION_MAIN);
-    // i.addCategory(Intent.CATEGORY_HOME);
-    // activity.startActivity(i);
-    // activity.finish();
-    return null;
+    return new ExitStep();
   }
-
 }
