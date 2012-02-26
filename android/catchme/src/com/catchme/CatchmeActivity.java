@@ -21,4 +21,8 @@ public class CatchmeActivity extends Activity {
     appController.start(this);
   }
 
+  public void setAppController(AppController appController) {
+    this.appController = appController;
+  }
+
 }

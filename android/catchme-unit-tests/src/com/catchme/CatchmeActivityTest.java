@@ -6,31 +6,29 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
+import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
-import com.catchme.steps.text.WelcomePresenter;
+import com.catchme.flow.AppController;
 
 @RunWith(CustomTestRunner.class)
-public class CatchmeActivityTest {
+public class CatchmeActivityTest extends BaseUnitTest {
 
   CatchmeActivity catchmeActivity = new CatchmeActivity();
 
   @Mock
-  WelcomePresenter welcomePage;
+  AppController appController;
 
   @Before
   public void before() {
-    MockitoAnnotations.initMocks(this);
-
-    catchmeActivity.setWelcomePresenter(welcomePage);
+    catchmeActivity.setAppController(appController);
   }
 
   @Test
-  public void startsWelcomePage() {
-    catchmeActivity.onCreate(null);
+  public void startsTheApplication() {
+    catchmeActivity.onResume();
 
-    verify(welcomePage).go();
+    verify(appController).start(catchmeActivity);
   }
 
 }
