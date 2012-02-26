@@ -13,6 +13,8 @@ public class AppController {
 
   private Stack<Context> activities = new Stack<Context>();
 
+  private PresenterRetriever presenterRetriever = new PresenterRetriever();
+
   // TODO test
   // TODO store status in a database, to know where we are in the flow
   // TODO next should calculate the next step to go to
@@ -21,7 +23,8 @@ public class AppController {
   public void start(Context context) {
     // start the first step; eventually this will read the step the user has
     // arrived to from the db
-    WelcomePresenter welcomePresenter = WelcomePresenter.getInstance();
+    WelcomePresenter welcomePresenter = presenterRetriever
+        .getPresenter(WelcomePresenter.class);
     welcomePresenter.setAppController(this);
 
     welcomePresenter.go(context);
@@ -41,6 +44,10 @@ public class AppController {
     i.addCategory(Intent.CATEGORY_HOME);
     activity.startActivity(i);
     activity.finish();
+  }
+
+  public void setPresenterRetriever(PresenterRetriever presenterRetriever) {
+    this.presenterRetriever = presenterRetriever;
   }
 
 }
