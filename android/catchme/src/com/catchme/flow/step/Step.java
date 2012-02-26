@@ -10,4 +10,6 @@ public interface Step {
 
   void go(Context context);
 
+  String getName();
+
 }

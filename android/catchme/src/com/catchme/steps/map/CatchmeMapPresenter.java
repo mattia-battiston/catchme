@@ -14,6 +14,8 @@ import com.google.android.maps.MapView;
 
 public class CatchmeMapPresenter implements Step, Presenter {
 
+  // TODO implement back, refactor, test
+
   private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
   private PresenterView view;
   private AppController appController;

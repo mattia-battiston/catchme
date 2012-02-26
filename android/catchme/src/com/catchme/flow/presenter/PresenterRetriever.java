@@ -21,4 +21,8 @@ public class PresenterRetriever {
     return (T) presenters.get(clazz);
   }
 
+  public static Map<Class<? extends Presenter>, Presenter> getPresenters() {
+    return presenters;
+  }
+
 }
