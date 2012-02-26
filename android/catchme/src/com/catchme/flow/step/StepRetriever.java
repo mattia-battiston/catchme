@@ -41,7 +41,12 @@ public class StepRetriever {
   }
 
   public Step getStepBefore(Step step) {
-    return new ExitStep();
+    for (int i = 1; i < steps.size(); i++) {
+      Step candidate = steps.get(i);
+      if (candidate.getName().equals(step.getName()))
+        return steps.get(i - 1);
+    }
+    return exitStep;
   }
 
   public List<Step> getSteps() {

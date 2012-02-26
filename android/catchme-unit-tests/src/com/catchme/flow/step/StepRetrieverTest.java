@@ -1,5 +1,6 @@
 package com.catchme.flow.step;
 
+import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.powermock.api.mockito.PowerMockito.mock;
@@ -10,6 +11,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 import com.catchme.base.BaseUnitTest;
+import com.catchme.steps.exit.ExitStep;
 
 public class StepRetrieverTest extends BaseUnitTest {
 
@@ -59,6 +61,45 @@ public class StepRetrieverTest extends BaseUnitTest {
     mockSteps(first, second, third, fourth);
 
     stepRetriever.getStepAfter(fourth);
+  }
+
+  @Test
+  public void getStepBefore_returnsStepBeforeCurrentOne() {
+    Step first = step("First");
+    Step second = step("Second");
+    Step third = step("Third");
+    Step fourth = step("Fourth");
+    mockSteps(first, second, third, fourth);
+
+    Step stepBefore = stepRetriever.getStepBefore(fourth);
+
+    assertThat(stepBefore, is(third));
+  }
+
+  @Test
+  public void getStepBefore_returnsFirstStepBeforeSecond() {
+    Step first = step("First");
+    Step second = step("Second");
+    Step third = step("Third");
+    Step fourth = step("Fourth");
+    mockSteps(first, second, third, fourth);
+
+    Step stepBefore = stepRetriever.getStepBefore(second);
+
+    assertThat(stepBefore, is(first));
+  }
+
+  @Test
+  public void getStepBefore_returnsExitStepBeforeFirst() {
+    Step first = step("First");
+    Step second = step("Second");
+    Step third = step("Third");
+    Step fourth = step("Fourth");
+    mockSteps(first, second, third, fourth);
+
+    Step stepBefore = stepRetriever.getStepBefore(first);
+
+    assertThat(stepBefore, is(instanceOf(ExitStep.class)));
   }
 
   private void mockSteps(Step... steps) {
