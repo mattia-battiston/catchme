@@ -7,9 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.catchme.flow.AppController;
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.flow.step.Step;
 
-public class WelcomePresenter implements Step {
+public class WelcomePresenter implements Step, Presenter {
 
   // TODO extract common parts for presenters
 
