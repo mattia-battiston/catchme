@@ -6,6 +6,12 @@ import com.catchme.steps.text.WelcomePresenter;
 
 public class StepRetriever {
 
+  // TODO test
+  // TODO store status in a database, to know where we are in the flow
+
+  // TODO next should calculate the next step to go to
+  // TODO back should calculate the next step to go to
+
   private PresenterRetriever presenterRetriever = new PresenterRetriever();
 
   public Step getFirstStep() {
@@ -14,6 +20,16 @@ public class StepRetriever {
 
   public Step getStepAfter(Step step) {
     return presenterRetriever.getPresenter(CatchmeMapPresenter.class);
+  }
+
+  public Step getStepBefore(Step step) {
+    // TODO wrap this in a step
+    // Intent i = new Intent();
+    // i.setAction(Intent.ACTION_MAIN);
+    // i.addCategory(Intent.CATEGORY_HOME);
+    // activity.startActivity(i);
+    // activity.finish();
+    return null;
   }
 
 }

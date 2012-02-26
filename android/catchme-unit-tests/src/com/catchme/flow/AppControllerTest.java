@@ -1,5 +1,6 @@
 package com.catchme.flow;
 
+import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.when;
@@ -8,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
-import android.content.Context;
+import android.app.Activity;
 
 import com.catchme.base.BaseUnitTest;
 import com.catchme.flow.step.Step;
@@ -19,7 +20,7 @@ public class AppControllerTest extends BaseUnitTest {
   AppController appController = new AppController();
 
   @Mock
-  Context context;
+  Activity context;
 
   @Mock
   StepRetriever stepRetriever;
@@ -27,11 +28,19 @@ public class AppControllerTest extends BaseUnitTest {
   @Mock
   Step firstStep;
 
+  @Mock
+  Step previousStep;
+
+  @Mock
+  Step nextStep;
+
   @Before
   public void before() {
     appController.setStepRetriever(stepRetriever);
 
     mockFirstStep();
+    mockNextStep();
+    mockPreviousStep();
   }
 
   @Test
@@ -53,36 +62,85 @@ public class AppControllerTest extends BaseUnitTest {
     appController.start(context);
     Step secondStep = mockStepAfter(firstStep);
     Step thirdStep = mockStepAfter(secondStep);
-    mockStepAfter(thirdStep);
+    Step fourthStep = mockStepAfter(thirdStep);
 
     appController.next(context);
-    verify(stepRetriever).getStepAfter(firstStep);
+    verify(secondStep).go(context);
 
     appController.next(context);
-    verify(stepRetriever).getStepAfter(secondStep);
+    verify(thirdStep).go(context);
 
     appController.next(context);
-    verify(stepRetriever).getStepAfter(thirdStep);
+    verify(fourthStep).go(context);
   }
 
   @Test
   public void next_goesToNextStep() {
-    appController.start(context);
-    Step secondStep = mockStepAfter(firstStep);
-
     appController.next(context);
 
+    verify(nextStep).go(context);
+  }
+
+  @Test
+  public void next_passTheAppControllerToTheStep() {
+    appController.next(context);
+
+    verify(nextStep).setAppController(appController);
+  }
+
+  @Test
+  public void back_goesToStepBeforeCurrentOne() {
+    appController.setStep(previousStep);
+    Step thirdStep = setStepBefore(previousStep);
+    Step secondStep = setStepBefore(thirdStep);
+    Step firstStep = setStepBefore(secondStep);
+
+    appController.back(context);
+    verify(thirdStep).go(context);
+
+    appController.back(context);
     verify(secondStep).go(context);
+
+    appController.back(context);
+    verify(firstStep).go(context);
+  }
+
+  @Test
+  public void back_goesToPreviousStep() {
+    appController.back(context);
+
+    verify(previousStep).go(context);
+  }
+
+  @Test
+  public void back_passTheAppControllerToTheStep() {
+    appController.back(context);
+
+    verify(previousStep).setAppController(appController);
   }
 
   private void mockFirstStep() {
     when(stepRetriever.getFirstStep()).thenReturn(firstStep);
   }
 
+  private void mockNextStep() {
+    when(stepRetriever.getStepAfter(any(Step.class))).thenReturn(nextStep);
+  }
+
+  private void mockPreviousStep() {
+    when(stepRetriever.getStepBefore(any(Step.class))).thenReturn(previousStep);
+  }
+
   private Step mockStepAfter(Step previousStep) {
     Step nextStep = mock(Step.class);
     when(stepRetriever.getStepAfter(previousStep)).thenReturn(nextStep);
     return nextStep;
+  }
+
+  private Step setStepBefore(Step currentStep) {
+    Step previousStep = mock(Step.class);
+    when(stepRetriever.getStepBefore(currentStep)).thenReturn(previousStep);
+    return previousStep;
   }
 
 }
