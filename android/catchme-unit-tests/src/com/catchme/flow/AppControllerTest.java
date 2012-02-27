@@ -12,7 +12,7 @@ import org.mockito.Mock;
 import android.app.Activity;
 
 import com.catchme.base.BaseUnitTest;
-import com.catchme.flow.step.Step;
+import com.catchme.flow.step.BaseStep;
 import com.catchme.flow.step.StepRetriever;
 
 public class AppControllerTest extends BaseUnitTest {
@@ -26,13 +26,13 @@ public class AppControllerTest extends BaseUnitTest {
   StepRetriever stepRetriever;
 
   @Mock
-  Step firstStep;
+  BaseStep firstStep;
 
   @Mock
-  Step previousStep;
+  BaseStep previousStep;
 
   @Mock
-  Step nextStep;
+  BaseStep nextStep;
 
   @Before
   public void before() {
@@ -60,9 +60,9 @@ public class AppControllerTest extends BaseUnitTest {
   @Test
   public void next_goesToStepAfterCurrentOne() {
     appController.start(context);
-    Step secondStep = mockStepAfter(firstStep);
-    Step thirdStep = mockStepAfter(secondStep);
-    Step fourthStep = mockStepAfter(thirdStep);
+    BaseStep secondStep = mockStepAfter(firstStep);
+    BaseStep thirdStep = mockStepAfter(secondStep);
+    BaseStep fourthStep = mockStepAfter(thirdStep);
 
     appController.next(context);
     verify(secondStep).go(context);
@@ -91,9 +91,9 @@ public class AppControllerTest extends BaseUnitTest {
   @Test
   public void back_goesToStepBeforeCurrentOne() {
     appController.setStep(previousStep);
-    Step thirdStep = setStepBefore(previousStep);
-    Step secondStep = setStepBefore(thirdStep);
-    Step firstStep = setStepBefore(secondStep);
+    BaseStep thirdStep = setStepBefore(previousStep);
+    BaseStep secondStep = setStepBefore(thirdStep);
+    BaseStep firstStep = setStepBefore(secondStep);
 
     appController.back(context);
     verify(thirdStep).go(context);
@@ -124,21 +124,21 @@ public class AppControllerTest extends BaseUnitTest {
   }
 
   private void mockNextStep() {
-    when(stepRetriever.getStepAfter(any(Step.class))).thenReturn(nextStep);
+    when(stepRetriever.getStepAfter(any(BaseStep.class))).thenReturn(nextStep);
   }
 
   private void mockPreviousStep() {
-    when(stepRetriever.getStepBefore(any(Step.class))).thenReturn(previousStep);
+    when(stepRetriever.getStepBefore(any(BaseStep.class))).thenReturn(previousStep);
   }
 
-  private Step mockStepAfter(Step previousStep) {
-    Step nextStep = mock(Step.class);
+  private BaseStep mockStepAfter(BaseStep previousStep) {
+    BaseStep nextStep = mock(BaseStep.class);
     when(stepRetriever.getStepAfter(previousStep)).thenReturn(nextStep);
     return nextStep;
   }
 
-  private Step setStepBefore(Step currentStep) {
-    Step previousStep = mock(Step.class);
+  private BaseStep setStepBefore(BaseStep currentStep) {
+    BaseStep previousStep = mock(BaseStep.class);
     when(stepRetriever.getStepBefore(currentStep)).thenReturn(previousStep);
     return previousStep;
   }

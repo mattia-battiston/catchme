@@ -1,21 +1,20 @@
 package com.catchme.steps.text;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import com.catchme.flow.AppController;
 import com.catchme.flow.presenter.Presenter;
-import com.catchme.flow.step.Step;
+import com.catchme.flow.step.BaseStep;
 
-public class WelcomePresenter implements Step, Presenter {
-
-  // TODO extract common parts for presenters
+public class WelcomePresenter extends BaseStep implements Presenter {
 
   private static WelcomePresenter instance = new WelcomePresenter();
-  private AppController appController;
+
+  public static WelcomePresenter getInstance() {
+    return instance;
+  }
 
   public interface PresenterView {
     Button getContinueButton();
@@ -36,22 +35,9 @@ public class WelcomePresenter implements Step, Presenter {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        appController.next(view.getContext());
+        next(view.getContext());
       }
     });
-  }
-
-  public void back(Activity activity) {
-    appController.back(activity);
-  }
-
-  public static WelcomePresenter getInstance() {
-    return instance;
-  }
-
-  @Override
-  public void setAppController(AppController appController) {
-    this.appController = appController;
   }
 
   @Override

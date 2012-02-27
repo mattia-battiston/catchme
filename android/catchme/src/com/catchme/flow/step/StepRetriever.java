@@ -14,42 +14,42 @@ public class StepRetriever {
 
   private static PresenterRetriever presenterRetriever = new PresenterRetriever();
 
-  private static List<Step> steps = new ArrayList<Step>();
+  private static List<BaseStep> steps = new ArrayList<BaseStep>();
 
-  private static Step exitStep = new ExitStep();
+  private static BaseStep exitStep = new ExitStep();
 
   static {
     steps.add(presenterRetriever.getPresenter(WelcomePresenter.class));
     steps.add(presenterRetriever.getPresenter(CatchmeMapPresenter.class));
   }
 
-  public Step getFirstStep() {
+  public BaseStep getFirstStep() {
     return steps.get(0);
   }
 
-  public Step getStepAfter(Step step) {
+  public BaseStep getStepAfter(BaseStep step) {
     for (int i = 0; i < steps.size() - 1; i++) {
-      Step candidate = steps.get(i);
+      BaseStep candidate = steps.get(i);
       if (candidate.getName().equals(step.getName()))
         return steps.get(i + 1);
     }
     throw new RuntimeException("No more steps");
   }
 
-  public Step getStepBefore(Step step) {
+  public BaseStep getStepBefore(BaseStep step) {
     for (int i = 1; i < steps.size(); i++) {
-      Step candidate = steps.get(i);
+      BaseStep candidate = steps.get(i);
       if (candidate.getName().equals(step.getName()))
         return steps.get(i - 1);
     }
     return exitStep;
   }
 
-  public List<Step> getSteps() {
+  public List<BaseStep> getSteps() {
     return steps;
   }
 
-  public static void setSteps(List<Step> steps) {
+  public static void setSteps(List<BaseStep> steps) {
     StepRetriever.steps = steps;
   }
 }

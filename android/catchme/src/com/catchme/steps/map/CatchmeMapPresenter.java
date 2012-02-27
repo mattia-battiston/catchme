@@ -7,12 +7,12 @@ import android.widget.Button;
 
 import com.catchme.flow.AppController;
 import com.catchme.flow.presenter.Presenter;
-import com.catchme.flow.step.Step;
+import com.catchme.flow.step.BaseStep;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
-public class CatchmeMapPresenter implements Step, Presenter {
+public class CatchmeMapPresenter extends BaseStep implements Presenter {
 
   // TODO implement back, refactor, test
 

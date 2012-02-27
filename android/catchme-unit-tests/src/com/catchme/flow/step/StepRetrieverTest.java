@@ -19,45 +19,45 @@ public class StepRetrieverTest extends BaseUnitTest {
 
   @Test
   public void getFirstStep_returnsFirstStep() {
-    Step expectedFirstStep = mockFirstStep();
+    BaseStep expectedFirstStep = mockFirstStep();
 
-    Step actualFirstStep = stepRetriever.getFirstStep();
+    BaseStep actualFirstStep = stepRetriever.getFirstStep();
 
     assertThat(actualFirstStep, is(expectedFirstStep));
   }
 
   @Test
   public void getStepAfter_returnsStepAfterCurrentOne() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    Step stepAfter = stepRetriever.getStepAfter(second);
+    BaseStep stepAfter = stepRetriever.getStepAfter(second);
 
     assertThat(stepAfter, is(third));
   }
 
   @Test
   public void getStepAfter_returnsLastStepAfterPenultimate() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    Step stepAfter = stepRetriever.getStepAfter(third);
+    BaseStep stepAfter = stepRetriever.getStepAfter(third);
 
     assertThat(stepAfter, is(fourth));
   }
 
   @Test(expected = RuntimeException.class)
   public void getStepAfter_exceptionIfThereAreNoMoreSteps() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
     stepRetriever.getStepAfter(fourth);
@@ -65,55 +65,55 @@ public class StepRetrieverTest extends BaseUnitTest {
 
   @Test
   public void getStepBefore_returnsStepBeforeCurrentOne() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    Step stepBefore = stepRetriever.getStepBefore(fourth);
+    BaseStep stepBefore = stepRetriever.getStepBefore(fourth);
 
     assertThat(stepBefore, is(third));
   }
 
   @Test
   public void getStepBefore_returnsFirstStepBeforeSecond() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    Step stepBefore = stepRetriever.getStepBefore(second);
+    BaseStep stepBefore = stepRetriever.getStepBefore(second);
 
     assertThat(stepBefore, is(first));
   }
 
   @Test
   public void getStepBefore_returnsExitStepBeforeFirst() {
-    Step first = step("First");
-    Step second = step("Second");
-    Step third = step("Third");
-    Step fourth = step("Fourth");
+    BaseStep first = step("First");
+    BaseStep second = step("Second");
+    BaseStep third = step("Third");
+    BaseStep fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    Step stepBefore = stepRetriever.getStepBefore(first);
+    BaseStep stepBefore = stepRetriever.getStepBefore(first);
 
     assertThat(stepBefore, is(instanceOf(ExitStep.class)));
   }
 
-  private void mockSteps(Step... steps) {
+  private void mockSteps(BaseStep... steps) {
     StepRetriever.setSteps(Arrays.asList(steps));
   }
 
-  private Step step(String stepName) {
-    Step step = mock(Step.class);
+  private BaseStep step(String stepName) {
+    BaseStep step = mock(BaseStep.class);
     when(step.getName()).thenReturn(stepName);
     return step;
   }
 
-  private Step mockFirstStep() {
-    Step firstStep = mock(Step.class);
+  private BaseStep mockFirstStep() {
+    BaseStep firstStep = mock(BaseStep.class);
     stepRetriever.getSteps().set(0, firstStep);
     return firstStep;
   }

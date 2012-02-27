@@ -6,9 +6,9 @@ import android.content.Intent;
 
 import com.catchme.android.IntentFactory;
 import com.catchme.flow.AppController;
-import com.catchme.flow.step.Step;
+import com.catchme.flow.step.BaseStep;
 
-public class ExitStep implements Step {
+public class ExitStep extends BaseStep {
 
   private IntentFactory intentFactory = new IntentFactory();
 

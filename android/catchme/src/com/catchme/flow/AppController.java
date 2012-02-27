@@ -1,16 +1,15 @@
 package com.catchme.flow;
 
-import android.app.Activity;
 import android.content.Context;
 
-import com.catchme.flow.step.Step;
+import com.catchme.flow.step.BaseStep;
 import com.catchme.flow.step.StepRetriever;
 
 public class AppController {
 
   private StepRetriever stepRetriever = new StepRetriever();
 
-  private Step step;
+  private BaseStep step;
 
   public void start(Context context) {
     this.step = stepRetriever.getFirstStep();
@@ -22,9 +21,9 @@ public class AppController {
     goToStep(context);
   }
 
-  public void back(Activity activity) {
+  public void back(Context context) {
     this.step = stepRetriever.getStepBefore(step);
-    goToStep(activity);
+    goToStep(context);
   }
 
   private void goToStep(Context context) {
@@ -36,7 +35,7 @@ public class AppController {
     this.stepRetriever = stepRetriever;
   }
 
-  public void setStep(Step step) {
+  public void setStep(BaseStep step) {
     this.step = step;
   }
 
