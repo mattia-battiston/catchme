@@ -7,10 +7,19 @@ import org.junit.Before;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import android.content.Context;
+
+import com.catchme.flow.AppController;
 import com.catchme.flow.presenter.PresenterRetriever;
 import com.catchme.steps.text.WelcomePresenter;
 
 public class BaseUnitTest {
+
+  @Mock
+  protected Context context;
+
+  @Mock
+  protected AppController appController;
 
   @Mock
   protected PresenterRetriever presenterRetriever;

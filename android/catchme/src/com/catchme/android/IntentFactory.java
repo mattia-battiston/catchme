@@ -1,5 +1,6 @@
 package com.catchme.android;
 
+import android.content.Context;
 import android.content.Intent;
 
 public class IntentFactory {
@@ -13,6 +14,10 @@ public class IntentFactory {
 
   protected Intent createIntent() {
     return new Intent();
+  }
+
+  public Intent createIntent(Context packageContent, Class<?> clazz) {
+    return new Intent(packageContent, clazz);
   }
 
 }
