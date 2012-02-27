@@ -54,4 +54,9 @@ public class WelcomePresenter implements Step, Presenter {
     this.appController = appController;
   }
 
+  @Override
+  public String getName() {
+    return "welcome";
+  }
+
 }

@@ -71,4 +71,9 @@ public class CatchmeMapPresenter implements Step, Presenter {
   public PresenterView getView() {
     return view;
   }
+
+  @Override
+  public String getName() {
+    return "firstPoint";
+  }
 }

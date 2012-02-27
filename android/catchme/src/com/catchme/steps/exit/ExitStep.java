@@ -10,9 +10,7 @@ import com.catchme.flow.step.Step;
 
 public class ExitStep implements Step {
 
-  private IntentFactory intentFactory;
-
-  // TODO test
+  private IntentFactory intentFactory = new IntentFactory();
 
   public void go(Context context) {
     Activity activity = (Activity) context;
