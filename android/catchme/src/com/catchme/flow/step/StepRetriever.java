@@ -10,11 +10,7 @@ import com.catchme.steps.text.WelcomePresenter;
 
 public class StepRetriever {
 
-  // TODO test
   // TODO store status in a database, to know where we are in the flow
-
-  // TODO next should calculate the next step to go to
-  // TODO back should calculate the next step to go to
 
   private static PresenterRetriever presenterRetriever = new PresenterRetriever();
 
