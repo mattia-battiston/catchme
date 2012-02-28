@@ -16,7 +16,12 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
   // TODO implement back, refactor, test
 
   private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
+
   private PresenterView view;
+
+  private MapView map;
+
+  private MapController mapController;
 
   public interface PresenterView {
     MapView getMap();
@@ -45,14 +50,15 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
 
   public void bind(final PresenterView view) {
     this.view = view;
-    MapView map = view.getMap();
-    MapController mapController = view.getMapController();
+    this.map = view.getMap();
+    this.mapController = view.getMapController();
+
     map.setBuiltInZoomControls(true);
+    mapController.setZoom(15);
 
     GeoPoint target = new GeoPoint(19240000, -99120000);
     view.setTarget(target);
     mapController.animateTo(target);
-    mapController.setZoom(15);
 
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
