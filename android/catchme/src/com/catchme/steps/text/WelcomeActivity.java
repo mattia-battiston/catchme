@@ -39,4 +39,8 @@ public class WelcomeActivity extends Activity implements PresenterView {
     return this;
   }
 
+  public void setPresenter(WelcomePresenter presenter) {
+    this.welcomePresenter = presenter;
+  }
+
 }
