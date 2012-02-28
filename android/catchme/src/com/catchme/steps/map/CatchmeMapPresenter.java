@@ -40,7 +40,8 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
   }
 
   public void go(Context context) {
-    Intent goToMap = new Intent(context, CatchmeMapActivity.class);
+    Intent goToMap = intentFactory.createIntent(context,
+        CatchmeMapActivity.class);
     context.startActivity(goToMap);
   }
 
@@ -62,10 +63,6 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
         appController.next(view.getContext());
       }
     });
-  }
-
-  public void setAppController(AppController appController) {
-    this.appController = appController;
   }
 
   public PresenterView getView() {

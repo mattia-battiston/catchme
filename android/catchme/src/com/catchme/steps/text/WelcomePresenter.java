@@ -23,8 +23,6 @@ public class WelcomePresenter extends BaseStep implements Presenter {
     Context getContext();
   }
 
-  private IntentFactory intentFactory = new IntentFactory();
-
   private WelcomePresenter() {
   }
 
