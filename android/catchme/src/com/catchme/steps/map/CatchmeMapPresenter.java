@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import com.catchme.flow.AppController;
 import com.catchme.flow.presenter.Presenter;
 import com.catchme.flow.step.BaseStep;
 import com.google.android.maps.GeoPoint;
@@ -18,7 +17,6 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
 
   private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
   private PresenterView view;
-  private AppController appController;
 
   public interface PresenterView {
     MapView getMap();
@@ -59,8 +57,7 @@ public class CatchmeMapPresenter extends BaseStep implements Presenter {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        System.out.println("Button clicked");
-        appController.next(view.getContext());
+        next(view.getContext());
       }
     });
   }
