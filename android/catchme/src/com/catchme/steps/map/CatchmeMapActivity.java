@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.catchme.R;
 import com.catchme.steps.map.point.MapPointFactory;
+import com.catchme.steps.map.point.MapPointOverlay;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
@@ -53,10 +54,14 @@ public class CatchmeMapActivity extends MapActivity implements
 
   @Override
   public void setTarget(GeoPoint point) {
-    List<Overlay> overlays = mapView.getOverlays();
-    overlays.add(mapPointFactory.createMapPoint(point));
-
+    MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point);
+    addPointOnMap(mapPoint);
     mapController.animateTo(point);
+  }
+
+  private void addPointOnMap(MapPointOverlay mapPoint) {
+    List<Overlay> overlays = mapView.getOverlays();
+    overlays.add(mapPoint);
   }
 
   @Override
