@@ -8,36 +8,28 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.catchme.R;
-import com.catchme.steps.map.CatchmeMapPresenter;
 import com.catchme.steps.map.point.baloon.BaloonLayout;
 import com.google.android.maps.GeoPoint;
-import com.google.android.maps.MapView;
 
 public class MapPointFactory {
 
   private final Activity activity;
-  private final CatchmeMapPresenter presenter;
 
-  public MapPointFactory(Activity activity, CatchmeMapPresenter mapPresenter) {
+  public MapPointFactory(Activity activity) {
     this.activity = activity;
-    this.presenter = mapPresenter;
   }
 
   // TODO some of this code should be in the MapPointOverlay, the baloon is
   // part of the point for us
-  public MapPointOverlay createMapPoint(GeoPoint point) {
+  public MapPointOverlay createMapPoint(GeoPoint point, String text) {
     MapPointOverlay pin = new MapPointOverlay(activity);
     pin.setPosition(point);
 
-    BaloonLayout noteBaloon = getBaloonLayout();
+    BaloonLayout layout = getBaloonLayout();
+    layout.setVisibility(View.VISIBLE);
+    ((TextView) layout.findViewById(R.id.note_text)).setText(text);
 
-    MapView map = presenter.getView().getMap();
-    noteBaloon.setVisibility(View.VISIBLE);
-    ((TextView) noteBaloon.findViewById(R.id.note_text))
-        .setText("Example text for baloon");
-    map.addView(noteBaloon, new MapView.LayoutParams(200, 200, point,
-        MapView.LayoutParams.BOTTOM_CENTER));
-
+    pin.setLayout(layout);
     return pin;
   }
 

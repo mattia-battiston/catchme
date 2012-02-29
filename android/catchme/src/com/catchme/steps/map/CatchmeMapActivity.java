@@ -20,8 +20,7 @@ public class CatchmeMapActivity extends MapActivity implements
 
   private CatchmeMapPresenter mapPresenter = CatchmeMapPresenter.getInstance();
 
-  private MapPointFactory mapPointFactory = new MapPointFactory(this,
-      mapPresenter);
+  private MapPointFactory mapPointFactory = new MapPointFactory(this);
 
   private MapController mapController;
   private MapView mapView;
@@ -54,12 +53,15 @@ public class CatchmeMapActivity extends MapActivity implements
 
   @Override
   public void setTarget(GeoPoint point) {
-    MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point);
+    MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point,
+        "Hello world");
     addPointOnMap(mapPoint);
     mapController.animateTo(point);
   }
 
   private void addPointOnMap(MapPointOverlay mapPoint) {
+    mapView.addView(mapPoint.getView(), mapPoint.getViewParams());
+
     List<Overlay> overlays = mapView.getOverlays();
     overlays.add(mapPoint);
   }
