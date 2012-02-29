@@ -8,8 +8,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.catchme.R;
-import com.catchme.steps.map.BaloonLayout;
 import com.catchme.steps.map.CatchmeMapPresenter;
+import com.catchme.steps.map.point.baloon.BaloonLayout;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
 
@@ -27,7 +27,7 @@ public class MapPointFactory {
   // part of the point for us
   public MapPointOverlay createMapPoint(GeoPoint point) {
     MapPointOverlay pin = new MapPointOverlay(activity);
-    pin.setPoint(point);
+    pin.setPosition(point);
 
     BaloonLayout noteBaloon = getBaloonLayout();
 

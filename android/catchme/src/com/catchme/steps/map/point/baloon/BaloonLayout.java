@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.map.point.baloon;
 
 import android.content.Context;
 import android.graphics.Canvas;

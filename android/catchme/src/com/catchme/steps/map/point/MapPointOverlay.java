@@ -18,7 +18,7 @@ public class MapPointOverlay extends ItemizedOverlay<OverlayItem> {
         R.drawable.map_pin)));
   }
 
-  public void setPoint(GeoPoint point) {
+  public void setPosition(GeoPoint point) {
     overlayItems.add(new OverlayItem(point, "", ""));
     populate();
   }

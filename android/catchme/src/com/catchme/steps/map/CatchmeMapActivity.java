@@ -73,4 +73,10 @@ public class CatchmeMapActivity extends MapActivity implements
   public Context getContext() {
     return this;
   }
+
+  @Override
+  public void onBackPressed() {
+    mapPresenter.back(this);
+  }
+
 }
