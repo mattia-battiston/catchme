@@ -8,7 +8,7 @@ import com.catchme.steps.text.WelcomePresenter;
 
 public class PresenterRetriever {
 
-  private static Map<Class<? extends Presenter>, Presenter> presenters = new HashMap<Class<? extends Presenter>, Presenter>();
+  private static Map<Class<? extends Presenter<?>>, Presenter<?>> presenters = new HashMap<Class<? extends Presenter<?>>, Presenter<?>>();
 
   static {
     presenters.put(WelcomePresenter.class, WelcomePresenter.getInstance());
@@ -17,11 +17,11 @@ public class PresenterRetriever {
   }
 
   @SuppressWarnings("unchecked")
-  public <T extends Presenter> T getPresenter(Class<T> clazz) {
+  public <T extends Presenter<?>> T getPresenter(Class<T> clazz) {
     return (T) presenters.get(clazz);
   }
 
-  public static Map<Class<? extends Presenter>, Presenter> getPresenters() {
+  public static Map<Class<? extends Presenter<?>>, Presenter<?>> getPresenters() {
     return presenters;
   }
 

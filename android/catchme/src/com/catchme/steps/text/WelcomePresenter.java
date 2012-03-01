@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.catchme.android.IntentFactory;
-import com.catchme.flow.presenter.Presenter;
-import com.catchme.flow.step.BaseStep;
+import com.catchme.flow.presenter.BasePresenter;
 
-public class WelcomePresenter extends BaseStep implements Presenter {
+public class WelcomePresenter extends
+    BasePresenter<WelcomePresenter.PresenterView> {
 
   private static WelcomePresenter instance = new WelcomePresenter();
 
@@ -33,6 +33,7 @@ public class WelcomePresenter extends BaseStep implements Presenter {
     currentContext.startActivity(goToWelcome);
   }
 
+  @Override
   public void bind(final PresenterView view) {
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
       @Override

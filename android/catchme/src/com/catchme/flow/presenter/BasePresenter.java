@@ -1,11 +1,11 @@
-package com.catchme.flow.step;
+package com.catchme.flow.presenter;
 
 import android.content.Context;
 
 import com.catchme.android.IntentFactory;
 import com.catchme.flow.AppController;
 
-public abstract class BaseStep implements Step {
+public abstract class BasePresenter<T> implements Presenter<T> {
 
   protected AppController appController;
 
@@ -21,6 +21,7 @@ public abstract class BaseStep implements Step {
     appController.back(context);
   }
 
+  @Override
   public void setAppController(AppController appController) {
     this.appController = appController;
   }

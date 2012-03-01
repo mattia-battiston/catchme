@@ -2,6 +2,7 @@ package com.catchme.flow.step;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.when;
@@ -11,6 +12,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 import com.catchme.base.BaseUnitTest;
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.steps.exit.ExitStep;
 
 public class StepRetrieverTest extends BaseUnitTest {
@@ -19,45 +21,45 @@ public class StepRetrieverTest extends BaseUnitTest {
 
   @Test
   public void getFirstStep_returnsFirstStep() {
-    BaseStep expectedFirstStep = mockFirstStep();
+    Presenter<?> expectedFirstStep = mockFirstStep();
 
-    BaseStep actualFirstStep = stepRetriever.getFirstStep();
+    Presenter<?> actualFirstStep = stepRetriever.getFirstStep();
 
-    assertThat(actualFirstStep, is(expectedFirstStep));
+    assertEquals(actualFirstStep, expectedFirstStep);
   }
 
   @Test
   public void getStepAfter_returnsStepAfterCurrentOne() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    BaseStep stepAfter = stepRetriever.getStepAfter(second);
+    Presenter<?> stepAfter = stepRetriever.getStepAfter(second);
 
-    assertThat(stepAfter, is(third));
+    assertEquals(stepAfter, third);
   }
 
   @Test
   public void getStepAfter_returnsLastStepAfterPenultimate() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    BaseStep stepAfter = stepRetriever.getStepAfter(third);
+    Presenter<?> stepAfter = stepRetriever.getStepAfter(third);
 
-    assertThat(stepAfter, is(fourth));
+    assertEquals(stepAfter, fourth);
   }
 
   @Test(expected = RuntimeException.class)
   public void getStepAfter_exceptionIfThereAreNoMoreSteps() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
     stepRetriever.getStepAfter(fourth);
@@ -65,55 +67,55 @@ public class StepRetrieverTest extends BaseUnitTest {
 
   @Test
   public void getStepBefore_returnsStepBeforeCurrentOne() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    BaseStep stepBefore = stepRetriever.getStepBefore(fourth);
+    Presenter<?> stepBefore = stepRetriever.getStepBefore(fourth);
 
-    assertThat(stepBefore, is(third));
+    assertEquals(stepBefore, third);
   }
 
   @Test
   public void getStepBefore_returnsFirstStepBeforeSecond() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    BaseStep stepBefore = stepRetriever.getStepBefore(second);
+    Presenter<?> stepBefore = stepRetriever.getStepBefore(second);
 
-    assertThat(stepBefore, is(first));
+    assertEquals(stepBefore, first);
   }
 
   @Test
   public void getStepBefore_returnsExitStepBeforeFirst() {
-    BaseStep first = step("First");
-    BaseStep second = step("Second");
-    BaseStep third = step("Third");
-    BaseStep fourth = step("Fourth");
+    Presenter<?> first = step("First");
+    Presenter<?> second = step("Second");
+    Presenter<?> third = step("Third");
+    Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    BaseStep stepBefore = stepRetriever.getStepBefore(first);
+    Presenter<?> stepBefore = stepRetriever.getStepBefore(first);
 
     assertThat(stepBefore, is(instanceOf(ExitStep.class)));
   }
 
-  private void mockSteps(BaseStep... steps) {
+  private void mockSteps(Presenter<?>... steps) {
     StepRetriever.setSteps(Arrays.asList(steps));
   }
 
-  private BaseStep step(String stepName) {
-    BaseStep step = mock(BaseStep.class);
+  private Presenter<?> step(String stepName) {
+    Presenter<?> step = mock(Presenter.class);
     when(step.getName()).thenReturn(stepName);
     return step;
   }
 
-  private BaseStep mockFirstStep() {
-    BaseStep firstStep = mock(BaseStep.class);
+  private Presenter<?> mockFirstStep() {
+    Presenter<?> firstStep = mock(Presenter.class);
     stepRetriever.getSteps().set(0, firstStep);
     return firstStep;
   }

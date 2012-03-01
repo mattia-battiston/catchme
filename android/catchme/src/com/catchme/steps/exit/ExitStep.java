@@ -5,10 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.catchme.android.IntentFactory;
-import com.catchme.flow.AppController;
-import com.catchme.flow.step.BaseStep;
+import com.catchme.flow.presenter.BasePresenter;
 
-public class ExitStep extends BaseStep {
+public class ExitStep extends BasePresenter<Void> {
 
   private IntentFactory intentFactory = new IntentFactory();
 
@@ -21,17 +20,17 @@ public class ExitStep extends BaseStep {
     activity.finish();
   }
 
+  public void setIntentFactory(IntentFactory intentFactory) {
+    this.intentFactory = intentFactory;
+  }
+
   @Override
-  public void setAppController(AppController appController) {
+  public void bind(Void view) {
   }
 
   @Override
   public String getName() {
     return "exit";
-  }
-
-  public void setIntentFactory(IntentFactory intentFactory) {
-    this.intentFactory = intentFactory;
   }
 
 }

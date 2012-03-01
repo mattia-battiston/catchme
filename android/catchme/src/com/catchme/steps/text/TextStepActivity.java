@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.catchme.R;
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.steps.text.WelcomePresenter.PresenterView;
 
 public class TextStepActivity extends Activity implements PresenterView {
 
-  private WelcomePresenter welcomePresenter = WelcomePresenter.getInstance();
+  private Presenter<PresenterView> presenter = WelcomePresenter.getInstance();
 
   private Button continueButton;
 
@@ -21,12 +22,12 @@ public class TextStepActivity extends Activity implements PresenterView {
 
     continueButton = (Button) findViewById(R.id.welcome_continue);
 
-    welcomePresenter.bind(this);
+    presenter.bind(this);
   }
 
   @Override
   public void onBackPressed() {
-    welcomePresenter.back(this);
+    presenter.back(this);
   }
 
   @Override
@@ -40,7 +41,7 @@ public class TextStepActivity extends Activity implements PresenterView {
   }
 
   public void setPresenter(WelcomePresenter presenter) {
-    this.welcomePresenter = presenter;
+    this.presenter = presenter;
   }
 
 }

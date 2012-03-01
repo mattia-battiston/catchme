@@ -3,6 +3,7 @@ package com.catchme.flow.step;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.flow.presenter.PresenterRetriever;
 import com.catchme.steps.exit.ExitStep;
 import com.catchme.steps.map.CatchmeMapPresenter;
@@ -14,42 +15,42 @@ public class StepRetriever {
 
   private static PresenterRetriever presenterRetriever = new PresenterRetriever();
 
-  private static List<BaseStep> steps = new ArrayList<BaseStep>();
+  private static List<Presenter<?>> steps = new ArrayList<Presenter<?>>();
 
-  private static BaseStep exitStep = new ExitStep();
+  private static Presenter<?> exitStep = new ExitStep();
 
   static {
     steps.add(presenterRetriever.getPresenter(WelcomePresenter.class));
     steps.add(presenterRetriever.getPresenter(CatchmeMapPresenter.class));
   }
 
-  public BaseStep getFirstStep() {
+  public Presenter<?> getFirstStep() {
     return steps.get(0);
   }
 
-  public BaseStep getStepAfter(BaseStep step) {
+  public Presenter<?> getStepAfter(Presenter<?> step) {
     for (int i = 0; i < steps.size() - 1; i++) {
-      BaseStep candidate = steps.get(i);
+      Presenter<?> candidate = steps.get(i);
       if (candidate.getName().equals(step.getName()))
         return steps.get(i + 1);
     }
     throw new RuntimeException("No more steps");
   }
 
-  public BaseStep getStepBefore(BaseStep step) {
+  public Presenter<?> getStepBefore(Presenter<?> step) {
     for (int i = 1; i < steps.size(); i++) {
-      BaseStep candidate = steps.get(i);
+      Presenter<?> candidate = steps.get(i);
       if (candidate.getName().equals(step.getName()))
         return steps.get(i - 1);
     }
     return exitStep;
   }
 
-  public List<BaseStep> getSteps() {
+  public List<Presenter<?>> getSteps() {
     return steps;
   }
 
-  public static void setSteps(List<BaseStep> steps) {
+  public static void setSteps(List<Presenter<?>> steps) {
     StepRetriever.steps = steps;
   }
 }

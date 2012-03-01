@@ -10,20 +10,19 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.catchme.base.BaseUnitTest;
-import com.catchme.flow.presenter.Presenter;
-import com.catchme.flow.presenter.PresenterRetriever;
 
 public class PresenterRetrieverTest extends BaseUnitTest {
 
   PresenterRetriever presenterRetriever = new PresenterRetriever();
 
-  Map<Class<? extends Presenter>, Presenter> presenters;
+  Map<Class<? extends Presenter<?>>, Presenter<?>> presenters;
 
   @Before
   public void before() {
     presenters = PresenterRetriever.getPresenters();
   }
 
+  @SuppressWarnings("rawtypes")
   @Test
   public void getPresenterReturnsTheExpectedPresenter() {
     Presenter expectedPresenter = addFakePresenter();
@@ -34,9 +33,11 @@ public class PresenterRetrieverTest extends BaseUnitTest {
     assertThat(expectedPresenter, is(actualPresenter));
   }
 
-  private Presenter addFakePresenter() {
+  @SuppressWarnings({ "unchecked", "rawtypes" })
+  private Presenter<?> addFakePresenter() {
     Presenter presenter = mock(Presenter.class);
-    presenters.put(presenter.getClass(), presenter);
+    presenters.put((Class<? extends Presenter<?>>) presenter.getClass(),
+        presenter);
     return presenter;
   }
 }

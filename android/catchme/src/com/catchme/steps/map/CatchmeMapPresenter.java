@@ -5,13 +5,13 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-import com.catchme.flow.presenter.Presenter;
-import com.catchme.flow.step.BaseStep;
+import com.catchme.flow.presenter.BasePresenter;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
-public class CatchmeMapPresenter extends BaseStep implements Presenter {
+public class CatchmeMapPresenter extends
+    BasePresenter<CatchmeMapPresenter.PresenterView> {
 
   // TODO implement back, refactor, test
 
