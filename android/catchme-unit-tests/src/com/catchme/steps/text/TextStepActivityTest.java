@@ -14,9 +14,9 @@ import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
 
 @RunWith(CustomTestRunner.class)
-public class WelcomeActivityTest extends BaseUnitTest {
+public class TextStepActivityTest extends BaseUnitTest {
 
-  WelcomeActivity welcomeActivity = new WelcomeActivity() {
+  TextStepActivity welcomeActivity = new TextStepActivity() {
     @Override
     public void setContentView(int layoutResID) {
     }

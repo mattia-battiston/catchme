@@ -8,7 +8,7 @@ import android.widget.Button;
 import com.catchme.R;
 import com.catchme.steps.text.WelcomePresenter.PresenterView;
 
-public class WelcomeActivity extends Activity implements PresenterView {
+public class TextStepActivity extends Activity implements PresenterView {
 
   private WelcomePresenter welcomePresenter = WelcomePresenter.getInstance();
 

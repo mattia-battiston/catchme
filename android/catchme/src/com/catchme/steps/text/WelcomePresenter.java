@@ -29,7 +29,7 @@ public class WelcomePresenter extends BaseStep implements Presenter {
   @Override
   public void go(Context currentContext) {
     Intent goToWelcome = intentFactory.createIntent(currentContext,
-        WelcomeActivity.class);
+        TextStepActivity.class);
     currentContext.startActivity(goToWelcome);
   }
 

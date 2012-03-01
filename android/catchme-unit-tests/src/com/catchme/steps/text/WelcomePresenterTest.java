@@ -47,7 +47,7 @@ public class WelcomePresenterTest extends BaseUnitTest {
 
   @Test
   public void go_startsWelcomeActivity() {
-    Intent intent = mockIntentToStartActivity(WelcomeActivity.class);
+    Intent intent = mockIntentToStartActivity(TextStepActivity.class);
 
     presenter.go(context);
 
@@ -69,7 +69,7 @@ public class WelcomePresenterTest extends BaseUnitTest {
     assertNotNull(presenter.getName());
   }
 
-  private Intent mockIntentToStartActivity(Class<WelcomeActivity> activityClass) {
+  private Intent mockIntentToStartActivity(Class<TextStepActivity> activityClass) {
     Intent intent = mock(Intent.class);
     when(intentFactory.createIntent(any(Context.class), any(Class.class)))
         .thenReturn(intent);
