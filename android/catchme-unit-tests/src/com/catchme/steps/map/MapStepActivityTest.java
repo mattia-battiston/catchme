@@ -82,6 +82,13 @@ public class MapStepActivityTest extends BaseUnitTest {
     assertThat((MapPointOverlay) overlays.get(0), is(mapPoint));
   }
 
+  @Test
+  public void setTargetCentersTheMapOnTheTarget() {
+    mapStepActivity.setTarget(point, "text");
+
+    verify(mapController).animateTo(point);
+  }
+
   private MapPointOverlay mockPointCreation() {
     MapPointOverlay mapPoint = mock(MapPointOverlay.class);
     BaloonLayout baloonLayout = mock(BaloonLayout.class);
