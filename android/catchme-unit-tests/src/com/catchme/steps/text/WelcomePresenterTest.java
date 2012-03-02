@@ -19,7 +19,6 @@ import android.widget.Button;
 
 import com.catchme.android.IntentFactory;
 import com.catchme.base.BaseUnitTest;
-import com.catchme.steps.text.WelcomePresenter.PresenterView;
 
 public class WelcomePresenterTest extends BaseUnitTest {
 
@@ -29,7 +28,7 @@ public class WelcomePresenterTest extends BaseUnitTest {
   IntentFactory intentFactory;
 
   @Mock
-  PresenterView view;
+  TextStepView view;
 
   @Mock
   Button continueButton;
@@ -46,7 +45,7 @@ public class WelcomePresenterTest extends BaseUnitTest {
   }
 
   @Test
-  public void go_startsWelcomeActivity() {
+  public void go_startsTextStepActivity() {
     Intent intent = mockIntentToStartActivity(TextStepActivity.class);
 
     presenter.go(context);

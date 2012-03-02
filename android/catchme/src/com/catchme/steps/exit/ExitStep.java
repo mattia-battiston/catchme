@@ -7,7 +7,7 @@ import android.content.Intent;
 import com.catchme.android.IntentFactory;
 import com.catchme.flow.presenter.BasePresenter;
 
-public class ExitStep extends BasePresenter<Void> {
+public class ExitStep extends BasePresenter<ExitStepView> {
 
   private IntentFactory intentFactory = new IntentFactory();
 
@@ -25,7 +25,7 @@ public class ExitStep extends BasePresenter<Void> {
   }
 
   @Override
-  public void bind(Void view) {
+  public void bind(ExitStepView view) {
   }
 
   @Override

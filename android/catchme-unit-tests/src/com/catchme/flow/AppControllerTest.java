@@ -12,7 +12,7 @@ import org.mockito.Mock;
 import android.app.Activity;
 
 import com.catchme.base.BaseUnitTest;
-import com.catchme.flow.step.BaseStep;
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.flow.step.StepRetriever;
 
 public class AppControllerTest extends BaseUnitTest {
@@ -25,14 +25,17 @@ public class AppControllerTest extends BaseUnitTest {
   @Mock
   StepRetriever stepRetriever;
 
+  @SuppressWarnings("rawtypes")
   @Mock
-  BaseStep firstStep;
+  Presenter firstStep;
 
+  @SuppressWarnings("rawtypes")
   @Mock
-  BaseStep previousStep;
+  Presenter previousStep;
 
+  @SuppressWarnings("rawtypes")
   @Mock
-  BaseStep nextStep;
+  Presenter nextStep;
 
   @Before
   public void before() {
@@ -60,9 +63,9 @@ public class AppControllerTest extends BaseUnitTest {
   @Test
   public void next_goesToStepAfterCurrentOne() {
     appController.start(context);
-    BaseStep secondStep = mockStepAfter(firstStep);
-    BaseStep thirdStep = mockStepAfter(secondStep);
-    BaseStep fourthStep = mockStepAfter(thirdStep);
+    Presenter<?> secondStep = mockStepAfter(firstStep);
+    Presenter<?> thirdStep = mockStepAfter(secondStep);
+    Presenter<?> fourthStep = mockStepAfter(thirdStep);
 
     appController.next(context);
     verify(secondStep).go(context);
@@ -91,9 +94,9 @@ public class AppControllerTest extends BaseUnitTest {
   @Test
   public void back_goesToStepBeforeCurrentOne() {
     appController.setStep(previousStep);
-    BaseStep thirdStep = setStepBefore(previousStep);
-    BaseStep secondStep = setStepBefore(thirdStep);
-    BaseStep firstStep = setStepBefore(secondStep);
+    Presenter<?> thirdStep = setStepBefore(previousStep);
+    Presenter<?> secondStep = setStepBefore(thirdStep);
+    Presenter<?> firstStep = setStepBefore(secondStep);
 
     appController.back(context);
     verify(thirdStep).go(context);
@@ -119,26 +122,32 @@ public class AppControllerTest extends BaseUnitTest {
     verify(previousStep).setAppController(appController);
   }
 
+  @SuppressWarnings("unchecked")
   private void mockFirstStep() {
     when(stepRetriever.getFirstStep()).thenReturn(firstStep);
   }
 
+  @SuppressWarnings("unchecked")
   private void mockNextStep() {
-    when(stepRetriever.getStepAfter(any(BaseStep.class))).thenReturn(nextStep);
+    when(stepRetriever.getStepAfter(any(Presenter.class))).thenReturn(nextStep);
   }
 
+  @SuppressWarnings("unchecked")
   private void mockPreviousStep() {
-    when(stepRetriever.getStepBefore(any(BaseStep.class))).thenReturn(previousStep);
+    when(stepRetriever.getStepBefore(any(Presenter.class))).thenReturn(
+        previousStep);
   }
 
-  private BaseStep mockStepAfter(BaseStep previousStep) {
-    BaseStep nextStep = mock(BaseStep.class);
+  @SuppressWarnings({ "rawtypes", "unchecked" })
+  private Presenter<?> mockStepAfter(Presenter<?> previousStep) {
+    Presenter nextStep = mock(Presenter.class);
     when(stepRetriever.getStepAfter(previousStep)).thenReturn(nextStep);
     return nextStep;
   }
 
-  private BaseStep setStepBefore(BaseStep currentStep) {
-    BaseStep previousStep = mock(BaseStep.class);
+  @SuppressWarnings({ "rawtypes", "unchecked" })
+  private Presenter setStepBefore(Presenter currentStep) {
+    Presenter previousStep = mock(Presenter.class);
     when(stepRetriever.getStepBefore(currentStep)).thenReturn(previousStep);
     return previousStep;
   }

@@ -7,11 +7,10 @@ import android.widget.Button;
 
 import com.catchme.R;
 import com.catchme.flow.presenter.Presenter;
-import com.catchme.steps.text.WelcomePresenter.PresenterView;
 
-public class TextStepActivity extends Activity implements PresenterView {
+public class TextStepActivity extends Activity implements TextStepView {
 
-  private Presenter<PresenterView> presenter = WelcomePresenter.getInstance();
+  private Presenter<TextStepView> presenter = WelcomePresenter.getInstance();
 
   private Button continueButton;
 

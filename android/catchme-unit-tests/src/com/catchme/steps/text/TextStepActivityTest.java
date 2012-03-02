@@ -16,7 +16,7 @@ import com.catchme.base.CustomTestRunner;
 @RunWith(CustomTestRunner.class)
 public class TextStepActivityTest extends BaseUnitTest {
 
-  TextStepActivity welcomeActivity = new TextStepActivity() {
+  TextStepActivity textStepActivity = new TextStepActivity() {
     @Override
     public void setContentView(int layoutResID) {
     }
@@ -35,21 +35,21 @@ public class TextStepActivityTest extends BaseUnitTest {
 
   @Before
   public void before() {
-    welcomeActivity.setPresenter(presenter);
+    textStepActivity.setPresenter(presenter);
   }
 
   @Test
   public void onCreateBindsPresenter() {
-    welcomeActivity.onCreate(savedInstanceState);
+    textStepActivity.onCreate(savedInstanceState);
 
-    verify(presenter).bind(welcomeActivity);
+    verify(presenter).bind(textStepActivity);
   }
 
   @Test
   public void onBack_delegatesToPresenter() {
-    welcomeActivity.onBackPressed();
+    textStepActivity.onBackPressed();
 
-    verify(presenter).back(welcomeActivity);
+    verify(presenter).back(textStepActivity);
   }
 
 }
