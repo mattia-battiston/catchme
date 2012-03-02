@@ -15,8 +15,7 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 
-public class MapStepActivity extends MapActivity implements
-    MapStepView {
+public class MapStepActivity extends MapActivity implements MapStepView {
 
   private FirstPointPresenter mapPresenter = FirstPointPresenter.getInstance();
 
@@ -52,9 +51,8 @@ public class MapStepActivity extends MapActivity implements
   }
 
   @Override
-  public void setTarget(GeoPoint point) {
-    MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point,
-        "Hello world");
+  public void setTarget(GeoPoint point, String text) {
+    MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point, text);
     addPointOnMap(mapPoint);
     mapController.animateTo(point);
   }

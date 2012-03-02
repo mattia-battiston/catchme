@@ -12,7 +12,7 @@ public interface MapStepView {
 
   MapController getMapController();
 
-  void setTarget(GeoPoint geoPoint);
+  void setTarget(GeoPoint geoPoint, String text);
 
   Button getContinueButton();
 

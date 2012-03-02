@@ -27,8 +27,7 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
   }
 
   public void go(Context context) {
-    Intent goToMap = intentFactory.createIntent(context,
-        MapStepActivity.class);
+    Intent goToMap = intentFactory.createIntent(context, MapStepActivity.class);
     context.startActivity(goToMap);
   }
 
@@ -41,7 +40,7 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
     mapController.setZoom(15);
 
     GeoPoint target = new GeoPoint(19240000, -99120000);
-    view.setTarget(target);
+    view.setTarget(target, "Hello world");
     mapController.animateTo(target);
 
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
