@@ -79,4 +79,20 @@ public class MapStepActivity extends MapActivity implements MapStepView {
     mapPresenter.back(this);
   }
 
+  public void setMapPointFactory(MapPointFactory mapPointFactory) {
+    this.mapPointFactory = mapPointFactory;
+  }
+
+  public void setMapView(MapView mapView) {
+    this.mapView = mapView;
+  }
+
+  public void setMapPresenter(FirstPointPresenter presenter) {
+    this.mapPresenter = presenter;
+  }
+
+  public void setMapController(MapController mapController) {
+    this.mapController = mapController;
+  }
+
 }
