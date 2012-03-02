@@ -15,10 +15,10 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 
-public class CatchmeMapActivity extends MapActivity implements
-    CatchmeMapPresenter.PresenterView {
+public class MapStepActivity extends MapActivity implements
+    MapStepView {
 
-  private CatchmeMapPresenter mapPresenter = CatchmeMapPresenter.getInstance();
+  private FirstPointPresenter mapPresenter = FirstPointPresenter.getInstance();
 
   private MapPointFactory mapPointFactory = new MapPointFactory(this);
 

@@ -3,52 +3,36 @@ package com.catchme.steps.map;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
-import android.widget.Button;
 
 import com.catchme.flow.presenter.BasePresenter;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
-public class CatchmeMapPresenter extends
-    BasePresenter<CatchmeMapPresenter.PresenterView> {
+public class FirstPointPresenter extends BasePresenter<MapStepView> {
 
-  // TODO implement back, refactor, test
+  private static FirstPointPresenter instance = new FirstPointPresenter();
 
-  private static CatchmeMapPresenter instance = new CatchmeMapPresenter();
-
-  private PresenterView view;
+  private MapStepView view;
 
   private MapView map;
 
   private MapController mapController;
 
-  public interface PresenterView {
-    MapView getMap();
-
-    MapController getMapController();
-
-    void setTarget(GeoPoint geoPoint);
-
-    Button getContinueButton();
-
-    Context getContext();
+  private FirstPointPresenter() {
   }
 
-  private CatchmeMapPresenter() {
-  }
-
-  public static CatchmeMapPresenter getInstance() {
+  public static FirstPointPresenter getInstance() {
     return instance;
   }
 
   public void go(Context context) {
     Intent goToMap = intentFactory.createIntent(context,
-        CatchmeMapActivity.class);
+        MapStepActivity.class);
     context.startActivity(goToMap);
   }
 
-  public void bind(final PresenterView view) {
+  public void bind(final MapStepView view) {
     this.view = view;
     this.map = view.getMap();
     this.mapController = view.getMapController();
@@ -68,7 +52,7 @@ public class CatchmeMapPresenter extends
     });
   }
 
-  public PresenterView getView() {
+  public MapStepView getView() {
     return view;
   }
 

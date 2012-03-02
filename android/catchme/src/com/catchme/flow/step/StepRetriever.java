@@ -6,7 +6,7 @@ import java.util.List;
 import com.catchme.flow.presenter.Presenter;
 import com.catchme.flow.presenter.PresenterRetriever;
 import com.catchme.steps.exit.ExitStep;
-import com.catchme.steps.map.CatchmeMapPresenter;
+import com.catchme.steps.map.FirstPointPresenter;
 import com.catchme.steps.text.WelcomePresenter;
 
 public class StepRetriever {
@@ -21,7 +21,7 @@ public class StepRetriever {
 
   static {
     steps.add(presenterRetriever.getPresenter(WelcomePresenter.class));
-    steps.add(presenterRetriever.getPresenter(CatchmeMapPresenter.class));
+    steps.add(presenterRetriever.getPresenter(FirstPointPresenter.class));
   }
 
   public Presenter<?> getFirstStep() {
