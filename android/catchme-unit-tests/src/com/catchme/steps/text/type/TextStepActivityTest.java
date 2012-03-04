@@ -41,7 +41,7 @@ public class TextStepActivityTest extends BaseUnitTest {
 
   @Before
   public void before() {
-    textStepActivity.setPresenter(presenter);
+    TextStepActivity.setPresenter(presenter);
     textStepActivity.setTextContent(textContent);
   }
 
