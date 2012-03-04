@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- HEADER -->
+    <TextView
+        android:id="@+id/text_header"
+		android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/border"
+        android:text="" />
+
+    <!-- FOOTER -->
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <!-- menu bar -->
+        <Button 
+            android:id="@+id/text_continue"
+            android:text="Continue" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+	        android:id="@+id/text_footer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:background="@color/border"
+	        android:text="" />
+    </LinearLayout>
+
+    <!-- MAIN PART -->
+
+    <LinearLayout
+        android:id="@+id/sub_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_menu"
+        android:layout_below="@id/text_header"
+        android:layout_weight="1"
+        android:background="#EAEAEA"
+        android:orientation="vertical"
+        android:paddingBottom="5sp" >
+        
+        <ScrollView
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="vertical">
+        
+	        <TextView
+		        android:id="@+id/text_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:textColor="@color/text"
+		        android:text="@string/text_welcome"/>
+        
+        </ScrollView>
+        
+    </LinearLayout>
+
+</RelativeLayout>
