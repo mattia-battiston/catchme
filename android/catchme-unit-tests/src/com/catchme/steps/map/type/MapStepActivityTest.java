@@ -24,7 +24,6 @@ import com.catchme.steps.map.FirstPointPresenter;
 import com.catchme.steps.map.point.MapPointFactory;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.catchme.steps.map.point.baloon.BaloonLayout;
-import com.catchme.steps.map.type.MapStepActivity;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
@@ -58,7 +57,7 @@ public class MapStepActivityTest extends BaseUnitTest {
 
   @Before
   public void before() {
-    mapStepActivity.setMapPresenter(presenter);
+    MapStepActivity.setMapPresenter(presenter);
 
     mapStepActivity.setMapPointFactory(mapPointFactory);
     mapStepActivity.setMapView(mapView);
