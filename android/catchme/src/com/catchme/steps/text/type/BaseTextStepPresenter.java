@@ -10,6 +10,7 @@ public abstract class BaseTextStepPresenter extends BasePresenter<TextStepView> 
 
   @Override
   public void go(Context currentContext) {
+    TextStepActivity.setPresenter(this);
     Intent goToWelcome = intentFactory.createIntent(currentContext,
         TextStepActivity.class);
     currentContext.startActivity(goToWelcome);

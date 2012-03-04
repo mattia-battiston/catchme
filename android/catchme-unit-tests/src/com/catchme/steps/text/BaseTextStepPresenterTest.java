@@ -3,12 +3,17 @@ package com.catchme.steps.text;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.mockStatic;
+import static org.powermock.api.mockito.PowerMockito.verifyStatic;
 import static org.powermock.api.mockito.PowerMockito.when;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +27,8 @@ import com.catchme.steps.text.type.BaseTextStepPresenter;
 import com.catchme.steps.text.type.TextStepActivity;
 import com.catchme.steps.text.type.TextStepView;
 
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(TextStepActivity.class)
 public class BaseTextStepPresenterTest extends BaseUnitTest {
 
   BaseTextStepPresenter presenter = new BaseTextStepPresenterForTest();
@@ -45,6 +52,7 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
     presenter.setIntentFactory(intentFactory);
     presenter.setAppController(appController);
     mockView();
+    mockStatic(TextStepActivity.class);
   }
 
   @Test
@@ -54,6 +62,14 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
     presenter.go(context);
 
     verify(context).startActivity(intent);
+  }
+
+  @Test
+  public void go_setsCurrentPresenterInTheActivity() {
+    presenter.go(context);
+
+    verifyStatic();
+    TextStepActivity.setPresenter(presenter);
   }
 
   @Test

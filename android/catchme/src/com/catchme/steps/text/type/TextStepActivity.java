@@ -8,11 +8,10 @@ import android.widget.TextView;
 
 import com.catchme.R;
 import com.catchme.flow.presenter.Presenter;
-import com.catchme.steps.text.WelcomePresenter;
 
 public class TextStepActivity extends Activity implements TextStepView {
 
-  private Presenter<TextStepView> presenter = WelcomePresenter.getInstance();
+  private static Presenter<TextStepView> presenter;
 
   private Button continueButton;
 
@@ -51,8 +50,8 @@ public class TextStepActivity extends Activity implements TextStepView {
     textContent.setText(textResourceId);
   }
 
-  public void setPresenter(WelcomePresenter presenter) {
-    this.presenter = presenter;
+  public static void setPresenter(Presenter<TextStepView> presenter) {
+    TextStepActivity.presenter = presenter;
   }
 
   public void setTextContent(TextView textContent) {
