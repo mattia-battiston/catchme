@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.catchme.R;
 import com.catchme.flow.presenter.Presenter;
@@ -15,12 +16,15 @@ public class TextStepActivity extends Activity implements TextStepView {
 
   private Button continueButton;
 
+  private TextView textContent;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.welcome);
+    setContentView(R.layout.text);
 
-    continueButton = (Button) findViewById(R.id.welcome_continue);
+    continueButton = (Button) findViewById(R.id.text_continue);
+    textContent = (TextView) findViewById(R.id.text_content);
 
     presenter.bind(this);
   }
@@ -40,8 +44,19 @@ public class TextStepActivity extends Activity implements TextStepView {
     return this;
   }
 
+  @Override
+  public void setText(String textName) {
+    int textResourceId = getResources().getIdentifier(textName, "string",
+        getPackageName());
+    textContent.setText(textResourceId);
+  }
+
   public void setPresenter(WelcomePresenter presenter) {
     this.presenter = presenter;
+  }
+
+  public void setTextContent(TextView textContent) {
+    this.textContent = textContent;
   }
 
 }

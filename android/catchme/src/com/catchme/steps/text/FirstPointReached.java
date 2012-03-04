@@ -18,4 +18,9 @@ public class FirstPointReached extends BaseTextStepPresenter {
     return "First Point Reached";
   }
 
+  @Override
+  public String getTextName() {
+    return "text_firstPointReached";
+  }
+
 }

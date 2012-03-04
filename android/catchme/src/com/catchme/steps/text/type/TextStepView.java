@@ -7,4 +7,7 @@ public interface TextStepView {
   Button getContinueButton();
 
   Context getContext();
+
+  void setText(String textName);
+
 }

@@ -18,4 +18,9 @@ public class WelcomePresenter extends BaseTextStepPresenter {
     return "welcome";
   }
 
+  @Override
+  public String getTextName() {
+    return "text_welcome";
+  }
+
 }

@@ -38,6 +38,8 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
   @Mock
   View gui;
 
+  String textName = "textName";
+
   @Before
   public void before() {
     presenter.setIntentFactory(intentFactory);
@@ -64,6 +66,13 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
     verify(appController).next(context);
   }
 
+  @Test
+  public void setsTheTextToShow() {
+    presenter.bind(view);
+
+    verify(view).setText(textName);
+  }
+
   private Intent mockIntentToStartActivity(Class<TextStepActivity> activityClass) {
     Intent intent = mock(Intent.class);
     when(intentFactory.createIntent(any(Context.class), any(Class.class)))
@@ -87,6 +96,11 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
     @Override
     public String getName() {
       return "BaseTextStepPresenterForTest";
+    }
+
+    @Override
+    public String getTextName() {
+      return textName;
     }
   }
 

@@ -10,20 +10,19 @@
 	        android:background="@color/background"
 	        android:orientation="vertical">
 		    <TextView
-		        android:id="@+id/welcome_header"
+		        android:id="@+id/text_header"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:background="@color/border"
 		        android:text="" />
 		    <TextView
-		        android:id="@+id/welcome_content"
+		        android:id="@+id/text_content"
 		        android:layout_width="match_parent"
 		        android:layout_height="match_parent"
-		        android:text="@string/veryLongText" 
 		        android:textColor="@color/text"/>
 
 		    <Button
-		        android:id="@+id/welcome_continue"
+		        android:id="@+id/text_continue"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_gravity="right"
@@ -31,7 +30,7 @@
 		        android:text="Continue" />
 		    
 		    <TextView
-		        android:id="@+id/welcome_footer"
+		        android:id="@+id/text_footer"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:layout_gravity="bottom"
