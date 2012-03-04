@@ -1,4 +1,4 @@
-package com.catchme.steps.text;
+package com.catchme.steps.text.type;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import com.catchme.R;
 import com.catchme.flow.presenter.Presenter;
+import com.catchme.steps.text.WelcomePresenter;
 
 public class TextStepActivity extends Activity implements TextStepView {
 

@@ -1,4 +1,4 @@
-package com.catchme.steps.text;
+package com.catchme.steps.text.type;
 
 import static org.mockito.Mockito.verify;
 
@@ -12,6 +12,8 @@ import android.view.View;
 
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
+import com.catchme.steps.text.WelcomePresenter;
+import com.catchme.steps.text.type.TextStepActivity;
 
 @RunWith(CustomTestRunner.class)
 public class TextStepActivityTest extends BaseUnitTest {

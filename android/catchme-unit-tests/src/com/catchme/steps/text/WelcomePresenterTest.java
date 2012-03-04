@@ -19,6 +19,8 @@ import android.widget.Button;
 
 import com.catchme.android.IntentFactory;
 import com.catchme.base.BaseUnitTest;
+import com.catchme.steps.text.type.TextStepActivity;
+import com.catchme.steps.text.type.TextStepView;
 
 public class WelcomePresenterTest extends BaseUnitTest {
 

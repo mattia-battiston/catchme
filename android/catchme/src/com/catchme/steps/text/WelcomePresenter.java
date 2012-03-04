@@ -6,6 +6,8 @@ import android.view.View;
 
 import com.catchme.android.IntentFactory;
 import com.catchme.flow.presenter.BasePresenter;
+import com.catchme.steps.text.type.TextStepActivity;
+import com.catchme.steps.text.type.TextStepView;
 
 public class WelcomePresenter extends BasePresenter<TextStepView> {
 
