@@ -29,6 +29,7 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
   }
 
   public void go(Context context) {
+    MapStepActivity.setMapPresenter(this);
     Intent goToMap = intentFactory.createIntent(context, MapStepActivity.class);
     context.startActivity(goToMap);
   }

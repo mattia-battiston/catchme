@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.catchme.R;
-import com.catchme.steps.map.FirstPointPresenter;
+import com.catchme.flow.presenter.Presenter;
 import com.catchme.steps.map.point.MapPointFactory;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.google.android.maps.GeoPoint;
@@ -18,7 +18,7 @@ import com.google.android.maps.Overlay;
 
 public class MapStepActivity extends MapActivity implements MapStepView {
 
-  private FirstPointPresenter mapPresenter = FirstPointPresenter.getInstance();
+  private static Presenter<MapStepView> mapPresenter;
 
   private MapPointFactory mapPointFactory = new MapPointFactory(this);
 
@@ -88,8 +88,8 @@ public class MapStepActivity extends MapActivity implements MapStepView {
     this.mapView = mapView;
   }
 
-  public void setMapPresenter(FirstPointPresenter presenter) {
-    this.mapPresenter = presenter;
+  public static void setMapPresenter(Presenter<MapStepView> presenter) {
+    mapPresenter = presenter;
   }
 
   public void setMapController(MapController mapController) {
