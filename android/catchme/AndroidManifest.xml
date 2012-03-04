@@ -26,7 +26,7 @@
         </activity>
         
         <activity android:label="Welcome" android:name=".steps.text.type.TextStepActivity"></activity>
-        <activity android:label="Catchme Map" android:name=".steps.map.MapStepActivity"></activity>
+        <activity android:label="Catchme Map" android:name=".steps.map.type.MapStepActivity"></activity>
         
     </application>
 

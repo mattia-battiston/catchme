@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.map.type;
 
 import android.content.Context;
 import android.widget.Button;

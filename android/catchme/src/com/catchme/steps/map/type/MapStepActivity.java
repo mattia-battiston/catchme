@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.map.type;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.catchme.R;
+import com.catchme.steps.map.FirstPointPresenter;
 import com.catchme.steps.map.point.MapPointFactory;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.google.android.maps.GeoPoint;

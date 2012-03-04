@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.view.View;
 
 import com.catchme.flow.presenter.BasePresenter;
+import com.catchme.steps.map.type.MapStepActivity;
+import com.catchme.steps.map.type.MapStepView;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;

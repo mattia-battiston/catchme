@@ -1,4 +1,4 @@
-package com.catchme.steps.map;
+package com.catchme.steps.map.type;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -20,9 +20,11 @@ import android.os.Bundle;
 
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
+import com.catchme.steps.map.FirstPointPresenter;
 import com.catchme.steps.map.point.MapPointFactory;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.catchme.steps.map.point.baloon.BaloonLayout;
+import com.catchme.steps.map.type.MapStepActivity;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
