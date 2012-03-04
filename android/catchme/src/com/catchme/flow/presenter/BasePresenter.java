@@ -26,4 +26,7 @@ public abstract class BasePresenter<T> implements Presenter<T> {
     this.appController = appController;
   }
 
+  public void setIntentFactory(IntentFactory intentFactory) {
+    this.intentFactory = intentFactory;
+  }
 }

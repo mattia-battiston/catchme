@@ -1,15 +1,8 @@
 package com.catchme.steps.text;
 
-import android.content.Context;
-import android.content.Intent;
-import android.view.View;
+import com.catchme.steps.text.type.BaseTextStepPresenter;
 
-import com.catchme.android.IntentFactory;
-import com.catchme.flow.presenter.BasePresenter;
-import com.catchme.steps.text.type.TextStepActivity;
-import com.catchme.steps.text.type.TextStepView;
-
-public class WelcomePresenter extends BasePresenter<TextStepView> {
+public class WelcomePresenter extends BaseTextStepPresenter {
 
   private static WelcomePresenter instance = new WelcomePresenter();
 
@@ -21,29 +14,8 @@ public class WelcomePresenter extends BasePresenter<TextStepView> {
   }
 
   @Override
-  public void go(Context currentContext) {
-    Intent goToWelcome = intentFactory.createIntent(currentContext,
-        TextStepActivity.class);
-    currentContext.startActivity(goToWelcome);
-  }
-
-  @Override
-  public void bind(final TextStepView view) {
-    view.getContinueButton().setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        next(view.getContext());
-      }
-    });
-  }
-
-  @Override
   public String getName() {
     return "welcome";
-  }
-
-  public void setIntentFactory(IntentFactory intentFactory) {
-    this.intentFactory = intentFactory;
   }
 
 }
