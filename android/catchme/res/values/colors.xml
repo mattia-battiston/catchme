@@ -4,6 +4,7 @@
     <color name="background">#F5F5FF</color>
     <color name="border">#004A94</color>
     <color name="text">#004A94</color>
+    <color name="text_inverted">#F5F5FF</color>
     <color name="buttons">#004A94</color>
     
 </resources>

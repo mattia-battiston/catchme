@@ -28,7 +28,7 @@ public class MapStepActivity extends MapActivity implements MapStepView {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.catchme_map);
+    setContentView(R.layout.new_catchme_map);
 
     mapView = (MapView) findViewById(R.id.mapview);
     mapController = mapView.getController();
