@@ -45,6 +45,7 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
   @Mock
   View gui;
 
+  String titleName = "textTitle";
   String textName = "textName";
 
   @Before
@@ -83,6 +84,13 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
   }
 
   @Test
+  public void setsTheTitleToShow() {
+    presenter.bind(view);
+
+    verify(view).setTitle(titleName);
+  }
+
+  @Test
   public void setsTheTextToShow() {
     presenter.bind(view);
 
@@ -117,6 +125,11 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
     @Override
     public String getTextName() {
       return textName;
+    }
+
+    @Override
+    protected String getTitleName() {
+      return titleName;
     }
   }
 

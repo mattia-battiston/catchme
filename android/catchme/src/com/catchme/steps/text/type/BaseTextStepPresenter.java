@@ -25,9 +25,12 @@ public abstract class BaseTextStepPresenter extends BasePresenter<TextStepView> 
       }
     });
 
+    view.setTitle(getTitleName());
     view.setText(getTextName());
   }
 
-  public abstract String getTextName();
+  protected abstract String getTitleName();
+
+  protected abstract String getTextName();
 
 }

@@ -22,4 +22,8 @@ public class FirstPointReachedTest extends BaseUnitTest {
     assertThat(presenter.getTextName(), is("text_firstPointReached"));
   }
 
+  @Test
+  public void showsFirstPointReachedTitle() {
+    assertThat(presenter.getTitleName(), is("text_firstPointReached_title"));
+  }
 }

@@ -10,4 +10,6 @@ public interface TextStepView {
 
   void setText(String textName);
 
+  void setTitle(String titleName);
+
 }

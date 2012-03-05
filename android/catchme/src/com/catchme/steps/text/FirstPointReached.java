@@ -23,4 +23,9 @@ public class FirstPointReached extends BaseTextStepPresenter {
     return "text_firstPointReached";
   }
 
+  @Override
+  protected String getTitleName() {
+    return "text_firstPointReached_title";
+  }
+
 }

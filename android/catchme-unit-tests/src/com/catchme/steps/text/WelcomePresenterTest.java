@@ -21,4 +21,9 @@ public class WelcomePresenterTest extends BaseUnitTest {
   public void showsWelcomeText() {
     assertThat(presenter.getTextName(), is("text_welcome"));
   }
+
+  @Test
+  public void showsWelcomeTitle() {
+    assertThat(presenter.getTitleName(), is("text_welcome_title"));
+  }
 }

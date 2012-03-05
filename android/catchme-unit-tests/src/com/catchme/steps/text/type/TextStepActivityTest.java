@@ -37,12 +37,15 @@ public class TextStepActivityTest extends BaseUnitTest {
   Bundle savedInstanceState;
 
   @Mock
+  TextView textTitle;
+  @Mock
   TextView textContent;
 
   @Before
   public void before() {
     TextStepActivity.setPresenter(presenter);
     textStepActivity.setTextContent(textContent);
+    textStepActivity.setTextTitle(textTitle);
   }
 
   @Test
@@ -64,6 +67,13 @@ public class TextStepActivityTest extends BaseUnitTest {
     textStepActivity.setText("example");
 
     verify(textContent).setText(anyInt());
+  }
+
+  @Test
+  public void setTitle_setsTheTextWhoseNameIsPassedInAsContent() {
+    textStepActivity.setTitle("example");
+
+    verify(textTitle).setText(anyInt());
   }
 
 }
