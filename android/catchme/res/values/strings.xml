@@ -19,6 +19,8 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</string>
 	
+    <string name="map_firstPoint_title">First Target: XXX</string>
+    
 	<string name="text_firstPointReached_title">First point reached!</string>
 	<string name="text_firstPointReached">This is an example text</string>
 

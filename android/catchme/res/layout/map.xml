@@ -11,7 +11,7 @@
         android:background="@color/background"
         android:orientation="vertical" >
 	    <TextView
-	        android:id="@+id/text_title"
+	        android:id="@+id/map_title"
 			android:layout_alignParentTop="true"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"

@@ -5,6 +5,7 @@ import java.util.List;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.catchme.R;
 import com.catchme.flow.presenter.Presenter;
@@ -25,6 +26,8 @@ public class MapStepActivity extends MapActivity implements MapStepView {
   private MapController mapController;
   private MapView mapView;
 
+  private TextView textTitle;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -32,6 +35,7 @@ public class MapStepActivity extends MapActivity implements MapStepView {
 
     mapView = (MapView) findViewById(R.id.mapview);
     mapController = mapView.getController();
+    textTitle = (TextView) findViewById(R.id.map_title);
 
     mapPresenter.bind(this);
   }
@@ -80,6 +84,13 @@ public class MapStepActivity extends MapActivity implements MapStepView {
     mapPresenter.back(this);
   }
 
+  @Override
+  public void setTitle(String titleName) {
+    int textResourceId = getResources().getIdentifier(titleName, "string",
+        getPackageName());
+    textTitle.setText(textResourceId);
+  }
+
   public void setMapPointFactory(MapPointFactory mapPointFactory) {
     this.mapPointFactory = mapPointFactory;
   }
@@ -94,6 +105,10 @@ public class MapStepActivity extends MapActivity implements MapStepView {
 
   public void setMapController(MapController mapController) {
     this.mapController = mapController;
+  }
+
+  public void setTextTitle(TextView textTitle) {
+    this.textTitle = textTitle;
   }
 
 }

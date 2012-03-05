@@ -3,6 +3,7 @@ package com.catchme.steps.map.type;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.verify;
 import static org.powermock.api.mockito.PowerMockito.mock;
@@ -17,6 +18,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
@@ -55,6 +57,9 @@ public class MapStepActivityTest extends BaseUnitTest {
 
   List<Overlay> overlays = new ArrayList<Overlay>();
 
+  @Mock
+  TextView textTitle;
+
   @Before
   public void before() {
     MapStepActivity.setMapPresenter(presenter);
@@ -64,6 +69,7 @@ public class MapStepActivityTest extends BaseUnitTest {
     mapStepActivity.setMapController(mapController);
     when(mapView.getOverlays()).thenReturn(overlays);
     mockPointCreation();
+    mapStepActivity.setTextTitle(textTitle);
   }
 
   @Test
@@ -88,6 +94,13 @@ public class MapStepActivityTest extends BaseUnitTest {
     mapStepActivity.setTarget(point, "text");
 
     verify(mapController).animateTo(point);
+  }
+
+  @Test
+  public void setTitle_setsTheTextWhoseNameIsPassedInAsContent() {
+    mapStepActivity.setTitle("example");
+
+    verify(textTitle).setText(anyInt());
   }
 
   private MapPointOverlay mockPointCreation() {

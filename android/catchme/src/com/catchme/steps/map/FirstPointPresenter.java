@@ -42,7 +42,7 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
     map.setBuiltInZoomControls(true);
     mapController.setZoom(15);
 
-    GeoPoint target = new GeoPoint(19240000, -99120000);
+    GeoPoint target = createPoint();
     view.setTarget(target, "Hello world");
     mapController.animateTo(target);
 
@@ -52,6 +52,8 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
         next(view.getContext());
       }
     });
+
+    view.setTitle("map_firstPoint_title");
   }
 
   public MapStepView getView() {
@@ -61,5 +63,9 @@ public class FirstPointPresenter extends BasePresenter<MapStepView> {
   @Override
   public String getName() {
     return "firstPoint";
+  }
+
+  protected GeoPoint createPoint() {
+    return new GeoPoint(19240000, -99120000);
   }
 }

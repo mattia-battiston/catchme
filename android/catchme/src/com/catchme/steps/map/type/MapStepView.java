@@ -12,6 +12,8 @@ public interface MapStepView {
 
   MapController getMapController();
 
+  void setTitle(String titleName);
+
   void setTarget(GeoPoint geoPoint, String text);
 
   Button getContinueButton();
