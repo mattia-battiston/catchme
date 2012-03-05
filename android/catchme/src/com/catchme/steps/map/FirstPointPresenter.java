@@ -13,20 +13,11 @@ import com.google.android.maps.MapView;
 
 public class FirstPointPresenter extends BasePresenter<MapStepView> {
 
-  private static FirstPointPresenter instance = new FirstPointPresenter();
-
   private MapStepView view;
 
   private MapView map;
 
   private MapController mapController;
-
-  private FirstPointPresenter() {
-  }
-
-  public static FirstPointPresenter getInstance() {
-    return instance;
-  }
 
   public void go(Context context) {
     MapStepActivity.setMapPresenter(this);

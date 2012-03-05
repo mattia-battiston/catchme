@@ -10,7 +10,7 @@ import com.catchme.base.BaseUnitTest;
 
 public class WelcomePresenterTest extends BaseUnitTest {
 
-  WelcomePresenter presenter = WelcomePresenter.getInstance();
+  WelcomePresenter presenter = new WelcomePresenter();
 
   @Test
   public void hasName() {

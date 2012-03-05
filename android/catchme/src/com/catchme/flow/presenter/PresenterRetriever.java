@@ -12,11 +12,9 @@ public class PresenterRetriever {
   private static Map<Class<? extends Presenter<?>>, Presenter<?>> presenters = new HashMap<Class<? extends Presenter<?>>, Presenter<?>>();
 
   static {
-    // TODO do they really need to be singleton? think about it
-    presenters.put(WelcomePresenter.class, WelcomePresenter.getInstance());
-    presenters
-        .put(FirstPointPresenter.class, FirstPointPresenter.getInstance());
-    presenters.put(FirstPointReached.class, FirstPointReached.getInstance());
+    presenters.put(WelcomePresenter.class, new WelcomePresenter());
+    presenters.put(FirstPointPresenter.class, new FirstPointPresenter());
+    presenters.put(FirstPointReached.class, new FirstPointReached());
   }
 
   @SuppressWarnings("unchecked")

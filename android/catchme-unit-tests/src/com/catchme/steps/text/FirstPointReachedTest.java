@@ -10,7 +10,7 @@ import com.catchme.base.BaseUnitTest;
 
 public class FirstPointReachedTest extends BaseUnitTest {
 
-  FirstPointReached presenter = FirstPointReached.getInstance();
+  FirstPointReached presenter = new FirstPointReached();
 
   @Test
   public void hasName() {
