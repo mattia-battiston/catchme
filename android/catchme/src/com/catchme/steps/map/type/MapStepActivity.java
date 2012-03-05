@@ -56,7 +56,11 @@ public class MapStepActivity extends MapActivity implements MapStepView {
   }
 
   @Override
-  public void setTarget(GeoPoint point, String text) {
+  public void setTarget(GeoPoint point, String textName) {
+    int textResourceId = getResources().getIdentifier(textName, "string",
+        getPackageName());
+    String text = getResources().getString(textResourceId);
+
     MapPointOverlay mapPoint = mapPointFactory.createMapPoint(point, text);
     addPointOnMap(mapPoint);
     mapController.animateTo(point);
