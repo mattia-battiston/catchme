@@ -18,16 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="Hello world" />
-
-        <ImageView
-            android:id="@+id/close_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:clickable="true"
-            android:paddingRight="10px"
-            android:src="@drawable/close" />
+            android:text="note title" />
 
         <TextView
             android:id="@+id/note_text"
@@ -40,15 +31,8 @@
             android:minLines="4"
             android:paddingLeft="5px"
             android:paddingRight="5px"
-            android:text=""
+            android:text="note text"
             android:textSize="5pt" />
-        
-        <Button
-	        android:id="@+id/mapBaloon_close"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="Close" />
-        
     </RelativeLayout>
 
 </com.catchme.steps.map.point.baloon.BaloonLayout>
