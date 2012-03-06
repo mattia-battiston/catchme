@@ -27,8 +27,9 @@ public abstract class BaseMapStepPresenter extends BasePresenter<MapStepView> {
     mapController.setZoom(15);
 
     GeoPoint target = getTarget();
+    String titleName = getTitleName();
     String textName = getTextName();
-    view.setTarget(target, textName);
+    view.setTarget(target, titleName, textName);
     mapController.animateTo(target);
 
     view.getContinueButton().setOnClickListener(new View.OnClickListener() {
@@ -38,12 +39,8 @@ public abstract class BaseMapStepPresenter extends BasePresenter<MapStepView> {
       }
     });
 
-    view.setTitle(getTitleName());
+    view.setTitle(titleName);
   }
-
-  // private String getTitleName() {
-  // return "map_firstPoint_title";
-  // }
 
   protected abstract String getTitleName();
 

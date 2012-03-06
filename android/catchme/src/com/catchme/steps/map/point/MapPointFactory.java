@@ -21,12 +21,14 @@ public class MapPointFactory {
 
   // TODO some of this code should be in the MapPointOverlay, the baloon is
   // part of the point for us
-  public MapPointOverlay createMapPoint(GeoPoint point, String text) {
+  public MapPointOverlay createMapPoint(GeoPoint point, String title,
+      String text) {
     MapPointOverlay pin = new MapPointOverlay(activity);
     pin.setPosition(point);
 
     BaloonLayout layout = getBaloonLayout();
     layout.setVisibility(View.VISIBLE);
+    ((TextView) layout.findViewById(R.id.note_label)).setText(title);
     ((TextView) layout.findViewById(R.id.note_text)).setText(text);
 
     pin.setLayout(layout);
