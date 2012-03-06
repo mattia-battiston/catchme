@@ -20,6 +20,7 @@ import org.mockito.Mock;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.catchme.R;
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
 import com.catchme.steps.map.FirstPointPresenter;
@@ -35,7 +36,18 @@ import com.google.android.maps.Overlay;
 @RunWith(CustomTestRunner.class)
 public class MapStepActivityTest extends BaseUnitTest {
 
-  MapStepActivity mapStepActivity = new MapStepActivity();
+  MapStepActivity mapStepActivity = new MapStepActivity() {
+    @Override
+    public void setContentView(int layoutResID) {
+    };
+
+    @Override
+    public android.view.View findViewById(int id) {
+      if (id == R.id.mapview)
+        return mapView;
+      return null;
+    };
+  };
 
   @Mock
   Bundle savedInstanceState;
