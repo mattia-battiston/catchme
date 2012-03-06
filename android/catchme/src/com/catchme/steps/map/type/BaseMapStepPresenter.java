@@ -38,8 +38,14 @@ public abstract class BaseMapStepPresenter extends BasePresenter<MapStepView> {
       }
     });
 
-    view.setTitle("map_firstPoint_title");
+    view.setTitle(getTitleName());
   }
+
+  // private String getTitleName() {
+  // return "map_firstPoint_title";
+  // }
+
+  protected abstract String getTitleName();
 
   protected abstract String getTextName();
 

@@ -11,6 +11,11 @@ public class FirstPointPresenter extends BaseMapStepPresenter {
   }
 
   @Override
+  protected String getTitleName() {
+    return "map_firstPoint_title";
+  }
+
+  @Override
   protected String getTextName() {
     return "map_firstPoint";
   }
