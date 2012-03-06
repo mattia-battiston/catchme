@@ -6,7 +6,7 @@ import com.google.android.maps.GeoPoint;
 public class FirstPointPresenter extends BaseMapStepPresenter {
 
   @Override
-  public String getName() {
+  public String getStepName() {
     return "firstPoint";
   }
 

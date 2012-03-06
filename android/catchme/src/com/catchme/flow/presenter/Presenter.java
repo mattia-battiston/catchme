@@ -14,7 +14,7 @@ public interface Presenter<T> {
 
   void back(Context context);
 
-  public abstract String getName();
+  public abstract String getStepName();
 
   void setAppController(AppController appController);
 

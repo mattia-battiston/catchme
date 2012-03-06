@@ -14,7 +14,7 @@ public class FirstPointReachedTest extends BaseUnitTest {
 
   @Test
   public void hasName() {
-    assertNotNull(presenter.getName());
+    assertNotNull(presenter.getStepName());
   }
 
   @Test

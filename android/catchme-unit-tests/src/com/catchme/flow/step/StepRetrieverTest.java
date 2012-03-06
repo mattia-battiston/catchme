@@ -110,7 +110,7 @@ public class StepRetrieverTest extends BaseUnitTest {
 
   private Presenter<?> step(String stepName) {
     Presenter<?> step = mock(Presenter.class);
-    when(step.getName()).thenReturn(stepName);
+    when(step.getStepName()).thenReturn(stepName);
     return step;
   }
 

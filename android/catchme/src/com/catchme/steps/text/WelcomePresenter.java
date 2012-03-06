@@ -9,7 +9,7 @@ public class WelcomePresenter extends BaseTextStepPresenter {
   }
 
   @Override
-  public String getName() {
+  public String getStepName() {
     return "welcome";
   }
 

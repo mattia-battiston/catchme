@@ -19,7 +19,7 @@ public class BasePresenterTest extends BaseUnitTest {
     }
 
     @Override
-    public String getName() {
+    public String getStepName() {
       return null;
     }
 

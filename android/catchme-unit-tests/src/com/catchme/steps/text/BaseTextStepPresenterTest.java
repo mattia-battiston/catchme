@@ -118,7 +118,7 @@ public class BaseTextStepPresenterTest extends BaseUnitTest {
 
   private class BaseTextStepPresenterForTest extends BaseTextStepPresenter {
     @Override
-    public String getName() {
+    public String getStepName() {
       return "BaseTextStepPresenterForTest";
     }
 

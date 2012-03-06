@@ -53,7 +53,7 @@ public class ExitStepTest extends BaseUnitTest {
 
   @Test
   public void hasAName() {
-    assertNotNull(exitStep.getName());
+    assertNotNull(exitStep.getStepName());
   }
 
 }

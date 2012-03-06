@@ -5,7 +5,7 @@ import com.catchme.steps.text.type.BaseTextStepPresenter;
 public class FirstPointReached extends BaseTextStepPresenter {
 
   @Override
-  public String getName() {
+  public String getStepName() {
     return "First Point Reached";
   }
 

@@ -29,7 +29,7 @@ public class ExitStep extends BasePresenter<ExitStepView> {
   }
 
   @Override
-  public String getName() {
+  public String getStepName() {
     return "exit";
   }
 

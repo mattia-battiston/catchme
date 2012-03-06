@@ -33,7 +33,7 @@ public class StepRetriever {
   public Presenter<?> getStepAfter(Presenter<?> step) {
     for (int i = 0; i < steps.size() - 1; i++) {
       Presenter<?> candidate = steps.get(i);
-      if (candidate.getName().equals(step.getName()))
+      if (candidate.getStepName().equals(step.getStepName()))
         return steps.get(i + 1);
     }
     throw new RuntimeException("No more steps");
@@ -42,7 +42,7 @@ public class StepRetriever {
   public Presenter<?> getStepBefore(Presenter<?> step) {
     for (int i = 1; i < steps.size(); i++) {
       Presenter<?> candidate = steps.get(i);
-      if (candidate.getName().equals(step.getName()))
+      if (candidate.getStepName().equals(step.getStepName()))
         return steps.get(i - 1);
     }
     return exitStep;
