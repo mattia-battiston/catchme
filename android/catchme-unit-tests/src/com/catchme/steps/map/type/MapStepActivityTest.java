@@ -95,7 +95,7 @@ public class MapStepActivityTest extends BaseUnitTest {
   public void setTargetAddsPointOnTheMap() {
     MapPointOverlay mapPoint = mockPointCreation();
 
-    mapStepActivity.setTarget(point, "text");
+    mapStepActivity.setTarget(point, "title", "text");
 
     assertThat(overlays.size(), is(1));
     assertThat((MapPointOverlay) overlays.get(0), is(mapPoint));
@@ -103,7 +103,7 @@ public class MapStepActivityTest extends BaseUnitTest {
 
   @Test
   public void setTargetCentersTheMapOnTheTarget() {
-    mapStepActivity.setTarget(point, "text");
+    mapStepActivity.setTarget(point, "title", "text");
 
     verify(mapController).animateTo(point);
   }
@@ -121,8 +121,9 @@ public class MapStepActivityTest extends BaseUnitTest {
     LayoutParams layoutParams = mock(LayoutParams.class);
     when(mapPoint.getView()).thenReturn(baloonLayout);
     when(mapPoint.getViewParams()).thenReturn(layoutParams);
-    when(mapPointFactory.createMapPoint(any(GeoPoint.class), anyString()))
-        .thenReturn(mapPoint);
+    when(
+        mapPointFactory.createMapPoint(any(GeoPoint.class), anyString(),
+            anyString())).thenReturn(mapPoint);
     return mapPoint;
   }
 }

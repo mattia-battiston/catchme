@@ -28,7 +28,7 @@ public class MapPointFactory {
 
     BaloonLayout layout = getBaloonLayout();
     layout.setVisibility(View.VISIBLE);
-    ((TextView) layout.findViewById(R.id.note_label)).setText(title);
+    ((TextView) layout.findViewById(R.id.note_title)).setText(title);
     ((TextView) layout.findViewById(R.id.note_text)).setText(text);
 
     pin.setLayout(layout);
