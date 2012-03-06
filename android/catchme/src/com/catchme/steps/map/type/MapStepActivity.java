@@ -75,7 +75,7 @@ public class MapStepActivity extends MapActivity implements MapStepView {
 
   @Override
   public Button getContinueButton() {
-    return (Button) findViewById(R.id.mapBaloon_close);
+    return (Button) findViewById(R.id.map_continue);
   }
 
   @Override
