@@ -18,7 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="note title" />
+            android:text="note title" 
+            android:textColor="@color/text" />
 
         <TextView
             android:id="@+id/note_text"
@@ -26,13 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/note_title"
             android:layout_centerHorizontal="true"
-            android:maxLength="160"
-            android:maxLines="4"
-            android:minLines="4"
-            android:paddingLeft="5px"
-            android:paddingRight="5px"
             android:text="note text"
-            android:textSize="5pt" />
+            android:textSize="5pt" 
+            android:textColor="@color/text" />
     </RelativeLayout>
 
 </com.catchme.steps.map.point.baloon.BaloonLayout>
