@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:text="note title" 
-            android:textColor="@color/text" />
+            android:textColor="@color/text"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/note_text"
@@ -28,7 +29,6 @@
             android:layout_below="@+id/note_title"
             android:layout_centerHorizontal="true"
             android:text="note text"
-            android:textSize="5pt" 
             android:textColor="@color/text" />
     </RelativeLayout>
 
