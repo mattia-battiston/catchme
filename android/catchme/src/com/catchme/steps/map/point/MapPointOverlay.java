@@ -20,6 +20,8 @@ public class MapPointOverlay extends ItemizedOverlay<OverlayItem> {
 
   private GeoPoint point;
 
+  private MapView mapView;
+
   public MapPointOverlay(Context context) {
     super(boundCenterBottom(context.getResources().getDrawable(
         R.drawable.map_pin)));
@@ -53,4 +55,18 @@ public class MapPointOverlay extends ItemizedOverlay<OverlayItem> {
     return new MapView.LayoutParams(200, 100, point,
         MapView.LayoutParams.BOTTOM_CENTER);
   }
+
+  @Override
+  public boolean onTap(GeoPoint p, MapView mapView) {
+    this.mapView = mapView;
+    mapView.removeView(layout);
+    return super.onTap(p, mapView);
+  }
+
+  @Override
+  protected boolean onTap(int index) {
+    mapView.addView(getView(), getViewParams());
+    return super.onTap(index);
+  }
+
 }
