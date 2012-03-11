@@ -20,26 +20,28 @@ public class BaloonLayout extends LinearLayout {
 
   @Override
   protected void dispatchDraw(Canvas canvas) {
-    Paint panelPaint = new Paint();
-    panelPaint.setARGB(0, 0, 0, 0);
+    Paint wholeBalloonArea = new Paint();
+    wholeBalloonArea.setARGB(0, 0, 0, 0);
 
-    RectF panelRect = new RectF();
-    panelRect.set(0, 0, getMeasuredWidth(), getMeasuredHeight());
-    canvas.drawRoundRect(panelRect, 5, 5, panelPaint);
+    int baloonWidth = getMeasuredWidth();
+    int baloonHeight = getMeasuredHeight();
 
-    RectF baloonRect = new RectF();
-    baloonRect.set(0, 0, getMeasuredWidth(), 2 * (getMeasuredHeight() / 3));
-    panelPaint.setARGB(230, 255, 255, 255);
-    canvas.drawRoundRect(baloonRect, 10, 10, panelPaint);
+    // top balloon with the text
+    // RectF panelRect = new RectF();
+    // panelRect.set(0, 0, baloonWidth, baloonHeight / 2);
+    // canvas.drawRoundRect(panelRect, 5, 5, wholeBalloonArea);
+    RectF balloonRect = new RectF();
+    balloonRect.set(0, 0, baloonWidth, 2 * (baloonHeight / 3));
+    wholeBalloonArea.setARGB(230, 255, 255, 255);
+    canvas.drawRoundRect(balloonRect, 10, 10, wholeBalloonArea);
 
-    Path baloonTip = new Path();
-    baloonTip.moveTo(5 * (getMeasuredWidth() / 8),
-        2 * (getMeasuredHeight() / 3));
-    baloonTip.lineTo(getMeasuredWidth() / 2, getMeasuredHeight());
-    baloonTip.lineTo(3 * (getMeasuredWidth() / 4),
-        2 * (getMeasuredHeight() / 3));
+    // here it's drawing the leg of the baloon
+    Path balloonTip = new Path();
+    balloonTip.moveTo(5 * (baloonWidth / 8), 2 * (baloonHeight / 3));
+    balloonTip.lineTo(baloonWidth / 2, baloonHeight);
+    balloonTip.lineTo(3 * (baloonWidth / 4), 2 * (baloonHeight / 3));
 
-    canvas.drawPath(baloonTip, panelPaint);
+    canvas.drawPath(balloonTip, wholeBalloonArea);
 
     super.dispatchDraw(canvas);
   }

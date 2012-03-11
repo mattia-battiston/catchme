@@ -42,7 +42,7 @@ public class MapPointFactory {
     BaloonLayout noteBaloon = (BaloonLayout) layoutInflater.inflate(
         R.layout.baloon, null);
     RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-        200, 100);
+        10, 10);
     layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
     layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
     noteBaloon.setLayoutParams(layoutParams);
