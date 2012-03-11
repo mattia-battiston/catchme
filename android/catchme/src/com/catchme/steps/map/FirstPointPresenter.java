@@ -26,7 +26,7 @@ public class FirstPointPresenter extends BaseMapStepPresenter {
   }
 
   protected GeoPoint createPoint() {
-    return new GeoPoint(19240000, -99120000);
+    return new GeoPoint(45449805, 11023514);
   }
 
 }
