@@ -5,19 +5,29 @@ import com.google.android.maps.GeoPoint;
 
 public class FirstPointPresenter extends BaseMapStepPresenter {
 
+  private final String stepName;
+  private final int latitude;
+  private final int longitude;
+
+  public FirstPointPresenter(String stepName, int latitude, int longitude) {
+    this.stepName = stepName;
+    this.latitude = latitude;
+    this.longitude = longitude;
+  }
+
   @Override
   public String getStepName() {
-    return "firstPoint";
+    return stepName;
   }
 
   @Override
   protected String getTitleName() {
-    return "map_firstPoint_title";
+    return "map_" + stepName + "_title";
   }
 
   @Override
   protected String getTextName() {
-    return "map_firstPoint";
+    return "map_" + stepName;
   }
 
   @Override
@@ -26,7 +36,7 @@ public class FirstPointPresenter extends BaseMapStepPresenter {
   }
 
   protected GeoPoint createPoint() {
-    return new GeoPoint(45449805, 11023514);
+    return new GeoPoint(latitude, longitude);
   }
 
 }

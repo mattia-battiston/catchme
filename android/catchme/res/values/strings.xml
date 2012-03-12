@@ -19,8 +19,11 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</string>
 	
-    <string name="map_firstPoint_title">First Target: XXX</string>
-    <string name="map_firstPoint">First Target</string>
+    <string name="map_sacher_title">First Target: Sacher</string>
+    <string name="map_sacher">Gelateria "Il Gelatone"</string>
+    
+    <string name="map_pizzeria70_title">Second Target: Pizzera 70</string>
+    <string name="map_pizzeria70">Mmmh, mediterranea...</string>
     
 	<string name="text_firstPointReached_title">First point reached!</string>
 	<string name="text_firstPointReached">This is an example text</string>
