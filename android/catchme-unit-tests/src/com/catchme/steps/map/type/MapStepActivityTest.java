@@ -23,7 +23,7 @@ import android.widget.TextView;
 import com.catchme.R;
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
-import com.catchme.steps.map.FirstPointPresenter;
+import com.catchme.steps.map.SimplePointPresenter;
 import com.catchme.steps.map.point.MapPointFactory;
 import com.catchme.steps.map.point.MapPointOverlay;
 import com.catchme.steps.map.point.baloon.BaloonLayout;
@@ -53,7 +53,7 @@ public class MapStepActivityTest extends BaseUnitTest {
   Bundle savedInstanceState;
 
   @Mock
-  FirstPointPresenter presenter;
+  SimplePointPresenter presenter;
 
   @Mock
   GeoPoint point;

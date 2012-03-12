@@ -3,13 +3,13 @@ package com.catchme.steps.map;
 import com.catchme.steps.map.type.BaseMapStepPresenter;
 import com.google.android.maps.GeoPoint;
 
-public class FirstPointPresenter extends BaseMapStepPresenter {
+public class SimplePointPresenter extends BaseMapStepPresenter {
 
   private final String stepName;
   private final int latitude;
   private final int longitude;
 
-  public FirstPointPresenter(String stepName, int latitude, int longitude) {
+  public SimplePointPresenter(String stepName, int latitude, int longitude) {
     this.stepName = stepName;
     this.latitude = latitude;
     this.longitude = longitude;
