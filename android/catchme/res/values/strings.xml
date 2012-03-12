@@ -21,11 +21,21 @@
 	
     <string name="map_sacher_title">First Target: Sacher</string>
     <string name="map_sacher">Gelateria "Il Gelatone"</string>
+
+    <string name="text_firstPointReached_title">First point reached!</string>
+	<string name="text_firstPointReached">This is an example text</string>
     
-    <string name="map_pizzeria70_title">Second Target: Pizzera 70</string>
+    <string name="map_pizzeria70_title">Second Target: Pizzeria 70</string>
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
     
-	<string name="text_firstPointReached_title">First point reached!</string>
-	<string name="text_firstPointReached">This is an example text</string>
+    <string name="map_viaBadile_title">Via Badile 45</string>
+    <string name="map_viaBadile">Old house</string>
+    
+    <string name="map_firstPizza_title">First pizza</string>
+    <string name="map_firstPizza">Pizza bra\'</string>
+    
+    <string name="map_viaStella_title">Taverna di Via Stella</string>
+    <string name="map_viaStella">polenta?</string>
+    
 
 </resources>
