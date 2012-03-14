@@ -32,10 +32,28 @@
     <string name="map_viaBadile">Old house</string>
     
     <string name="map_firstPizza_title">First pizza</string>
-    <string name="map_firstPizza">Pizza bra\'</string>
+    <string name="map_firstPizza">Piazza bra\'</string>
     
     <string name="map_viaStella_title">Taverna di Via Stella</string>
     <string name="map_viaStella">polenta?</string>
+    
+    <string name="map_pozzoAmore_title">Pozzo dell\'Amore</string>
+    <string name="map_pozzoAmore"></string>
+    
+    <string name="map_ferraris_title">Ferraris</string>
+    <string name="map_ferraris">Museo della radio</string>
+    
+    <string name="map_oldHouse_title">Antonia\'s house</string>
+    <string name="map_oldHouse"></string>
+    
+    <string name="map_pontePietra_title">Ponte Pietra</string>
+    <string name="map_pontePietra"></string>
+    
+    <string name="map_torreLamberti_title">Torre dei Lamberti</string>
+    <string name="map_torreLamberti"></string>
+    
+    <string name="map_home_title">Home</string>
+    <string name="map_home">come back!</string>
     
 
 </resources>

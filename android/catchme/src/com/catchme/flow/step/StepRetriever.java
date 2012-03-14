@@ -23,8 +23,14 @@ public class StepRetriever {
     steps.add(new FirstPointReached());
     steps.add(new SimplePointPresenter("pizzeria70", 45449060, 11020489));
     steps.add(new SimplePointPresenter("viaBadile", 45441427, 11022977));
+    steps.add(new SimplePointPresenter("ferraris", 45433293, 10996181));
     steps.add(new SimplePointPresenter("firstPizza", 45439135, 10992768));
+    steps.add(new SimplePointPresenter("oldHouse", 45439290, 10985363));
+    steps.add(new SimplePointPresenter("pozzoAmore", 45442993, 10996096));
     steps.add(new SimplePointPresenter("viaStella", 45441716, 10998894));
+    steps.add(new SimplePointPresenter("pontePietra", 45447705, 10999932));
+    steps.add(new SimplePointPresenter("torreLamberti", 45443128, 10997693));
+    steps.add(new SimplePointPresenter("home", 45444727, 11021433));
   }
 
   public Presenter<?> getFirstStep() {
