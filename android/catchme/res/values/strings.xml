@@ -3,20 +3,29 @@
 
     <string name="app_name">Catchme</string>
     
-    <string name="text_welcome_title">Welcome to The Love Quest</string>
+    <string name="text_welcome_title">Welcome to "The Love Quest"</string>
     <string name="text_welcome">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Dear Aindrea, \n
+        \n
+        Today is your lucky day: you\'re going to experience a lovely trip around Verona prepared by your boyfriend Mattia, in the quest of Love.\n
+        \n
+        This application especially made for this purpose will guide through this adventure. We don\'t want to tell you much yet to not spoil the fun. 
+        All that we can say is that your will be required to walk around quite a bit. \n
+        \n
+        So, let\'s get started! Please press the \"Continue\" button below
+	</string>
+	
+    <string name="text_instructions_title">A few instructions</string>
+    <string name="text_instructions">
+        There aren\'t many rules for today, but just to make sure you know what to do: here a few instructions to successfully complete The Love Quest\n
+        \n
+        - this application is going to guide through a list of steps \n
+        - every time you complete a step, press \"continue\" to go to the next one \n
+        - if you ever want to go back, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"continue\" again to come back here \n
+        - please leave your internet connection on in order for all the steps to work properly \n
+        - some steps are going to involve you walking somewhere. When you reach your target, please take a picture in that place to prove you\'ve been there before continuing on to the step after \n
+        - in case you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n
+        - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n
 	</string>
 	
     <string name="map_sacher_title">First Target: Sacher</string>
