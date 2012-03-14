@@ -26,10 +26,23 @@
         - some steps are going to involve you walking somewhere. When you reach your target, please take a picture in that place to prove you\'ve been there before continuing on to the step after \n
         - in case you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n
         - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n
+        - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)
 	</string>
 	
+    <string name="text_getReady_title">Let\'s get ready!</string>
+    <string name="text_getReady">
+        Ok, it\'s time to get ready now and start this adventure! Have a shower, wear something, put your make-up on, etc. etc. \n
+        \n
+        When you\'re ready to go grab your phone and \"continue\" to start your Love Quest!
+	</string>
+	
+    <string name="text_firstText_title">First Text</string>
+    <string name="text_firstText">
+        Time to text Mattia: \"ON MY WAY\" 
+	</string>
+    
     <string name="map_sacher_title">First Target: Sacher</string>
-    <string name="map_sacher">Gelateria "Il Gelatone"</string>
+    <string name="map_sacher">get to Gelateria "Il Gelatone"</string>
 
     <string name="text_firstPointReached_title">First point reached!</string>
 	<string name="text_firstPointReached">This is an example text</string>
