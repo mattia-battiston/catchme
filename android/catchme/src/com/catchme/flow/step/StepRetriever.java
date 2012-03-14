@@ -7,7 +7,7 @@ import com.catchme.flow.presenter.Presenter;
 import com.catchme.steps.exit.ExitStep;
 import com.catchme.steps.map.SimplePointPresenter;
 import com.catchme.steps.text.FirstPointReached;
-import com.catchme.steps.text.WelcomePresenter;
+import com.catchme.steps.text.SimpleTextPresenter;
 
 public class StepRetriever {
 
@@ -18,7 +18,7 @@ public class StepRetriever {
   private static Presenter<?> exitStep = new ExitStep();
 
   static {
-    steps.add(new WelcomePresenter());
+    steps.add(new SimpleTextPresenter("welcome"));
     steps.add(new SimplePointPresenter("sacher", 45449805, 11023514));
     steps.add(new FirstPointReached());
     steps.add(new SimplePointPresenter("pizzeria70", 45449060, 11020489));

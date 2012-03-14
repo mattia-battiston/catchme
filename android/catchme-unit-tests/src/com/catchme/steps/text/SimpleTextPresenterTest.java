@@ -8,9 +8,9 @@ import org.junit.Test;
 
 import com.catchme.base.BaseUnitTest;
 
-public class WelcomePresenterTest extends BaseUnitTest {
+public class SimpleTextPresenterTest extends BaseUnitTest {
 
-  WelcomePresenter presenter = new WelcomePresenter();
+  SimpleTextPresenter presenter = new SimpleTextPresenter("stepName");
 
   @Test
   public void hasName() {
@@ -19,11 +19,11 @@ public class WelcomePresenterTest extends BaseUnitTest {
 
   @Test
   public void showsWelcomeText() {
-    assertThat(presenter.getTextName(), is("text_welcome"));
+    assertThat(presenter.getTextName(), is("text_stepName"));
   }
 
   @Test
   public void showsWelcomeTitle() {
-    assertThat(presenter.getTitleName(), is("text_welcome_title"));
+    assertThat(presenter.getTitleName(), is("text_stepName_title"));
   }
 }

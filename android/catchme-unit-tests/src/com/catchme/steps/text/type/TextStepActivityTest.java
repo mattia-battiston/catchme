@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.catchme.base.BaseUnitTest;
 import com.catchme.base.CustomTestRunner;
-import com.catchme.steps.text.WelcomePresenter;
+import com.catchme.steps.text.SimpleTextPresenter;
 
 @RunWith(CustomTestRunner.class)
 public class TextStepActivityTest extends BaseUnitTest {
@@ -31,7 +31,7 @@ public class TextStepActivityTest extends BaseUnitTest {
   };
 
   @Mock
-  WelcomePresenter presenter;
+  SimpleTextPresenter presenter;
 
   @Mock
   Bundle savedInstanceState;
