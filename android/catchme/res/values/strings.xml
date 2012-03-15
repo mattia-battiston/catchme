@@ -41,12 +41,22 @@
         Time to text Mattia: \"ON MY WAY\" 
 	</string>
     
-    <string name="map_sacher_title">First Target: Sacher</string>
-    <string name="map_sacher">get to Gelateria "Il Gelatone"</string>
+    <string name="map_sacher_title">Target 1: Sacher</string>
+    <string name="map_sacher">get to: Gelateria \"Il Gelatone\"</string>
 
-    <string name="text_firstPointReached_title">First point reached!</string>
-	<string name="text_firstPointReached">This is an example text</string>
-    
+    <string name="text_sacherReached_title">Target 1: Sacher - Reached!</string>
+    <string name="text_sacherReached">
+        Wow, you reached the first congratulations! Woo oh!\n\n
+        Awww, do you remember all the times we had sacher here? Mmmh, that\'s soooo good. How lovely are our strolls in the summer nights! 
+        I just love to walk around with you, chat, have an ice cream and relax. I can\'t wait for the weather to get warmer and start againg.\n
+        \n
+        \n
+        Ok, since you reached your first target, don\'t forget to take a picture to prove you\'ve been here! Exit the application (just use the \"home\" button of your phone), 
+        take a picture, and then open it up again to continue.
+    </string>
+    <string name="text_sacherReachedText_title">Text time</string>
+    <string name="text_sacherReachedText">Time to text Mattia: \"SACHER REACHED\" </string>
+        
     <string name="map_pizzeria70_title">Second Target: Pizzeria 70</string>
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
     

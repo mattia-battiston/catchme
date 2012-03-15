@@ -21,7 +21,11 @@ public class StepRetriever {
     steps.add(new SimpleTextPresenter("instructions"));
     steps.add(new SimpleTextPresenter("getReady"));
     steps.add(new SimpleTextPresenter("firstText"));
+
     steps.add(new SimplePointPresenter("sacher", 45449805, 11023514));
+    steps.add(new SimpleTextPresenter("sacherReached"));
+    steps.add(new SimpleTextPresenter("sacherReachedText"));
+
     steps.add(new SimpleTextPresenter("firstPointReached"));
     steps.add(new SimplePointPresenter("pizzeria70", 45449060, 11020489));
     steps.add(new SimplePointPresenter("viaBadile", 45441427, 11022977));
