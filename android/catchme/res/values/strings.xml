@@ -17,23 +17,23 @@
 	
     <string name="text_instructions_title">A few instructions</string>
     <string name="text_instructions">
-        There aren\'t many rules for today, but just to make sure you know what to do: here a few instructions to successfully complete The Love Quest\n
+        There aren\'t many rules for today, but just to make sure you know what to do: here are a few instructions to successfully complete The Love Quest\n
         \n
-        - this application is going to guide through a list of steps \n\n
-        - every time you complete a step, press \"continue\" to go to the next one \n\n
-        - if you ever want to go back, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"continue\" again to come back here \n\n
-        - please leave your internet connection on in order for all the steps to work properly \n\n
-        - some steps are going to involve you walking somewhere. When you reach your target, please take a picture in that place to prove you\'ve been there before continuing on to the step after \n\n
-        - in case you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n\n
-        - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n\n
+        - this application is going to guide you through a list of steps \n\n
+        - every time you complete a step, press \"Continue\" to go to the next one \n\n
+        - some steps are going to involve you walking somewhere. When you reach your target, please take a picture of yourself in that place to prove you\'ve been there before continuing on to the step after \n\n
         - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)\n\n
+        - if you ever want to go previous steps, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"Continue\" again to come back here \n\n
+        - when you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n\n
+        - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n\n
+        - please leave your internet connection on in order for all the steps to work properly \n\n
 	</string>
 	
     <string name="text_getReady_title">Let\'s get ready!</string>
     <string name="text_getReady">
         Ok, it\'s time to get ready now and start this adventure! Have a shower, wear something, put your make-up on, etc. etc. \n
         \n
-        When you\'re ready to go grab your phone and \"continue\" to start your Love Quest!
+        When you\'re ready to go grab your phone and \"Continue\" to start your Love Quest!
 	</string>
 	
     <string name="text_firstText_title">First Text</string>
@@ -42,7 +42,7 @@
 	</string>
     
     <string name="map_sacher_title">Target 1: Sacher</string>
-    <string name="map_sacher">get to: Gelateria \"Il Gelatone\"</string>
+    <string name="map_sacher">Gelateria \"Il Gelatone\"</string>
 
     <string name="text_sacherReached_title">Target 1: Sacher - Reached!</string>
     <string name="text_sacherReached">
