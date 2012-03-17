@@ -23,6 +23,7 @@
         - every time you complete a step, press \"Continue\" to go to the next one \n\n
         - some steps are going to involve you walking somewhere. When you reach your target, please take a picture of yourself in that place to prove you\'ve been there before continuing on to the step after \n\n
         - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)\n\n
+        - if you don't feel like walking and prefer to use the bus you can; just know that all the target are at walking distance from each other, so we suggest to take your time and use your feet to enjoy it more :-)
         - if you ever want to go previous steps, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"Continue\" again to come back here \n\n
         - when you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n\n
         - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n\n
@@ -57,35 +58,37 @@
     <string name="text_sacherReachedText_title">Text time</string>
     <string name="text_sacherReachedText">Time to text Mattia: \"SACHER REACHED\" </string>
         
-    <string name="map_pizzeria70_title">Second Target: Pizzeria 70</string>
+    <string name="map_pizzeria70_title">Target 2: Pizzeria 70</string>
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
     
-    <string name="map_viaBadile_title">Via Badile 45</string>
-    <string name="map_viaBadile">Old house</string>
+    <string name="map_viaBadile_title">Target 3: Via Badile</string>
+    <string name="map_viaBadile">Old Via Badile\'s house</string>
     
-    <string name="map_firstPizza_title">First pizza</string>
-    <string name="map_firstPizza">Piazza bra\'</string>
+    <string name="map_ferraris_title">Target 4: Ferraris</string>
+    <string name="map_ferraris">where we first met</string>
+
+    <string name="map_firstPizza_title">Target 5: First Date</string>
+    <string name="map_firstPizza">Piazza bra\', first pizza place</string>
     
-    <string name="map_viaStella_title">Taverna di Via Stella</string>
-    <string name="map_viaStella">polenta?</string>
-    
-    <string name="map_pozzoAmore_title">Pozzo dell\'Amore</string>
-    <string name="map_pozzoAmore"></string>
-    
-    <string name="map_ferraris_title">Ferraris</string>
-    <string name="map_ferraris">Museo della radio</string>
-    
-    <string name="map_oldHouse_title">Antonia\'s house</string>
+    <string name="map_oldHouse_title">Target 6: Antonia\'s house</string>
     <string name="map_oldHouse"></string>
     
-    <string name="map_pontePietra_title">Ponte Pietra</string>
+    <string name="map_cinemaFiume_title">Target 7: Cinema Fiume</string>
+    <string name="map_cinemaFiume"></string>
+    
+    <string name="map_pozzoAmore_title">Target 8: Pozzo dell\'Amore</string>
+    <string name="map_pozzoAmore"></string>
+
+    <string name="map_viaStella_title">Target 9: Taverna di Via Stella</string>
+    <string name="map_viaStella">polenta?</string>
+
+    <string name="map_pontePietra_title">Target 10: Ponte Pietra</string>
     <string name="map_pontePietra"></string>
     
-    <string name="map_torreLamberti_title">Torre dei Lamberti</string>
+    <string name="map_torreLamberti_title">Target 11: Torre dei Lamberti</string>
     <string name="map_torreLamberti"></string>
     
-    <string name="map_home_title">Home</string>
+    <string name="map_home_title">Target 12: Home</string>
     <string name="map_home">come back!</string>
-    
 
 </resources>
