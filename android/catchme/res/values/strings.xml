@@ -62,7 +62,7 @@
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
 	<string name="text_pizzeria70Reached_title">Target 2: Pizzeria 70 - Reached!</string>
     <string name="text_pizzeria70Reached">
-        TODO
+        We love our pizzas here, don\'t we? But what I most love is to have pizza with you: spend the night chatting, hearing your stories, and laughing. Mmmh, shall we have a pizza tonight? :-)
     </string>
     <string name="text_pizzeria70ReachedText_title">Text time</string>
     <string name="text_pizzeria70ReachedText">Time to text Mattia: \"PIZZERIA 70 REACHED\" </string>
@@ -71,7 +71,9 @@
     <string name="map_viaBadile">Old Via Badile\'s house</string>
     <string name="text_viaBadileReached_title">Target 3: Via Badile - Reached!</string>
     <string name="text_viaBadileReached">
-        TODO
+        Your old via badile house. So many things happened here! Do you remember the little \"ou\" man drawn on the whiteboard? And that time when they cut your electricity? 
+        And when I did the shopping for you? And when I showed you how to cook carbonara? And the first Valentine\'s Day? And...oh, I better stop and let you continue your journey :) 
+        remember to take a picture!
     </string>
     <string name="text_viaBadileReachedText_title">Text time</string>
     <string name="text_viaBadileReachedText">Time to text Mattia: \"VIA BADILE REACHED\" </string>
