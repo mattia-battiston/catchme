@@ -23,7 +23,7 @@
         - every time you complete a step, press \"Continue\" to go to the next one \n\n
         - some steps are going to involve you walking somewhere. When you reach your target, please take a picture of yourself in that place to prove you\'ve been there before continuing on to the step after \n\n
         - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)\n\n
-        - if you don't feel like walking and prefer to use the bus, you can; just know that all the targets are at walking distance from each other, so we suggest you to take your time and use your feet to enjoy it more :-)
+        - if you don\'t feel like walking and prefer to use the bus, you can; just know that all the targets are at walking distance from each other, so we suggest you to take your time and use your feet to enjoy it more :-)
         - there is no rush! enjoy this adventure
         - if you ever want to go previous steps, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"Continue\" again to come back here \n\n
         - when you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n\n
@@ -45,7 +45,6 @@
     
     <string name="map_sacher_title">Target 1: Sacher</string>
     <string name="map_sacher">Gelateria \"Il Gelatone\"</string>
-
     <string name="text_sacherReached_title">Target 1: Sacher - Reached!</string>
     <string name="text_sacherReached">
         Wow, you reached the first target, congratulations! Woo hoo!\n\n
@@ -58,36 +57,96 @@
     </string>
     <string name="text_sacherReachedText_title">Text time</string>
     <string name="text_sacherReachedText">Time to text Mattia: \"SACHER REACHED\" </string>
-        
+    
     <string name="map_pizzeria70_title">Target 2: Pizzeria 70</string>
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
+	<string name="text_pizzeria70Reached_title">Target 2: Pizzeria 70 - Reached!</string>
+    <string name="text_pizzeria70Reached">
+        TODO
+    </string>
+    <string name="text_pizzeria70ReachedText_title">Text time</string>
+    <string name="text_pizzeria70ReachedText">Time to text Mattia: \"PIZZERIA 70 REACHED\" </string>
     
     <string name="map_viaBadile_title">Target 3: Via Badile</string>
     <string name="map_viaBadile">Old Via Badile\'s house</string>
+    <string name="text_viaBadileReached_title">Target 3: Via Badile - Reached!</string>
+    <string name="text_viaBadileReached">
+        TODO
+    </string>
+    <string name="text_viaBadileReachedText_title">Text time</string>
+    <string name="text_viaBadileReachedText">Time to text Mattia: \"VIA BADILE REACHED\" </string>
     
     <string name="map_ferraris_title">Target 4: Ferraris</string>
     <string name="map_ferraris">where we first met</string>
+    <string name="text_ferrarisReached_title">Target 4: Ferraris - Reached!</string>
+    <string name="text_ferrarisReached">
+        TODO
+    </string>
+    <string name="text_ferrarisReachedText_title">Text time</string>
+    <string name="text_ferrarisReachedText">Time to text Mattia: \"FERRARIS REACHED\" </string>
 
     <string name="map_firstPizza_title">Target 5: First Date</string>
     <string name="map_firstPizza">Piazza bra\', first pizza place</string>
+    <string name="text_firstPizzaReached_title">Target 5: First Date - Reached!</string>
+    <string name="text_firstPizzaReached">
+        TODO
+    </string>
+    <string name="text_firstPizzaReachedText_title">Text time</string>
+    <string name="text_firstPizzaReachedText">Time to text Mattia: \"FIRST DATE REACHED\" </string>
     
     <string name="map_oldHouse_title">Target 6: Antonia\'s house</string>
     <string name="map_oldHouse"></string>
+    <string name="text_oldHouseReached_title">Target 6: Antonia\'s house - Reached!</string>
+    <string name="text_oldHouseReached">
+        TODO
+    </string>
+    <string name="text_oldHouseReachedText_title">Text time</string>
+    <string name="text_oldHouseReachedText">Time to text Mattia: \"ANTONIA\'S HOUSE REACHED\" </string>
     
     <string name="map_cinemaFiume_title">Target 7: Cinema Fiume</string>
     <string name="map_cinemaFiume"></string>
+    <string name="text_cinemaFiumeReached_title">Target 7: Cinema Fiume - Reached!</string>
+    <string name="text_cinemaFiumeReached">
+        TODO
+    </string>
+    <string name="text_cinemaFiumeReachedText_title">Text time</string>
+    <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
     
     <string name="map_pozzoAmore_title">Target 8: Pozzo dell\'Amore</string>
     <string name="map_pozzoAmore"></string>
+    <string name="text_pozzoAmoreReached_title">Target 8: Pozzo dell\'Amore - Reached!</string>
+    <string name="text_pozzoAmoreReached">
+        TODO
+    </string>
+    <string name="text_pozzoAmoreReachedText_title">Text time</string>
+    <string name="text_pozzoAmoreReachedText">Time to text Mattia: \"POZZO AMORE REACHED\" </string>
 
     <string name="map_viaStella_title">Target 9: Taverna di Via Stella</string>
     <string name="map_viaStella">polenta?</string>
+    <string name="text_viaStellaReached_title">Target 9: Taverna di Via Stella - Reached!</string>
+    <string name="text_viaStellaReached">
+        TODO
+    </string>
+    <string name="text_viaStellaReachedText_title">Text time</string>
+    <string name="text_viaStellaReachedText">Time to text Mattia: \"VIA STELLA REACHED\" </string>
 
     <string name="map_pontePietra_title">Target 10: Ponte Pietra</string>
     <string name="map_pontePietra"></string>
+    <string name="text_pontePietraReached_title">Target 10: Ponte Pietra - Reached!</string>
+    <string name="text_pontePietraReached">
+        TODO
+    </string>
+    <string name="text_pontePietraReachedText_title">Text time</string>
+    <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
     
     <string name="map_torreLamberti_title">Target 11: Torre dei Lamberti</string>
     <string name="map_torreLamberti"></string>
+    <string name="text_torreLambertiReached_title">Target 11: Torre dei Lamberti - Reached!</string>
+    <string name="text_torreLambertiReached">
+        TODO
+    </string>
+    <string name="text_torreLambertiReachedText_title">Text time</string>
+    <string name="text_torreLambertiReachedText">Time to text Mattia: \"TORRE DEI LAMBERTI REACHED\" </string>
     
     <string name="map_home_title">Target 12: Home</string>
     <string name="map_home">come back!</string>

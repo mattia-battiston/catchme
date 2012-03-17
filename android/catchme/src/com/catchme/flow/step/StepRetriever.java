@@ -27,24 +27,44 @@ public class StepRetriever {
     steps.add(new SimpleTextPresenter("sacherReachedText"));
 
     steps.add(new SimplePointPresenter("pizzeria70", 45449060, 11020489));
+    steps.add(new SimpleTextPresenter("pizzeria70Reached"));
+    steps.add(new SimpleTextPresenter("pizzeria70ReachedText"));
 
     steps.add(new SimplePointPresenter("viaBadile", 45441427, 11022977));
+    steps.add(new SimpleTextPresenter("viaBadileReached"));
+    steps.add(new SimpleTextPresenter("viaBadileReachedText"));
 
     steps.add(new SimplePointPresenter("ferraris", 45433293, 10996181));
+    steps.add(new SimpleTextPresenter("ferrarisReached"));
+    steps.add(new SimpleTextPresenter("ferrarisReachedText"));
 
     steps.add(new SimplePointPresenter("firstPizza", 45439135, 10992768));
+    steps.add(new SimpleTextPresenter("firstPizzaReached"));
+    steps.add(new SimpleTextPresenter("firstPizzaReachedText"));
 
     steps.add(new SimplePointPresenter("oldHouse", 45439290, 10985363));
+    steps.add(new SimpleTextPresenter("oldHouseReached"));
+    steps.add(new SimpleTextPresenter("oldHouseReachedText"));
 
     steps.add(new SimplePointPresenter("cinemaFiume", 45442627, 10976893));
+    steps.add(new SimpleTextPresenter("cinemaFiumeReached"));
+    steps.add(new SimpleTextPresenter("cinemaFiumeReachedText"));
 
     steps.add(new SimplePointPresenter("pozzoAmore", 45442993, 10996096));
+    steps.add(new SimpleTextPresenter("pozzoAmoreReached"));
+    steps.add(new SimpleTextPresenter("pozzoAmoreReachedText"));
 
     steps.add(new SimplePointPresenter("viaStella", 45441716, 10998894));
+    steps.add(new SimpleTextPresenter("viaStellaReached"));
+    steps.add(new SimpleTextPresenter("viaStellaReachedText"));
 
     steps.add(new SimplePointPresenter("pontePietra", 45447705, 10999932));
+    steps.add(new SimpleTextPresenter("pontePietraReached"));
+    steps.add(new SimpleTextPresenter("pontePietraReachedText"));
 
     steps.add(new SimplePointPresenter("torreLamberti", 45443128, 10997693));
+    steps.add(new SimpleTextPresenter("torreLambertiReached"));
+    steps.add(new SimpleTextPresenter("torreLambertiReachedText"));
 
     steps.add(new SimplePointPresenter("home", 45444727, 11021433));
   }
