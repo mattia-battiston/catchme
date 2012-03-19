@@ -82,10 +82,10 @@
     <string name="map_ferraris">where we first met</string>
     <string name="text_ferrarisReached_title">Target 4: Ferraris - Reached!</string>
     <string name="text_ferrarisReached">
-        I will never forget the first I saw you. I was doing my museum walk, going around pretending to be interested in those old radios, when I saw you standing in a corner, looking at some electonic stuff.
-        You were wearing your black short jacket, and brown trousers. I remember I thought \"wow, she\'s so beautiful! I wander who she is. Maybe Antonia knows her and can introduce me to her\". 
-        And then we went to that bar with crappy karaoke, I had an hot chocolate and you had a coke. But really you wanted an hot chocolate too :-) Then we exchanged numbers, Andreas. 
-        Then there was the Tibet night. And the rest is history...
+        I will never forget the first time I saw you. I was doing my museum walk, going around the room and pretending to be interested in those old radios, when I saw you standing in a corner, 
+        looking at some electonic stuff. You were wearing your black short jacket, and brown trousers. I remember I thought \"wow, she\'s so beautiful! I wander who she is. Maybe Antonia knows her 
+        and can introduce me to her\". And then we went to that bar with crappy karaoke, I had an hot chocolate and you had a coke. But really you wanted an hot chocolate too :-) 
+        Then we exchanged numbers, Andreas. Then there was the Tibet night. And the rest is history...
     </string>
     <string name="text_ferrarisReachedText_title">Text time</string>
     <string name="text_ferrarisReachedText">Time to text Mattia: \"FERRARIS REACHED\" </string>
@@ -94,7 +94,9 @@
     <string name="map_firstPizza">Piazza bra\', first pizza place</string>
     <string name="text_firstPizzaReached_title">Target 5: First Date - Reached!</string>
     <string name="text_firstPizzaReached">
-        TODO
+        Here we had our first date, do you remember? I'm sure you do. Oh, I was so nervous! While I was waiting for you outside the school I had butterflies in my stomach. \n
+        I had margherita and you had prosciutto e funghi...aww, such a polite couple! Eh eh. You told me about your experiences around the world, your family, your cat, etc. etc. 
+        I couldn't stop listening to you, I was already in love :-) ah ah, and then you were too shy to give me a small kiss to thank me for paying for the pizza. Awww, bless you  
     </string>
     <string name="text_firstPizzaReachedText_title">Text time</string>
     <string name="text_firstPizzaReachedText">Time to text Mattia: \"FIRST DATE REACHED\" </string>
