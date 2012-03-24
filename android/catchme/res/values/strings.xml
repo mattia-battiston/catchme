@@ -125,6 +125,8 @@
     <string name="text_cinemaFiumeReachedText_title">Text time</string>
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
     
+    <!-- TODO add CastelVecchio here -->
+    
     <string name="map_pozzoAmore_title">Target 8: Pozzo dell\'Amore</string>
     <string name="map_pozzoAmore"></string>
     <string name="text_pozzoAmoreReached_title">Target 8: Pozzo dell\'Amore - Reached!</string>
@@ -143,7 +145,7 @@
     <string name="text_viaStellaReached">
 		Of all the times we've been here, I particularly remember when I first met your parents. Oh, I was really nervous! It was just a couple of months after 
 		we got togheter. First we met in piazza bra\' and then we came here, and we had a lovely evening. I think your mum started loving me from that night :-)\n
-		I was nervous but not scared: I knew already I would have been with you for a looooooon time...
+		I was nervous but not scared: I knew already I would have been with you for a looooooong time...
     </string>
     <string name="text_viaStellaReachedText_title">Text time</string>
     <string name="text_viaStellaReachedText">Time to text Mattia: \"VIA STELLA REACHED\" </string>
@@ -152,7 +154,9 @@
     <string name="map_pontePietra"></string>
     <string name="text_pontePietraReached_title">Target 10: Ponte Pietra - Reached!</string>
     <string name="text_pontePietraReached">
-        TODO
+        Here is where we exchanged our first kiss...oh no, wait, we didn\'t! Eh eh. You were too shy, but nevermind. It all fell into place in the end. \n
+        I remember when that night when I was walking home you texted me \"thank you for being so patient, sorry if I\'m so shy\" and I replied 
+        \"don\'t worry, it will all come at the right time\". Indeed, the right time arrived short after.
     </string>
     <string name="text_pontePietraReachedText_title">Text time</string>
     <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
