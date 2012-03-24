@@ -94,9 +94,9 @@
     <string name="map_firstPizza">Piazza bra\', first pizza place</string>
     <string name="text_firstPizzaReached_title">Target 5: First Date - Reached!</string>
     <string name="text_firstPizzaReached">
-        Here we had our first date, do you remember? I'm sure you do. Oh, I was so nervous! While I was waiting for you outside the school I had butterflies in my stomach. \n
+        Here we had our first date, do you remember? I\'m sure you do. Oh, I was so nervous! While I was waiting for you outside the school I had butterflies in my stomach. \n
         I had margherita and you had prosciutto e funghi...aww, such a polite couple! Eh eh. You told me about your experiences around the world, your family, your cat, etc. etc. 
-        I couldn't stop listening to you, I was already in love :-) ah ah, and then you were too shy to give me a small kiss to thank me for paying for the pizza. Awww, bless you.\n
+        I couldn\'t stop listening to you, I was already in love :-) ah ah, and then you were too shy to give me a small kiss to thank me for paying for the pizza. Awww, bless you.\n
         And then we walked, and walked, and walked...there was always an extra ultimo giro just to chat some more.
     </string>
     <string name="text_firstPizzaReachedText_title">Text time</string>
@@ -118,9 +118,9 @@
     <string name="map_cinemaFiume"></string>
     <string name="text_cinemaFiumeReached_title">Target 7: Cinema Fiume - Reached!</string>
     <string name="text_cinemaFiumeReached">
-        \"You\'re very nice tonight\" \"Uh uh, thank you\". Oh, I'll never forget that moment! It was our second date, we came here to watch Enchanted.
+        \"You\'re very nice tonight\" \"Uh uh, thank you\". Oh, I\'ll never forget that moment! It was our second date, we came here to watch Enchanted.
         I wanted to hold your hand during the film, but I was too shy. You were wearing a pink top and a scarf, and you told me how much you loved scarfs. 
-        By the way, that'\s why I bought you that scarf for christmas (that one that you've never wore!)
+        By the way, that\'s why I bought you that scarf for christmas (that one that you\'ve never wore!)
     </string>
     <string name="text_cinemaFiumeReachedText_title">Text time</string>
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
@@ -143,7 +143,7 @@
     <string name="map_viaStella">polenta?</string>
     <string name="text_viaStellaReached_title">Target 9: Taverna di Via Stella - Reached!</string>
     <string name="text_viaStellaReached">
-		Of all the times we've been here, I particularly remember when I first met your parents. Oh, I was really nervous! It was just a couple of months after 
+		Of all the times we\'ve been here, I particularly remember when I first met your parents. Oh, I was really nervous! It was just a couple of months after 
 		we got togheter. First we met in piazza bra\' and then we came here, and we had a lovely evening. I think your mum started loving me from that night :-)\n
 		I was nervous but not scared: I knew already I would have been with you for a looooooong time...
     </string>
@@ -168,14 +168,22 @@
         You knew you would have arrived here sooner or later. This is where our love started: the first kiss. I remember every second of that day.\n
         First I came to take you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hurted yours accidentally, 
         but you said \"uh, holding hands, nice\" so we did...but hey, nevermind, that was cool :-) then we walked and I brought you here, at the Torre dei Lamberti,
-        right at the top; I showed you where I lived, and that was the moment when you realized I didn't live near San Zeno. You understood I really cared about you,
+        right at the top; I showed you where I lived, and that was the moment when you realized I didn\'t live near San Zeno. You understood I really cared about you,
         I was willing to walk all that way just for you, so you hugged me. And that was the moment I kissed you, just before telling you how beautiful you are 
-        and how much I liked you. That's when our story began.\n
+        and how much I liked you. That\'s when our story began.\n
         \n
         P.S. You better take a nice picture here :-)
     </string>
     <string name="text_torreLambertiReachedText_title">Text time</string>
     <string name="text_torreLambertiReachedText">Time to text Mattia: \"TORRE DEI LAMBERTI REACHED\" </string>
+    
+    <string name="text_timeToGoHome_title">Time to go home</string>
+    <string name="text_timeToGoHome">
+        Congratulations, your quest is complete! You have been really good, you got here. Weeeeee...oh no, hang on a second, it\' not over yet!
+        There is still one last target to reach: home. \n
+        \n
+        Get home to complete your quest and find love
+    </string>
     
     <string name="map_home_title">Target 12: Home</string>
     <string name="map_home">come back!</string>
