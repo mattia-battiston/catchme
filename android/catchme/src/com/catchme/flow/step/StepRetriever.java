@@ -50,6 +50,10 @@ public class StepRetriever {
     steps.add(new SimpleTextPresenter("cinemaFiumeReached"));
     steps.add(new SimpleTextPresenter("cinemaFiumeReachedText"));
 
+    steps.add(new SimplePointPresenter("castelvecchio", 45439575, 10988398));
+    steps.add(new SimpleTextPresenter("castelvecchioReached"));
+    steps.add(new SimpleTextPresenter("castelvecchioReachedText"));
+
     steps.add(new SimplePointPresenter("pozzoAmore", 45442993, 10996096));
     steps.add(new SimpleTextPresenter("pozzoAmoreReached"));
     steps.add(new SimpleTextPresenter("pozzoAmoreReachedText"));
