@@ -66,6 +66,7 @@ public class StepRetriever {
     steps.add(new SimpleTextPresenter("torreLambertiReached"));
     steps.add(new SimpleTextPresenter("torreLambertiReachedText"));
 
+    steps.add(new SimpleTextPresenter("timeToGoHome"));
     steps.add(new SimplePointPresenter("home", 45444727, 11021433));
   }
 
