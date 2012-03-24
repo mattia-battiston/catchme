@@ -9,8 +9,11 @@
         \n
         Today is your lucky day: you\'re going to experience a lovely trip around Verona prepared by your boyfriend Mattia, in the quest of Love.\n
         \n
-        This application especially made for this purpose will guide through this adventure. We don\'t want to tell you much yet to not spoil the fun. 
-        All that we can say is that your will be required to walk around quite a bit. \n
+        This application especially made for this purpose will guide through this adventure. \n
+        It will give you some targets to reach and provide you with a special piece of message every time you reach one. 
+        At the end the messages will be put togheter to unveal the solution of this game. Just like a treasure hunt.\n
+        \n
+        We don\'t want to tell you much yet to not spoil the fun. Just know that your will be required to walk around quite a bit. \n
         \n
         So, let\'s get started! Please press the \"Continue\" button below
 	</string>
@@ -22,6 +25,7 @@
         - this application is going to guide you through a list of steps \n\n
         - every time you complete a step, press \"Continue\" to go to the next one \n\n
         - some steps are going to involve you walking somewhere. When you reach your target, please take a picture of yourself in that place to prove you\'ve been there before continuing on to the step after \n\n
+        - after you reach the target you\'ll be given a piece of message. You might want to write it down so that at the end you can put all the pieces togheter
         - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)\n\n
         - if you don\'t feel like walking and prefer to use the bus, you can; just know that all the targets are at walking distance from each other, so we suggest you to take your time and use your feet to enjoy it more :-)
         - there is no rush! enjoy this adventure
@@ -42,6 +46,10 @@
     <string name="text_firstText">
         Time to text Mattia: \"ON MY WAY\" 
 	</string>
+    <string name="text_firstMessage_title">The secret message</string>
+    <string name="text_firstMessage">
+        Piece of message #
+	</string>
     
     <string name="map_sacher_title">Target 1: Sacher</string>
     <string name="map_sacher">Gelateria \"Il Gelatone\"</string>
@@ -57,7 +65,11 @@
     </string>
     <string name="text_sacherReachedText_title">Text time</string>
     <string name="text_sacherReachedText">Time to text Mattia: \"SACHER REACHED\" </string>
-    
+    <string name="text_sacherMessage_title">The secret message</string>
+    <string name="text_sacherMessage">
+		Piece of message #
+	</string>
+        
     <string name="map_pizzeria70_title">Target 2: Pizzeria 70</string>
     <string name="map_pizzeria70">Mmmh, mediterranea...</string>
 	<string name="text_pizzeria70Reached_title">Target 2: Pizzeria 70 - Reached!</string>
@@ -66,6 +78,10 @@
     </string>
     <string name="text_pizzeria70ReachedText_title">Text time</string>
     <string name="text_pizzeria70ReachedText">Time to text Mattia: \"PIZZERIA 70 REACHED\" </string>
+    <string name="text_pizzeria70Message_title">The secret message</string>
+    <string name="text_pizzeria70Message">
+        Piece of message #
+	</string>
     
     <string name="map_viaBadile_title">Target 3: Via Badile</string>
     <string name="map_viaBadile">Old Via Badile\'s house</string>
@@ -77,6 +93,10 @@
     </string>
     <string name="text_viaBadileReachedText_title">Text time</string>
     <string name="text_viaBadileReachedText">Time to text Mattia: \"VIA BADILE REACHED\" </string>
+    <string name="text_viaBadileMessage_title">The secret message</string>
+    <string name="text_viaBadileMessage">
+        Piece of message #
+	</string>
     
     <string name="map_ferraris_title">Target 4: Ferraris</string>
     <string name="map_ferraris">where we first met</string>
@@ -89,6 +109,10 @@
     </string>
     <string name="text_ferrarisReachedText_title">Text time</string>
     <string name="text_ferrarisReachedText">Time to text Mattia: \"FERRARIS REACHED\" </string>
+    <string name="text_ferrarisMessage_title">The secret message</string>
+    <string name="text_ferrarisMessage">
+        Piece of message #
+	</string>
 
     <string name="map_firstPizza_title">Target 5: First Date</string>
     <string name="map_firstPizza">Piazza bra\', first pizza place</string>
@@ -101,6 +125,10 @@
     </string>
     <string name="text_firstPizzaReachedText_title">Text time</string>
     <string name="text_firstPizzaReachedText">Time to text Mattia: \"FIRST DATE REACHED\" </string>
+    <string name="text_firstPizzaMessage_title">The secret message</string>
+    <string name="text_firstPizzaMessage">
+        Piece of message #
+	</string>
     
     <string name="map_oldHouse_title">Target 6: Antonia\'s house</string>
     <string name="map_oldHouse"></string>
@@ -113,6 +141,10 @@
     </string>
     <string name="text_oldHouseReachedText_title">Text time</string>
     <string name="text_oldHouseReachedText">Time to text Mattia: \"ANTONIA\'S HOUSE REACHED\" </string>
+    <string name="text_oldHouseMessage_title">The secret message</string>
+    <string name="text_oldHouseMessage">
+        Piece of message #
+	</string>
     
     <string name="map_cinemaFiume_title">Target 7: Cinema Fiume</string>
     <string name="map_cinemaFiume"></string>
@@ -124,6 +156,10 @@
     </string>
     <string name="text_cinemaFiumeReachedText_title">Text time</string>
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
+    <string name="text_cinemaFiumeMessage_title">The secret message</string>
+    <string name="text_cinemaFiumeMessage">
+        Piece of message #
+	</string>
     
     <string name="map_castelvecchio_title">Target 8: Castelvecchio</string>
     <string name="map_castelvecchio">where it almost ended...</string>
@@ -138,6 +174,10 @@
     </string>
     <string name="text_castelvecchioReachedText_title">Text time</string>
     <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
+    <string name="text_castelvecchioMessage_title">The secret message</string>
+    <string name="text_castelvecchioMessage">
+        Piece of message #
+	</string>
     
     <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
     <string name="map_pozzoAmore"></string>
@@ -150,6 +190,10 @@
     </string>
     <string name="text_pozzoAmoreReachedText_title">Text time</string>
     <string name="text_pozzoAmoreReachedText">Time to text Mattia: \"POZZO AMORE REACHED\" </string>
+    <string name="text_pozzoAmoreMessage_title">The secret message</string>
+    <string name="text_pozzoAmoreMessage">
+        Piece of message #
+	</string>
 
     <string name="map_viaStella_title">Target 10: Taverna di Via Stella</string>
     <string name="map_viaStella">polenta?</string>
@@ -161,6 +205,10 @@
     </string>
     <string name="text_viaStellaReachedText_title">Text time</string>
     <string name="text_viaStellaReachedText">Time to text Mattia: \"VIA STELLA REACHED\" </string>
+    <string name="text_viaStellaMessage_title">The secret message</string>
+    <string name="text_viaStellaMessage">
+        Piece of message #
+	</string>
 
     <string name="map_pontePietra_title">Target 11: Ponte Pietra</string>
     <string name="map_pontePietra"></string>
@@ -172,6 +220,10 @@
     </string>
     <string name="text_pontePietraReachedText_title">Text time</string>
     <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
+    <string name="text_pontePietraMessage_title">The secret message</string>
+    <string name="text_pontePietraMessage">
+        Piece of message #
+	</string>
     
     <string name="map_torreLamberti_title">Target 12: Torre dei Lamberti</string>
     <string name="map_torreLamberti"></string>
@@ -188,6 +240,10 @@
     </string>
     <string name="text_torreLambertiReachedText_title">Text time</string>
     <string name="text_torreLambertiReachedText">Time to text Mattia: \"TORRE DEI LAMBERTI REACHED\" </string>
+    <string name="text_torreLambertiMessage_title">The secret message</string>
+    <string name="text_torreLambertiMessage">
+        Piece of message #
+	</string>
     
     <string name="text_timeToGoHome_title">Time to go home</string>
     <string name="text_timeToGoHome">
