@@ -48,7 +48,7 @@
 	</string>
     <string name="text_firstMessage_title">The secret message</string>
     <string name="text_firstMessage">
-        Piece of message #5:\n I love your smile that always makes me laugh.
+        Piece of message #5:\n \"I love your smile that always makes me laugh.\"
 	</string>
     
     <string name="map_sacher_title">Target 1: Sacher</string>
@@ -67,7 +67,7 @@
     <string name="text_sacherReachedText">Time to text Mattia: \"SACHER REACHED\" </string>
     <string name="text_sacherMessage_title">The secret message</string>
     <string name="text_sacherMessage">
-		Piece of message #11:\n I love how every time I'm grumpy you can change my mood.
+		Piece of message #11:\n \"I love how every time I\'m grumpy you can change my mood.\"
 	</string>
         
     <string name="map_pizzeria70_title">Target 2: Pizzeria 70</string>
@@ -80,7 +80,7 @@
     <string name="text_pizzeria70ReachedText">Time to text Mattia: \"PIZZERIA 70 REACHED\" </string>
     <string name="text_pizzeria70Message_title">The secret message</string>
     <string name="text_pizzeria70Message">
-        Piece of message #2:\n I love your hair and the funny bit that sticks out of it at the front. 
+        Piece of message #2:\n \"I love your hair and the funny bit that sticks out of it at the front.\" 
 	</string>
     
     <string name="map_viaBadile_title">Target 3: Via Badile</string>
@@ -95,7 +95,7 @@
     <string name="text_viaBadileReachedText">Time to text Mattia: \"VIA BADILE REACHED\" </string>
     <string name="text_viaBadileMessage_title">The secret message</string>
     <string name="text_viaBadileMessage">
-        Piece of message #9:\n I love to walk with you and having to go slower because your legs are little and you can't keep up.
+        Piece of message #9:\n \"I love to walk with you and having to go slower because your legs are little and you can\'t keep up.\"
 	</string>
     
     <string name="map_ferraris_title">Target 4: Ferraris</string>
@@ -111,7 +111,7 @@
     <string name="text_ferrarisReachedText">Time to text Mattia: \"FERRARIS REACHED\" </string>
     <string name="text_ferrarisMessage_title">The secret message</string>
     <string name="text_ferrarisMessage">
-        Piece of message #7:\n I love your hands that always smell of that liquid to clean them.
+        Piece of message #7:\n \"I love your hands that always smell of that liquid to clean them.\"
 	</string>
 
     <string name="map_firstPizza_title">Target 5: First Date</string>
@@ -127,7 +127,7 @@
     <string name="text_firstPizzaReachedText">Time to text Mattia: \"FIRST DATE REACHED\" </string>
     <string name="text_firstPizzaMessage_title">The secret message</string>
     <string name="text_firstPizzaMessage">
-        Piece of message #4:\n I love your eyes that look so big on your piccolina face.
+        Piece of message #4:\n \"I love your eyes that look so big on your piccolina face.\"
 	</string>
     
     <string name="map_oldHouse_title">Target 6: Antonia\'s house</string>
@@ -143,7 +143,7 @@
     <string name="text_oldHouseReachedText">Time to text Mattia: \"ANTONIA\'S HOUSE REACHED\" </string>
     <string name="text_oldHouseMessage_title">The secret message</string>
     <string name="text_oldHouseMessage">
-        Piece of message #12:\n I love to wake up with you every morning and see your sleepy face.
+        Piece of message #12:\n \"I love to wake up with you every morning and see your sleepy face.\"
 	</string>
     
     <string name="map_cinemaFiume_title">Target 7: Cinema Fiume</string>
@@ -158,7 +158,7 @@
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
     <string name="text_cinemaFiumeMessage_title">The secret message</string>
     <string name="text_cinemaFiumeMessage">
-        Piece of message #3:\n I love your ears and the way you always try to cover them.
+        Piece of message #3:\n \"I love your ears and the way you always try to cover them.\"
 	</string>
     
     <string name="map_castelvecchio_title">Target 8: Castelvecchio</string>
@@ -176,7 +176,7 @@
     <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
     <string name="text_castelvecchioMessage_title">The secret message</string>
     <string name="text_castelvecchioMessage">
-        Piece of message #8:\n I love to keep that liquid to clean our hands when we go to throw away the rubbish togheter.
+        Piece of message #8:\n \"I love to keep that liquid to clean our hands when we go to throw away the rubbish togheter.\"
 	</string>
     
     <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
@@ -192,7 +192,7 @@
     <string name="text_pozzoAmoreReachedText">Time to text Mattia: \"POZZO AMORE REACHED\" </string>
     <string name="text_pozzoAmoreMessage_title">The secret message</string>
     <string name="text_pozzoAmoreMessage">
-        Piece of message #6:\n I love your nose when it's itchy and you have faggia.
+        Piece of message #6:\n \"I love your nose when it\'s itchy and you have faggia.\"
 	</string>
 
     <string name="map_viaStella_title">Target 10: Taverna di Via Stella</string>
@@ -207,7 +207,7 @@
     <string name="text_viaStellaReachedText">Time to text Mattia: \"VIA STELLA REACHED\" </string>
     <string name="text_viaStellaMessage_title">The secret message</string>
     <string name="text_viaStellaMessage">
-        Piece of message #10:\n I love to go on holiday with you and have a good naps.
+        Piece of message #10:\n \"I love to go on holiday with you and have a good nap.\"
 	</string>
 
     <string name="map_pontePietra_title">Target 11: Ponte Pietra</string>
@@ -222,7 +222,7 @@
     <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
     <string name="text_pontePietraMessage_title">The secret message</string>
     <string name="text_pontePietraMessage">
-        Piece of message #1:\n Aindrea Elizabeth Harte, since the first time I met you I knew I was in love with you and loved everything about you.
+        Piece of message #1:\n \"Aindrea Elizabeth Harte, since the first time I met you I knew I was in love with you and loved everything about you.\"
 	</string>
     
     <string name="map_torreLamberti_title">Target 12: Torre dei Lamberti</string>
@@ -242,7 +242,7 @@
     <string name="text_torreLambertiReachedText">Time to text Mattia: \"TORRE DEI LAMBERTI REACHED\" </string>
     <string name="text_torreLambertiMessage_title">The secret message</string>
     <string name="text_torreLambertiMessage">
-        Piece of message #13:\n For a million reasons more, I love you And I want to spend the rest of my life with you.
+        Piece of message #13:\n \"For a million reasons more, I love you And I want to spend the rest of my life with you.\"
 	</string>
     
     <string name="text_timeToGoHome_title">Time to go home</string>
