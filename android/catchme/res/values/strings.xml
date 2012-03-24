@@ -125,11 +125,23 @@
     <string name="text_cinemaFiumeReachedText_title">Text time</string>
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
     
-    <!-- TODO add CastelVecchio here -->
+    <string name="map_castelvecchio_title">Target 8: Castelvecchio</string>
+    <string name="map_castelvecchio">where it almost ended...</string>
+    <string name="text_castelvecchioReached_title">Target 8: Castelvecchio - Reached!</string>
+    <string name="text_castelvecchioReached">
+        Uh, a sad one...here is where we encountered a little bump in the road. \"Sono confusa, devo ti parlare\". That night we talked a lot, you tried to explain me
+        how you felt, and then we arrived here, I looked you in the eyes and asked you: \"Are you sure this is what you want?\". And after an hesitation you said yes, 
+        that was what you wanted.\n
+        \n
+        5 minutes later...\"Emilyyyyyyyyyy, what have I done?!?!\". Luckily I sent you that message, you made up your mind and came back to me. 
+        As I said, just a little bump in the long road we're walking togheter.
+    </string>
+    <string name="text_castelvecchioReachedText_title">Text time</string>
+    <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
     
-    <string name="map_pozzoAmore_title">Target 8: Pozzo dell\'Amore</string>
+    <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
     <string name="map_pozzoAmore"></string>
-    <string name="text_pozzoAmoreReached_title">Target 8: Pozzo dell\'Amore - Reached!</string>
+    <string name="text_pozzoAmoreReached_title">Target 9: Pozzo dell\'Amore - Reached!</string>
     <string name="text_pozzoAmoreReached">
         Ok, this is difficult. You might not remember this, but I do. It was our first date and we were walking around the center, whilst I was explaining everything to you
         about Verona, ancient roman, etc. We arrived here - not exactly here, but near here - and there was a bombolone sleeping at the side of the road. 
@@ -139,9 +151,9 @@
     <string name="text_pozzoAmoreReachedText_title">Text time</string>
     <string name="text_pozzoAmoreReachedText">Time to text Mattia: \"POZZO AMORE REACHED\" </string>
 
-    <string name="map_viaStella_title">Target 9: Taverna di Via Stella</string>
+    <string name="map_viaStella_title">Target 10: Taverna di Via Stella</string>
     <string name="map_viaStella">polenta?</string>
-    <string name="text_viaStellaReached_title">Target 9: Taverna di Via Stella - Reached!</string>
+    <string name="text_viaStellaReached_title">Target 10: Taverna di Via Stella - Reached!</string>
     <string name="text_viaStellaReached">
 		Of all the times we\'ve been here, I particularly remember when I first met your parents. Oh, I was really nervous! It was just a couple of months after 
 		we got togheter. First we met in piazza bra\' and then we came here, and we had a lovely evening. I think your mum started loving me from that night :-)\n
@@ -150,9 +162,9 @@
     <string name="text_viaStellaReachedText_title">Text time</string>
     <string name="text_viaStellaReachedText">Time to text Mattia: \"VIA STELLA REACHED\" </string>
 
-    <string name="map_pontePietra_title">Target 10: Ponte Pietra</string>
+    <string name="map_pontePietra_title">Target 11: Ponte Pietra</string>
     <string name="map_pontePietra"></string>
-    <string name="text_pontePietraReached_title">Target 10: Ponte Pietra - Reached!</string>
+    <string name="text_pontePietraReached_title">Target 11: Ponte Pietra - Reached!</string>
     <string name="text_pontePietraReached">
         Here is where we exchanged our first kiss...oh no, wait, we didn\'t! Eh eh. You were too shy, but nevermind. It all fell into place in the end. \n
         I remember when that night when I was walking home you texted me \"thank you for being so patient, sorry if I\'m so shy\" and I replied 
@@ -161,9 +173,9 @@
     <string name="text_pontePietraReachedText_title">Text time</string>
     <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
     
-    <string name="map_torreLamberti_title">Target 11: Torre dei Lamberti</string>
+    <string name="map_torreLamberti_title">Target 12: Torre dei Lamberti</string>
     <string name="map_torreLamberti"></string>
-    <string name="text_torreLambertiReached_title">Target 11: Torre dei Lamberti - Reached!</string>
+    <string name="text_torreLambertiReached_title">Target 12: Torre dei Lamberti - Reached!</string>
     <string name="text_torreLambertiReached">
         You knew you would have arrived here sooner or later. This is where our love started: the first kiss. I remember every second of that day.\n
         First I came to take you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hurted yours accidentally, 
@@ -185,7 +197,7 @@
         Get home to complete your quest and find love
     </string>
     
-    <string name="map_home_title">Target 12: Home</string>
+    <string name="map_home_title">Extra Target: Home</string>
     <string name="map_home">come back!</string>
 
 </resources>
