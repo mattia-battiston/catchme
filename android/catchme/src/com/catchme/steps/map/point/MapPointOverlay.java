@@ -52,7 +52,7 @@ public class MapPointOverlay extends ItemizedOverlay<OverlayItem> {
   }
 
   public LayoutParams getViewParams() {
-    return new MapView.LayoutParams(200, 100, point,
+    return new MapView.LayoutParams(400, 150, point,
         MapView.LayoutParams.BOTTOM_CENTER);
   }
 

@@ -11,7 +11,7 @@
         \n
         This application especially made for this purpose will guide through this adventure. \n
         It will give you some targets to reach and provide you with a special piece of message every time you reach one. 
-        At the end the messages will be put togheter to unveal the solution of this game. Just like a treasure hunt.\n
+        At the end, the messages will be put togheter to unveal the solution of this game. Just like a treasure hunt.\n
         \n
         We don\'t want to tell you much yet to not spoil the fun. Just know that your will be required to walk around quite a bit. \n
         \n
@@ -25,10 +25,10 @@
         - this application is going to guide you through a list of steps \n\n
         - every time you complete a step, press \"Continue\" to go to the next one \n\n
         - some steps are going to involve you walking somewhere. When you reach your target, please take a picture of yourself in that place to prove you\'ve been there before continuing on to the step after \n\n
-        - after you reach the target you\'ll be given a piece of message. You might want to write it down so that at the end you can put all the pieces togheter
+        - after you reach the target you\'ll be given a piece of message. You might want to write it down so that at the end you can put all the pieces togheter \n\n
         - after some steps we\'ll ask you to text Mattia to provide him your position (don\'t worry, we\'ll remind you when you need to do so)\n\n
-        - if you don\'t feel like walking and prefer to use the bus, you can; just know that all the targets are at walking distance from each other, so we suggest you to take your time and use your feet to enjoy it more :-)
-        - there is no rush! enjoy this adventure
+        - if you don\'t feel like walking and prefer to use the bus, you can; just know that all the targets are at walking distance from each other, so we suggest you to take your time and use your feet to enjoy it more :-) \n\n
+        - there is no rush! enjoy this adventure \n\n
         - if you ever want to go previous steps, simply use the \"back\" button of your phone. Indeed, why don\'t you try it right now? Go back to the welcome screen and then \"Continue\" again to come back here \n\n
         - when you need to leave the application (to send a text, make a call, etc.), just open it up again and it should resume from where you left it. You will find it in your application list under \"Catchme\". \n\n
         - if the application doesn\'t resume properly, but instead starts from the beginning, just quickly skip the steps that you have already completed \n\n
@@ -87,8 +87,9 @@
     <string name="map_viaBadile">Old Via Badile\'s house</string>
     <string name="text_viaBadileReached_title">Target 3: Via Badile - Reached!</string>
     <string name="text_viaBadileReached">
-        Your old via badile house. So many things happened here! Do you remember the little \"ou\" man drawn on the whiteboard? And that time when they cut your electricity? 
-        And when I did the shopping for you? And when I showed you how to cook carbonara? And the first Valentine\'s Day? And...oh, I better stop and let you continue your journey :) 
+        Your old via badile house. So many things happened here! \n
+        Do you remember the little \"ou\" man drawn on the whiteboard? And that time when they cut your electricity? \n
+        And when I did the shopping for you? And when I showed you how to cook carbonara? And the first Valentine\'s Day? And...oh, I better stop and let you continue your journey :) \n
         remember to take a picture!
     </string>
     <string name="text_viaBadileReachedText_title">Text time</string>
@@ -103,8 +104,10 @@
     <string name="text_ferrarisReached_title">Target 4: Ferraris - Reached!</string>
     <string name="text_ferrarisReached">
         I will never forget the first time I saw you. I was doing my museum walk, going around the room and pretending to be interested in those old radios, when I saw you standing in a corner, 
-        looking at some electonic stuff. You were wearing your black short jacket, and brown trousers. I remember I thought \"wow, she\'s so beautiful! I wander who she is. Maybe Antonia knows her 
-        and can introduce me to her\". And then we went to that bar with crappy karaoke, I had an hot chocolate and you had a coke. But really you wanted an hot chocolate too :-) 
+        looking at some electonic stuff. \n
+        You were wearing your short black jacket, and brown trousers. I remember I thought \"wow, she\'s so beautiful! I wander who she is. Maybe Antonia knows her 
+        and can introduce me to her\". \n\n
+        And then we went to that bar with crappy karaoke, I had an hot chocolate and you had a coke. But really you wanted an hot chocolate too :-) 
         Then we exchanged numbers, Andreas. Then there was the Tibet night. And the rest is history...
     </string>
     <string name="text_ferrarisReachedText_title">Text time</string>
@@ -135,9 +138,9 @@
     <string name="text_oldHouseReached_title">Target 6: Antonia\'s house - Reached!</string>
     <string name="text_oldHouseReached">
         I used to take you back here after our walks, do you remember? And then we would exchange a little kiss on the cheek, eh eh. Buonanotte, mwah mwah.
-        And immediatly after we would both think \"oh, i should have kissed her!\". Ah, good memories. \n
-        We have so many memories here! She was definitely crazy, but thank God she was there and we met. Oh, do you remember that time when I slept here? 
-        Ah ah, and then I had to sneak out in the morning. Fun :-)
+        And immediatly after we would both think \"oh, i should have kissed her!\". Ah, good memories. \n\n
+        We have so many memories here! She was definitely crazy, but thank God she was there and we met. \n
+        Oh, do you remember that time when I slept here? Ah ah, and then I had to sneak out in the morning. Fun :-)
     </string>
     <string name="text_oldHouseReachedText_title">Text time</string>
     <string name="text_oldHouseReachedText">Time to text Mattia: \"ANTONIA\'S HOUSE REACHED\" </string>
@@ -151,8 +154,8 @@
     <string name="text_cinemaFiumeReached_title">Target 7: Cinema Fiume - Reached!</string>
     <string name="text_cinemaFiumeReached">
         \"You\'re very nice tonight\" \"Uh uh, thank you\". Oh, I\'ll never forget that moment! It was our second date, we came here to watch Enchanted.
-        I wanted to hold your hand during the film, but I was too shy. You were wearing a pink top and a scarf, and you told me how much you loved scarfs. 
-        By the way, that\'s why I bought you that scarf for christmas (that one that you\'ve never wore!)
+        I wanted to hold your hand during the film, but I was too shy. You were wearing a pink top and a scarf, and you told me how much you loved scarfs. \n
+        By the way, that\'s why I bought you that scarf for christmas (that one that you never wore!)
     </string>
     <string name="text_cinemaFiumeReachedText_title">Text time</string>
     <string name="text_cinemaFiumeReachedText">Time to text Mattia: \"FIUME REACHED\" </string>
@@ -165,9 +168,9 @@
     <string name="map_castelvecchio">where it almost ended...</string>
     <string name="text_castelvecchioReached_title">Target 8: Castelvecchio - Reached!</string>
     <string name="text_castelvecchioReached">
-        Uh, a sad one...here is where we encountered a little bump in the road. \"Sono confusa, devo ti parlare\". That night we talked a lot, you tried to explain me
-        how you felt, and then we arrived here, I looked you in the eyes and asked you: \"Are you sure this is what you want?\". And after an hesitation you said yes, 
-        that was what you wanted.\n
+        Uh, a sad one...here is where we encountered a little bump in the road. \"Sono confusa, devo ti parlare\". \n
+        That night we talked a lot, you tried to explain me how you felt, and then we arrived here, I looked into your eyes and asked you: \"Are you sure this is what you want?\". 
+        And after an hesitation you said yes, that was what you wanted.\n
         \n
         5 minutes later...\"Emilyyyyyyyyyy, what have I done?!?!\". Luckily I sent you that message, you made up your mind and came back to me. 
         As I said, just a little bump in the long road we\'re walking togheter.
@@ -183,9 +186,10 @@
     <string name="map_pozzoAmore"></string>
     <string name="text_pozzoAmoreReached_title">Target 9: Pozzo dell\'Amore - Reached!</string>
     <string name="text_pozzoAmoreReached">
-        Ok, this is difficult. You might not remember this, but I do. It was our first date and we were walking around the center, whilst I was explaining everything to you
+        Ok, this is difficult. You might not remember this, but I do. \n\n
+        It was our first date and we were walking around the center, whilst I was explaining everything to you
         about Verona, ancient roman, etc. We arrived here - not exactly here, but near here - and there was a bombolone sleeping at the side of the road. 
-        You were walking on that side, so I exchanged place with you and protected you while walking near him. 
+        You were walking on that side, so I exchanged place with you and protected you while walking near him. \n\n
         And from that moment on I protected my piccolina from everything bad around her.
     </string>
     <string name="text_pozzoAmoreReachedText_title">Text time</string>
@@ -200,7 +204,7 @@
     <string name="text_viaStellaReached_title">Target 10: Taverna di Via Stella - Reached!</string>
     <string name="text_viaStellaReached">
 		Of all the times we\'ve been here, I particularly remember when I first met your parents. Oh, I was really nervous! It was just a couple of months after 
-		we got togheter. First we met in piazza bra\' and then we came here, and we had a lovely evening. I think your mum started loving me from that night :-)\n
+		we got togheter. First we met in piazza bra\' and then we came here, and we had a lovely evening. I think your mum started loving me from that night :-)\n\n
 		I was nervous but not scared: I knew already I would have been with you for a looooooong time...
     </string>
     <string name="text_viaStellaReachedText_title">Text time</string>
@@ -214,9 +218,10 @@
     <string name="map_pontePietra"></string>
     <string name="text_pontePietraReached_title">Target 11: Ponte Pietra - Reached!</string>
     <string name="text_pontePietraReached">
-        Here is where we exchanged our first kiss...oh no, wait, we didn\'t! Eh eh. You were too shy, but nevermind. It all fell into place in the end. \n
+        Here is where we exchanged our first kiss...oh no, wait, we didn\'t! Eh eh. You were too shy, but nevermind. It all fell into place in the end. \n\n
         I remember when that night when I was walking home you texted me \"thank you for being so patient, sorry if I\'m so shy\" and I replied 
-        \"don\'t worry, it will all come at the right time\". Indeed, the right time arrived short after.
+        \"don\'t worry, it will all come at the right time\". \n\n
+        Indeed, the right time arrived short after.
     </string>
     <string name="text_pontePietraReachedText_title">Text time</string>
     <string name="text_pontePietraReachedText">Time to text Mattia: \"PONTE PIETRA REACHED\" </string>
@@ -229,13 +234,13 @@
     <string name="map_torreLamberti"></string>
     <string name="text_torreLambertiReached_title">Target 12: Torre dei Lamberti - Reached!</string>
     <string name="text_torreLambertiReached">
-        You knew you would have arrived here sooner or later. This is where our love started: the first kiss. I remember every second of that day.\n
-        First I came to take you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hurted yours accidentally, 
-        but you said \"uh, holding hands, nice\" so we did...but hey, nevermind, that was cool :-) then we walked and I brought you here, at the Torre dei Lamberti,
-        right at the top; I showed you where I lived, and that was the moment when you realized I didn\'t live near San Zeno. You understood I really cared about you,
-        I was willing to walk all that way just for you, so you hugged me. And that was the moment I kissed you, just before telling you how beautiful you are 
-        and how much I liked you. That\'s when our story began.\n
-        \n
+        You knew you would have arrived here sooner or later. This is where our love started: the first kiss. I remember every second of that day.\n\n
+        First I came to you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hurted yours accidentally, 
+        but you said \"uh, holding hands, nice\" and so we did...but hey, nevermind, that was cool :-) \n
+        then we walked and I brought you here, at the Torre dei Lamberti, right at the top; 
+        I showed you where I lived, and that was the moment when you realized I didn\'t live near San Zeno. You understood I really cared about you, I was willing to walk all that way just for you! \n
+        So you hugged me, and that was the moment I kissed you, just before telling you how beautiful you are and how much I liked you. \n
+        That\'s when our story began.\n\n
         P.S. You better take a nice picture here :-)
     </string>
     <string name="text_torreLambertiReachedText_title">Text time</string>
@@ -247,7 +252,7 @@
     
     <string name="text_timeToGoHome_title">Time to go home</string>
     <string name="text_timeToGoHome">
-        Congratulations, your quest is complete! You have been really good, you got here. Weeeeee...oh no, hang on a second, it\' not over yet!
+        Congratulations, your quest is complete! You have been really good, you got here. Weeeeee...oh no, hang on a second, it\' not over yet!\n
         There is still one last target to reach: home. \n
         \n
         Get home to complete your quest and find love

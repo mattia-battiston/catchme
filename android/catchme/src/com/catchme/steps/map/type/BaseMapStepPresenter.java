@@ -24,7 +24,7 @@ public abstract class BaseMapStepPresenter extends BasePresenter<MapStepView> {
     MapController mapController = view.getMapController();
 
     map.setBuiltInZoomControls(true);
-    mapController.setZoom(17);
+    mapController.setZoom(18);
 
     GeoPoint target = getTarget();
     String titleName = getTitleName();
