@@ -176,7 +176,7 @@
     <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
     <string name="text_castelvecchioMessage_title">The secret message</string>
     <string name="text_castelvecchioMessage">
-        Piece of message #8:\n \"I love how you always find new bruces on you but you don't know you hurt yourself.\"
+        Piece of message #8:\n \"I love how you always find new bruces on you but you don\'t know you hurt yourself.\"
 	</string>
     
     <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
@@ -268,10 +268,27 @@
         The quest is getting difficult, you\'re gonna need the help of your real love. Please hand your phone to him to let him help you.
     </string>
     
-    <string name="text_homeMessage_title">The secret message: solution</string>
-    <string name="text_homeMessage">
-        Piece of message #14:\n Will you marry me?
+    <string name="text_fullMessage_title">The love quest: solution</string>
+    <string name="text_fullMessage">
+        Aindrea Elizabeth Harte, since the first time I met you I knew I was in love with you and loved everything about you. \n\n
+        I love your hair and the funny bit that sticks out of it at the front. \n\n
+        I love your ears and the way you always try to cover them. \n\n
+        I love your eyes that look so big on your piccolina face. \n\n
+        I love your smile that always makes me laugh. \n\n
+        I love your nose when it\'s itchy and you have faggia. \n\n
+        I love your hands that always smell of that liquid to clean them, and how we keep it when we go to throw away the rubbish togheter. \n\n
+        I love how you always find new bruces on you but you don\'t know you hurt yourself. \n\n
+        I love to walk with you and having to go slower because your legs are little and you can\'t keep up. \n\n
+        I love to go on holiday with you and have a good naps. \n\n
+        I love how every time I\'m grumpy you can change my mood. \n\n
+        I love to wake up with you every morning and see your sleepy face. \n\n
+        For a million reasons more, I love you And I want to spend the rest of my life with you. \n\n
+        Will you marry me?
 	</string>
     
+    <string name="text_thankYou_title">Thank you</string>
+    <string name="text_thankYou">
+        Thank you for playing with us. We hope to have you back again. Bye bye xxx
+    </string>
     
 </resources>

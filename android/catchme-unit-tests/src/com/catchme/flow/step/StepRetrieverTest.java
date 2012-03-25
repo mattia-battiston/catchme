@@ -54,15 +54,17 @@ public class StepRetrieverTest extends BaseUnitTest {
     assertEquals(stepAfter, fourth);
   }
 
-  @Test(expected = RuntimeException.class)
-  public void getStepAfter_exceptionIfThereAreNoMoreSteps() {
+  @Test
+  public void getStepAfter_returnsExitStepAfterLast() {
     Presenter<?> first = step("First");
     Presenter<?> second = step("Second");
     Presenter<?> third = step("Third");
     Presenter<?> fourth = step("Fourth");
     mockSteps(first, second, third, fourth);
 
-    stepRetriever.getStepAfter(fourth);
+    Presenter<?> stepAfter = stepRetriever.getStepAfter(fourth);
+
+    assertThat(stepAfter, is(instanceOf(ExitStep.class)));
   }
 
   @Test

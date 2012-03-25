@@ -86,7 +86,12 @@ public class StepRetriever {
     steps.add(new SimpleTextPresenter("timeToGoHome"));
     steps.add(new SimplePointPresenter("home", 45444727, 11021433));
     steps.add(new SimpleTextPresenter("homeReached"));
-    steps.add(new SimpleTextPresenter("homeMessage"));
+
+    steps.add(new SimpleTextPresenter("ensureYoureHome"));
+    steps.add(new SimpleTextPresenter("handOverYourPhone"));
+    steps.add(new SimpleTextPresenter("fullMessage"));
+
+    steps.add(new SimpleTextPresenter("thankYou"));
   }
 
   public Presenter<?> getFirstStep() {
@@ -99,7 +104,7 @@ public class StepRetriever {
       if (candidate.getStepName().equals(step.getStepName()))
         return steps.get(i + 1);
     }
-    throw new RuntimeException("No more steps");
+    return exitStep;
   }
 
   public Presenter<?> getStepBefore(Presenter<?> step) {
