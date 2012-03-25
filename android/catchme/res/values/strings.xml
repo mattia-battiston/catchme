@@ -111,7 +111,7 @@
     <string name="text_ferrarisReachedText">Time to text Mattia: \"FERRARIS REACHED\" </string>
     <string name="text_ferrarisMessage_title">The secret message</string>
     <string name="text_ferrarisMessage">
-        Piece of message #7:\n \"I love your hands that always smell of that liquid to clean them.\"
+        Piece of message #7:\n \"I love your hands that always smell of that liquid to clean them, and how we keep it when we go to throw away the rubbish togheter.\"
 	</string>
 
     <string name="map_firstPizza_title">Target 5: First Date</string>
@@ -176,7 +176,7 @@
     <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
     <string name="text_castelvecchioMessage_title">The secret message</string>
     <string name="text_castelvecchioMessage">
-        Piece of message #8:\n \"I love to keep that liquid to clean our hands when we go to throw away the rubbish togheter.\"
+        Piece of message #8:\n \"I love how you always find new bruces on you but you don't know you hurt yourself.\"
 	</string>
     
     <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
@@ -255,5 +255,23 @@
     
     <string name="map_home_title">Extra Target: Home</string>
     <string name="map_home">come back!</string>
-
+	<string name="text_homeReached_title">Extra Target: Home - Reached</string>
+    <string name="text_homeReached">
+        You\'re home, now go upstairs and meet your love
+    </string>
+    <string name="text_ensureYoureHome_title">Are you sure?</string>
+    <string name="text_ensureYoureHome">
+        Are you sure you\'re home with your love? If so, please continue
+    </string>
+    <string name="text_handOverYourPhone_title">Hand your phone over</string>
+    <string name="text_handOverYourPhone">
+        The quest is getting difficult, you\'re gonna need the help of your real love. Please hand your phone to him to let him help you.
+    </string>
+    
+    <string name="text_homeMessage_title">The secret message: solution</string>
+    <string name="text_homeMessage">
+        Piece of message #14:\n Will you marry me?
+	</string>
+    
+    
 </resources>
