@@ -57,7 +57,7 @@
     <string name="text_sacherReached">
         Wow, you reached the first target, congratulations! Woo hoo!\n\n
         Awww, do you remember all the times we had sacher here? Mmmh, that\'s soooo good. How lovely are our strolls in the summer nights! 
-        I just love to walk around with you, chat, have an ice cream and relax. I can\'t wait for the weather to get warmer and start againg.\n
+        I just love to walk around with you, chat, have an ice cream and relax. I can\'t wait for the weather to get warmer and start again.\n
         \n
         \n
         Ok, since you reached your first target, don\'t forget to take a picture to prove you\'ve been here! Exit the application (just use the \"home\" button of your phone), 
@@ -89,8 +89,8 @@
     <string name="text_viaBadileReached">
         Your old via badile house. So many things happened here! \n
         Do you remember the little \"ou\" man drawn on the whiteboard? And that time when they cut your electricity? \n
-        And when I did the shopping for you? And when I showed you how to cook carbonara? And the first Valentine\'s Day? And...oh, I better stop and let you continue your journey :) \n
-        remember to take a picture!
+        And when I did the shopping for you? And when I showed you how to cook carbonara? And the first Valentine\'s Day? And...oh, I better stop and let you continue your journey :-) \n
+        Remember to take a picture!
     </string>
     <string name="text_viaBadileReachedText_title">Text time</string>
     <string name="text_viaBadileReachedText">Time to text Mattia: \"VIA BADILE REACHED\" </string>
@@ -138,7 +138,7 @@
     <string name="text_oldHouseReached_title">Target 6: Antonia\'s house - Reached!</string>
     <string name="text_oldHouseReached">
         I used to take you back here after our walks, do you remember? And then we would exchange a little kiss on the cheek, eh eh. Buonanotte, mwah mwah.
-        And immediatly after we would both think \"oh, i should have kissed her!\". Ah, good memories. \n\n
+        And immediately after we would both think \"oh, i should have kissed her!\". Ah, good memories. \n\n
         We have so many memories here! She was definitely crazy, but thank God she was there and we met. \n
         Oh, do you remember that time when I slept here? Ah ah, and then I had to sneak out in the morning. Fun :-)
     </string>
@@ -179,7 +179,7 @@
     <string name="text_castelvecchioReachedText">Time to text Mattia: \"CASTELVECCHIO REACHED\" </string>
     <string name="text_castelvecchioMessage_title">The secret message</string>
     <string name="text_castelvecchioMessage">
-        Piece of message #8:\n \"I love how you always find new bruces on you but you don\'t know you hurt yourself.\"
+        Piece of message #8:\n \"I love how you always find new bruces on you but you don\'t know how you hurt yourself.\"
 	</string>
     
     <string name="map_pozzoAmore_title">Target 9: Pozzo dell\'Amore</string>
@@ -219,7 +219,7 @@
     <string name="text_pontePietraReached_title">Target 11: Ponte Pietra - Reached!</string>
     <string name="text_pontePietraReached">
         Here is where we exchanged our first kiss...oh no, wait, we didn\'t! Eh eh. You were too shy, but nevermind. It all fell into place in the end. \n\n
-        I remember when that night when I was walking home you texted me \"thank you for being so patient, sorry if I\'m so shy\" and I replied 
+        I remember that night when I was walking home you texted me \"thank you for being so patient, sorry if I\'m so shy\" and I replied 
         \"don\'t worry, it will all come at the right time\". \n\n
         Indeed, the right time arrived short after.
     </string>
@@ -235,7 +235,7 @@
     <string name="text_torreLambertiReached_title">Target 12: Torre dei Lamberti - Reached!</string>
     <string name="text_torreLambertiReached">
         You knew you would have arrived here sooner or later. This is where our love started: the first kiss. I remember every second of that day.\n\n
-        First I came to you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hurted yours accidentally, 
+        First I came to you at Antonia\'s house, and we walked to the center holding hands for the first time. Actually my hand hit yours accidentally, 
         but you said \"uh, holding hands, nice\" and so we did...but hey, nevermind, that was cool :-) \n
         then we walked and I brought you here, at the Torre dei Lamberti, right at the top; 
         I showed you where I lived, and that was the moment when you realized I didn\'t live near San Zeno. You understood I really cared about you, I was willing to walk all that way just for you! \n
